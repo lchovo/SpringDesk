@@ -1,6 +1,6 @@
 # SpringDesk
 
-Organize your Windows 11 desktop into translucent fences — a lightweight alternative to Stardock Fences.
+Organize your Windows 11 desktop into translucent boxes — a lightweight alternative to Stardock Fences.
 
 [中文说明](#中文说明)
 
@@ -8,14 +8,14 @@ Organize your Windows 11 desktop into translucent fences — a lightweight alter
 
 ## Features
 
-- **Fences**: create, rename, move and resize; the arrow on the title bar rolls a fence up to just its title
-- **Tabs**: several groups of icons in one fence — drop a fence onto another fence's title bar to merge them
-- **Folder portals**: a fence that shows a folder, such as Downloads
+- **Boxes**: create, rename, move and resize; the arrow on the title bar rolls a box up to just its title
+- **Tabs**: several groups of icons in one box — drop a box onto another box's title bar to merge them
+- **Folder boxes**: a box that shows a folder, such as Downloads
 - **Sorted for you**: on first run your desktop is sorted by type into apps, files, folders and downloads; anything unclear goes to the Inbox. New files on the desktop find their place automatically
-- **Desktop search**: click the desktop or a fence and just type, or press Ctrl+Alt+Space anytime
-- **Control center**: appearance (transparency, tint), layout lock, layout backups
+- **Desktop search**: click the desktop or a box and just type, or press Ctrl+Alt+Space anytime
+- **Settings**: appearance (opacity, tint), the sorting box, layout lock, daily layout backups
 
-The interface is in Chinese for now; more languages are planned.
+In English, or in Chinese on Chinese Windows (Settings → General → Language).
 
 ## Install
 
@@ -36,16 +36,16 @@ Windows Settings → Apps → Installed apps → SpringDesk → Uninstall. Your 
 ## FAQ
 
 **Does SpringDesk move my files?**
-No. It only shows them in fences; they stay in your Desktop folder. After uninstalling, your desktop is as it was.
+No. It only shows them in boxes; they stay in your Desktop folder. After uninstalling, your desktop is as it was.
 
-**What is "显示 Windows 桌面图标" in the tray menu?**
-An emergency switch: if something goes wrong with the fences, turn it on to see Windows' own desktop icons.
+**What is "Show Windows desktop icons" in the tray menu?**
+An emergency switch: if something goes wrong with the boxes, turn it on to see Windows' own desktop icons.
 
 **My security software (360, Huorong…) shows a warning.**
-Typing on the desktop to search needs to receive keystrokes, which some security software flags. Allow it, or turn the feature off in the control center (通用).
+Typing on the desktop to search needs to receive keystrokes, which some security software flags. Allow it, or turn the feature off in Settings → General.
 
 **Something went wrong.**
-Control center → 关于 (About) → 导出诊断信息 (Export diagnostics), and send me the zip. It holds logs and your fence layout, with file names but no file contents.
+Settings → About → Export diagnostics, and send me the zip. It holds logs and your layout, with file names but no file contents.
 
 ---
 
@@ -60,7 +60,8 @@ Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的
 - **文件夹门户**：分区里直接显示某个文件夹（比如"下载"）的内容
 - **自动整理**：第一次使用时按类型分好"软件 / 文件 / 文件夹 / 下载"，分不清的放进"临时分区"；以后桌面上的新文件也会自动归位
 - **桌面搜索**：点一下桌面或分区后直接打字就能搜，中文打拼音首字母（比如 wx 找到微信）；也可以随时按 Ctrl+Alt+空格
-- **控制中心**：外观（透明度、底色）、锁定布局、布局备份和恢复
+- **设置**：外观（不透明度、底色）、收纳门户、锁定分区、每天自动备份布局
+- **中英文界面**：跟随 Windows 的显示语言，也可以在 设置 → 通用 → 语言 里改
 
 ### 安装
 
@@ -87,10 +88,10 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 应急开关：万一分区出了问题，打开它就能看到 Windows 自己的桌面图标。
 
 **安全软件（360、火绒等）弹出提示？**
-"在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能的话，可以在控制中心 → 通用里关掉。
+"在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能的话，可以在 设置 → 通用 里关掉。
 
 **遇到问题怎么办？**
-控制中心 → 关于 → 导出诊断信息，把生成的压缩包发给我。里面是日志和分区布局，有桌面上的文件名，没有文件内容。
+设置 → 关于 → 导出诊断信息，把生成的压缩包发给我。里面是日志和分区布局，有桌面上的文件名，没有文件内容。
 
 ### 更新日志
 
