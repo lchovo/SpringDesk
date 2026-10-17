@@ -13,7 +13,9 @@ Organize your Windows 11 desktop into translucent boxes — a lightweight altern
 - **Folder boxes**: a box that shows a folder, such as Downloads
 - **Sorted for you**: on first run your desktop is sorted by type into apps, files, folders and downloads; anything unclear goes to the Inbox. New files on the desktop find their place automatically
 - **Desktop search**: click the desktop or a box and just type, or press Ctrl+Alt+Space anytime
-- **Settings**: appearance (opacity, tint), the sorting box, layout lock, daily layout backups
+- **Quick Look**: select an icon and press Space to see pictures, videos, music, text and PDFs without opening them; other files show their details. The arrow keys move to the next one
+- **Light and dark**: follows Windows, or pick one in Settings → Appearance
+- **Settings**: theme and opacity, the sorting box, layout lock, daily layout backups
 
 In English, or in Chinese on Chinese Windows (Settings → General → Language).
 
@@ -38,8 +40,8 @@ Windows Settings → Apps → Installed apps → SpringDesk → Uninstall. Your 
 **Does SpringDesk move my files?**
 No. It only shows them in boxes; they stay in your Desktop folder. After uninstalling, your desktop is as it was.
 
-**What is "Show Windows desktop icons" in the tray menu?**
-An emergency switch: if something goes wrong with the boxes, turn it on to see Windows' own desktop icons.
+**What is "Also show Windows’ own icons" in the tray menu?**
+An emergency switch: if something goes wrong with the boxes, turn it on to see Windows' own desktop icons. It's also in Settings → General.
 
 **My security software (360, Huorong…) shows a warning.**
 Typing on the desktop to search needs to receive keystrokes, which some security software flags. Allow it, or turn the feature off in Settings → General.
@@ -60,7 +62,9 @@ Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的
 - **文件夹门户**：分区里直接显示某个文件夹（比如"下载"）的内容
 - **自动整理**：第一次使用时按类型分好"软件 / 文件 / 文件夹 / 下载"，分不清的放进"临时分区"；以后桌面上的新文件也会自动归位
 - **桌面搜索**：点一下桌面或分区后直接打字就能搜，中文打拼音首字母（比如 wx 找到微信）；也可以随时按 Ctrl+Alt+空格
-- **设置**：外观（不透明度、底色）、收纳门户、锁定分区、每天自动备份布局
+- **空格预览**：选中图标按空格，不用打开就能看图片、视频、音乐、文本和 PDF；其他文件显示信息。方向键看下一个
+- **浅色和深色**：跟随 Windows，也可以在 设置 → 外观 里选
+- **设置**：主题和不透明度、收纳门户、锁定分区、每天自动备份布局
 - **中英文界面**：跟随 Windows 的显示语言，也可以在 设置 → 通用 → 语言 里改
 
 ### 安装
@@ -84,8 +88,8 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 **桌面上的文件会被移走吗？**
 不会。SpringDesk 只是把它们显示在分区里，文件一直在原来的桌面文件夹里。卸载后桌面和原来一样。
 
-**右键托盘图标里的"显示 Windows 桌面图标"是什么？**
-应急开关：万一分区出了问题，打开它就能看到 Windows 自己的桌面图标。
+**右键托盘图标里的"同时显示 Windows 自带的图标"是什么？**
+应急开关：万一分区出了问题，打开它就能看到 Windows 自己的桌面图标。设置 → 通用 里也有。
 
 **安全软件（360、火绒等）弹出提示？**
 "在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能的话，可以在 设置 → 通用 里关掉。
