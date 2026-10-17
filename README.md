@@ -1,6 +1,6 @@
 # SpringDesk
 
-Organize your Windows 11 desktop into translucent boxes — a lightweight alternative to Stardock Fences.
+Organize your Windows 11 desktop into translucent boxes.
 
 [中文说明](#中文说明)
 
@@ -25,7 +25,7 @@ In English, or in Chinese on Chinese Windows (Settings → General → Language)
 2. If you see "Windows protected your PC", click **More info**, then **Run anyway**. (SpringDesk isn't code-signed, so Windows doesn't recognize it yet.)
 3. SpringDesk opens and sorts your desktop. It starts with Windows from then on.
 
-Requires **Windows 11**. If you use Fences, quit it first.
+Requires **Windows 11**. If another desktop organizer is running, quit it first.
 
 ## Updates
 
@@ -53,7 +53,7 @@ Settings → About → Export diagnostics, and send me the zip. It holds logs an
 
 ## 中文说明
 
-Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的分区里，用起来像 Stardock Fences。
+Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的分区里。
 
 ### 能做什么
 
@@ -73,7 +73,7 @@ Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的
 2. 如果看到"Windows 已保护你的电脑"：点"更多信息"，再点"仍要运行"。（SpringDesk 没有买代码签名证书，所以 Windows 不认识它。）
 3. 装好后 SpringDesk 会自动打开，把桌面上的东西按类型整理好，以后开机自动启动。
 
-需要 **Windows 11**。如果在用 Fences，请先退出 Fences。
+需要 **Windows 11**。如果在用别的桌面整理工具，请先把它退出。
 
 ### 更新
 
