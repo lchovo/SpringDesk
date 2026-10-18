@@ -21,15 +21,16 @@ In English, or in Chinese on Chinese Windows (Settings → General → Language)
 
 ## Install
 
-1. Download **SpringDesk-win-Setup.exe** from the [latest release](https://github.com/lchovo/SpringDesk/releases/latest) and run it.
-2. If you see "Windows protected your PC", click **More info**, then **Run anyway**. (SpringDesk isn't code-signed, so Windows doesn't recognize it yet.)
-3. SpringDesk opens and sorts your desktop. It starts with Windows from then on.
+1. Get SpringDesk from the [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB) (free 7-day trial).
+2. SpringDesk opens and sorts your desktop. It starts with Windows from then on.
+
+Had the free version from GitHub? Open the Store version once: your boxes come along, and it asks you to uninstall the GitHub copy.
 
 Requires **Windows 11**. If another desktop organizer is running, quit it first.
 
 ## Updates
 
-Automatic: when a new version is ready, a notification lets you restart to update. If you don't, it updates the next time SpringDesk starts.
+Automatic, through the Microsoft Store.
 
 ## Uninstall
 
@@ -69,15 +70,16 @@ Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的
 
 ### 安装
 
-1. 到 [下载页](https://github.com/lchovo/SpringDesk/releases/latest) 下载 **SpringDesk-win-Setup.exe**，双击安装。
-2. 如果看到"Windows 已保护你的电脑"：点"更多信息"，再点"仍要运行"。（SpringDesk 没有买代码签名证书，所以 Windows 不认识它。）
-3. 装好后 SpringDesk 会自动打开，把桌面上的东西按类型整理好，以后开机自动启动。
+1. 到 [微软商店](https://apps.microsoft.com/detail/9NRL4M710KQB) 安装 SpringDesk（可以免费试用 7 天）。
+2. 装好后 SpringDesk 会自动打开，把桌面上的东西按类型整理好，以后开机自动启动。
+
+以前装过 GitHub 上的免费版？打开一次商店版，分区会原样接过来，并提醒你卸载 GitHub 版。
 
 需要 **Windows 11**。如果在用别的桌面整理工具，请先把它退出。
 
 ### 更新
 
-自动的：有新版本时右下角会提示，点一下就重启更新；不点的话，下次启动时自动更新。
+自动的，由微软商店更新。
 
 ### 卸载
 
@@ -99,4 +101,4 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 
 ### 更新日志
 
-见 [每个版本的说明](https://github.com/lchovo/SpringDesk/releases)。
+见 [商店页](https://apps.microsoft.com/detail/9NRL4M710KQB) 的"此版本中的新增功能"。
