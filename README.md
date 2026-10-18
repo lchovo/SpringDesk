@@ -6,7 +6,7 @@ Organize your Windows 11 desktop into translucent boxes.
 
 [中文说明](#中文说明)
 
-![SpringDesk](screenshot.png)
+<img width="2560" height="1440" alt="01-overview" src="https://github.com/user-attachments/assets/0ece9e88-7548-4caf-b6e5-e1e7d9ec19fa" />
 
 ## Features
 
