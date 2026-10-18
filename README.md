@@ -2,9 +2,11 @@
 
 Organize your Windows 11 desktop into translucent boxes.
 
+**Website: [springdesk.app](https://springdesk.app)** · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
+
 [中文说明](#中文说明)
 
-<img width="2560" height="1440" alt="01-overview" src="https://github.com/user-attachments/assets/323a4915-9e7d-4e32-8850-84461e4dc52c" />
+![SpringDesk](screenshot.png)
 
 ## Features
 
@@ -21,7 +23,7 @@ In English, or in Chinese on Chinese Windows (Settings → General → Language)
 
 ## Install
 
-1. Get SpringDesk from the [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB) (free 7-day trial).
+1. Get SpringDesk from the [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github) (free 7-day trial).
 2. SpringDesk opens and sorts your desktop. It starts with Windows from then on.
 
 Had the free version from GitHub? Open the Store version once: your boxes come along, and it asks you to uninstall the GitHub copy.
@@ -70,7 +72,7 @@ Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的
 
 ### 安装
 
-1. 到 [微软商店](https://apps.microsoft.com/detail/9NRL4M710KQB) 安装 SpringDesk（可以免费试用 7 天）。
+1. 到 [微软商店](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github) 安装 SpringDesk（可以免费试用 7 天）。
 2. 装好后 SpringDesk 会自动打开，把桌面上的东西按类型整理好，以后开机自动启动。
 
 以前装过 GitHub 上的免费版？打开一次商店版，分区会原样接过来，并提醒你卸载 GitHub 版。
@@ -101,4 +103,4 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 
 ### 更新日志
 
-见 [商店页](https://apps.microsoft.com/detail/9NRL4M710KQB) 的"此版本中的新增功能"。
+见 [商店页](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github) 的"此版本中的新增功能"。
