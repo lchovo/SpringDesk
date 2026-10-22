@@ -35,7 +35,7 @@ you send it yourself.
 
 ## Contact
 
-Questions about privacy: open an issue at github.com/lchovo/SpringDesk.
+Questions about privacy: email SpringDesk@outlook.com, or open an issue at github.com/lchovo/SpringDesk.
 
 ---
 
@@ -66,4 +66,4 @@ SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行
 
 ## 联系
 
-关于隐私的问题：在 github.com/lchovo/SpringDesk 提一个 issue。
+关于隐私的问题：发邮件到 SpringDesk@outlook.com，或在 github.com/lchovo/SpringDesk 提一个 issue。
