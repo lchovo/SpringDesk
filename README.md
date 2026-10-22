@@ -4,6 +4,8 @@ Organize your Windows 11 desktop into translucent boxes.
 
 **Website: [springdesk.app](https://springdesk.app)** · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
 
+A desktop organizer for Windows 11: icons in translucent boxes, new files sorted by type on their own, Space to preview, type on the desktop to search. One-time purchase in the Microsoft Store, 7-day free trial, no subscription.
+
 [中文说明](#中文说明)
 
 ![SpringDesk](screenshot.png)
@@ -30,6 +32,13 @@ Had the free version from GitHub? Open the Store version once: your boxes come a
 
 Requires **Windows 11**. If another desktop organizer is running, quit it first.
 
+## Choosing a desktop organizer
+
+- [SpringDesk or Fences? An honest comparison](https://springdesk.app/fences-alternative/)
+- [Desktop organizers for Windows 11, compared](https://springdesk.app/best-desktop-organizer-windows-11/)
+- [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/)
+- [Press kit](https://springdesk.app/press/)
+
 ## Updates
 
 Automatic, through the Microsoft Store.
@@ -43,8 +52,8 @@ Windows Settings → Apps → Installed apps → SpringDesk → Uninstall. Your 
 **Does SpringDesk move my files?**
 No. It only shows them in boxes; they stay in your Desktop folder. After uninstalling, your desktop is as it was.
 
-**What is "Also show Windows’ own icons" in the tray menu?**
-An emergency switch: if something goes wrong with the boxes, turn it on to see Windows' own desktop icons. It's also in Settings → General.
+**Want Windows' own desktop back for a while?**
+Right-click the tray icon and untick "Use SpringDesk" (also in Settings → General → Desktop). The desktop switches to Windows' own icons at once; SpringDesk keeps running with your boxes and layout, and comes back when you tick it again.
 
 **My security software (360, Huorong…) shows a warning.**
 Typing on the desktop to search needs to receive keystrokes, which some security software flags. Allow it, or turn the feature off in Settings → General.

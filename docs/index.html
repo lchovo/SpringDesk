@@ -10,118 +10,80 @@
   <meta property="og:description" content="Translucent boxes for your desktop icons. New files sort themselves. Press Space to look inside, type to find anything.">
   <meta property="og:image" content="https://springdesk.app/assets/og.jpg">
   <meta property="og:url" content="https://springdesk.app/">
-  <link rel="canonical" href="https://springdesk.app/">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico">
-  <style>
-    :root {
-      --text: #1d1d1f;
-      --text-2: #55555c;
-      --accent: #007aff;
-      --card: rgba(255, 255, 255, 0.62);
-      --card-stroke: rgba(255, 255, 255, 0.85);
-      --shadow: 0 1px 2px rgba(40, 30, 80, 0.06), 0 12px 40px rgba(60, 40, 120, 0.12);
-      --page: linear-gradient(160deg, #f3e9ff 0%, #e6efff 35%, #fde8f1 70%, #fff4e6 100%);
-      --radius: 20px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #f5f5f7;
-        --text-2: #a8a8b3;
-        --accent: #0a84ff;
-        --card: rgba(40, 38, 56, 0.6);
-        --card-stroke: rgba(255, 255, 255, 0.08);
-        --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.35);
-        --page: linear-gradient(160deg, #1d1630 0%, #141b2e 40%, #2a1626 75%, #2a1f16 100%);
+  <link rel="canonical" href="https://springdesk.app/">
+  <link rel="alternate" hreflang="en" href="https://springdesk.app/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://springdesk.app/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://springdesk.app/#app",
+        "name": "SpringDesk",
+        "description": "A desktop organizer for Windows 11. SpringDesk gathers desktop icons into translucent boxes that snap to a grid, sorts new files into tabs by type, previews files with the Space bar, and searches every box when you type on the desktop. One-time purchase in the Microsoft Store with a 7-day free trial.",
+        "url": "https://springdesk.app/",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Desktop organizer",
+        "operatingSystem": "Windows 11",
+        "softwareVersion": "1.5.3",
+        "datePublished": "2026-10-17",
+        "inLanguage": ["en", "zh-Hans"],
+        "image": "https://springdesk.app/assets/icon-300.png",
+        "screenshot": [
+          "https://springdesk.app/assets/01-overview.jpg",
+          "https://springdesk.app/assets/og.jpg"
+        ],
+        "installUrl": "https://apps.microsoft.com/detail/9NRL4M710KQB",
+        "offers": {
+          "@type": "Offer",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.microsoft.com/detail/9NRL4M710KQB"
+        },
+        "featureList": [
+          "Translucent boxes for desktop icons that snap to a grid and never overlap",
+          "Tabs and boxes that roll up to their title bar",
+          "New files on the desktop sort themselves into tabs by type",
+          "Folder boxes that show any folder, such as Downloads, on the desktop",
+          "Press Space to preview pictures, videos, music, text and PDFs",
+          "Type on the desktop to search every box",
+          "A separate layout for each resolution and scaling, with daily backups",
+          "Light and dark themes, clear or frosted glass",
+          "One-time purchase, no subscription; 7-day free trial",
+          "No account, no ads, no data collected"
+        ],
+        "author": { "@type": "Person", "name": "Brock Loong", "url": "https://github.com/lchovo" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How much is SpringDesk?", "acceptedAnswer": { "@type": "Answer", "text": "Try SpringDesk free for 7 days. After that it's a one-time purchase in the Microsoft Store, with updates included and no subscription. Until January 1, 2027 it's US$4.99 instead of US$7.99; the Store shows the price in your currency." } },
+          { "@type": "Question", "name": "Does SpringDesk move my files?", "acceptedAnswer": { "@type": "Answer", "text": "No. Your files stay in your Desktop folder; SpringDesk only shows them in boxes. Uninstall it and your desktop is exactly as it was." } },
+          { "@type": "Question", "name": "Does SpringDesk work on Windows 10?", "acceptedAnswer": { "@type": "Answer", "text": "No, SpringDesk needs Windows 11." } },
+          { "@type": "Question", "name": "How is SpringDesk different from Fences?", "acceptedAnswer": { "@type": "Answer", "text": "Fences is the best-known desktop organizer and has more options, such as custom sorting rules and colored fences, and it runs on Windows 10 too. SpringDesk is simpler and costs less: a one-time purchase that is cheaper than one year of the Fences subscription, new files sorted by type without setting up rules, Space to preview files, and typing on the desktop to search." } },
+          { "@type": "Question", "name": "I use Fences or another desktop organizer. Can I switch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Quit the other organizer first (SpringDesk asks you to if Fences is running), then start SpringDesk: it sorts your desktop into boxes on its first run, and you can rearrange everything from there. Layouts from other apps aren't imported." } },
+          { "@type": "Question", "name": "Does SpringDesk collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "No. There's no account, no ads and no data collection; everything happens on your PC." } },
+          { "@type": "Question", "name": "Is SpringDesk in my language?", "acceptedAnswer": { "@type": "Answer", "text": "SpringDesk is in English and Chinese, and follows your Windows display language." } }
+        ]
       }
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--text);
-      background: var(--page);
-      background-attachment: fixed;
-      font: 17px/1.55 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 19px; color: var(--text); }
-    .brand img { width: 32px; height: 32px; image-rendering: pixelated; }
-    header nav { display: flex; gap: 24px; font-size: 15px; }
-    header nav a { color: var(--text-2); }
-
-    .hero { text-align: center; padding: 56px 0 32px; }
-    h1 {
-      font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
-      font-size: clamp(40px, 6vw, 68px);
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      margin: 0 0 20px;
-    }
-    .lede { font-size: 20px; color: var(--text-2); max-width: 680px; margin: 0 auto 32px; }
-    .get { display: inline-flex; flex-direction: column; align-items: center; gap: 12px; }
-    .get img { height: 56px; display: block; }
-    .get .light { display: none; }
-    @media (prefers-color-scheme: dark) { .get .dark { display: none; } .get .light { display: block; } }
-    .fine { font-size: 14px; color: var(--text-2); }
-
-    .glass {
-      background: var(--card);
-      border: 1px solid var(--card-stroke);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(24px) saturate(1.4);
-      -webkit-backdrop-filter: blur(24px) saturate(1.4);
-    }
-    .movie { margin: 48px auto 0; padding: 8px; max-width: 1040px; }
-    video, .shot { display: block; width: 100%; height: auto; border-radius: 14px; background: #ddd; aspect-ratio: 16 / 9; object-fit: cover; }
-
-    section.feature { display: grid; grid-template-columns: 5fr 7fr; gap: 48px; align-items: center; padding: 64px 0; }
-    section.feature:nth-of-type(even) { grid-template-columns: 7fr 5fr; }
-    section.feature:nth-of-type(even) .copy { order: 2; }
-    .copy h2 {
-      font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
-      font-size: 34px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 12px;
-    }
-    .copy p { color: var(--text-2); margin: 0; }
-    .media { padding: 8px; }
-
-    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 32px 0 64px; }
-    .grid .glass { padding: 24px; }
-    .grid h3 { font-size: 17px; margin: 0 0 6px; }
-    .grid p { font-size: 15px; color: var(--text-2); margin: 0; }
-
-    .faq { max-width: 760px; margin: 0 auto; padding: 32px 0 64px; }
-    .faq h2 { text-align: center; font-size: 34px; margin: 0 0 24px; }
-    details { padding: 16px 24px; margin-bottom: 12px; }
-    summary { cursor: pointer; font-weight: 600; }
-    details p { color: var(--text-2); margin: 12px 0 0; }
-
-    .closing { text-align: center; padding: 48px 0 80px; }
-    .closing h2 { font-size: 40px; margin: 0 0 24px; letter-spacing: -0.01em; }
-    footer { padding: 24px 0 40px; font-size: 14px; color: var(--text-2); display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-    footer a { color: var(--text-2); }
-
-    @media (max-width: 820px) {
-      section.feature, section.feature:nth-of-type(even) { grid-template-columns: 1fr; gap: 24px; padding: 40px 0; }
-      section.feature:nth-of-type(even) .copy { order: 0; }
-      .grid { grid-template-columns: 1fr 1fr; }
-      header nav { display: none; }
-    }
-    @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
-  </style>
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <a class="brand" href="#"><img src="assets/icon.png" alt="">SpringDesk</a>
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
       <nav>
         <a href="#features">Features</a>
+        <a href="/fences-alternative/">Compare</a>
         <a href="#faq">FAQ</a>
         <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-header">Get it</a>
       </nav>
@@ -131,12 +93,12 @@
       <h1>Your Windows 11 desktop,<br>sorted.</h1>
       <p class="lede">SpringDesk gathers your icons into translucent boxes that snap into place, sorts new files by type, and lets you preview or find anything without opening a window.</p>
       <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-hero">
-        <img class="dark" src="assets/store-badge-dark.svg" alt="Get it from Microsoft">
-        <img class="light" src="assets/store-badge-light.svg" alt="Get it from Microsoft">
+        <img class="dark" src="/assets/store-badge-dark.svg" alt="Get it from Microsoft">
+        <img class="light" src="/assets/store-badge-light.svg" alt="Get it from Microsoft">
         <span class="fine">Free 7-day trial · Buy once, no subscription</span>
       </a>
       <div class="movie glass">
-        <video src="assets/1-sorted.mp4" poster="assets/1-sorted.jpg" autoplay muted loop playsinline></video>
+        <video src="/assets/1-sorted.mp4" poster="/assets/1-sorted.jpg" autoplay muted loop playsinline></video>
       </div>
     </div>
 
@@ -146,7 +108,7 @@
           <h2>Boxes that stay out of your way</h2>
           <p>Your icons live in translucent boxes right on the wallpaper, below every window. Drag an icon in and the others make room. Boxes snap to a grid and never overlap, so the desktop stays neat however you move things around.</p>
         </div>
-        <div class="media glass"><img class="shot" src="assets/01-overview.jpg" alt="A tidy desktop: apps, files, folders and downloads in translucent boxes" loading="lazy"></div>
+        <div class="media glass"><img class="shot" src="/assets/01-overview.jpg" alt="A tidy desktop: apps, files, folders and downloads in translucent boxes" loading="lazy"></div>
       </section>
 
       <section class="feature">
@@ -154,7 +116,7 @@
           <h2>Tabs, and boxes that roll up</h2>
           <p>Drop one box onto another to keep more in one place, and switch with a click. Roll a box up to just its title bar when you need the space, and lock your layout so nothing moves by accident.</p>
         </div>
-        <div class="media glass"><video data-src="assets/2-tabs.mp4" poster="assets/2-tabs.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="media glass"><video data-src="/assets/2-tabs.mp4" poster="/assets/2-tabs.jpg" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="feature">
@@ -162,7 +124,7 @@
           <h2>New files sort themselves</h2>
           <p>Save or download a file to the desktop and it goes straight to its tab: documents, spreadsheets, slides, PDFs, pictures and more. Anything SpringDesk can't place waits in the Inbox, so nothing goes missing.</p>
         </div>
-        <div class="media glass"><video data-src="assets/3-new-files.mp4" poster="assets/3-new-files.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="media glass"><video data-src="/assets/3-new-files.mp4" poster="/assets/3-new-files.jpg" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="feature">
@@ -170,7 +132,7 @@
           <h2>Press Space to look inside</h2>
           <p>Pictures, videos, music, text, code and PDFs open in an instant, without starting another app. The arrow keys flip through the rest. Other files show their details at a glance.</p>
         </div>
-        <div class="media glass"><video data-src="assets/4-quick-look.mp4" poster="assets/4-quick-look.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="media glass"><video data-src="/assets/4-quick-look.mp4" poster="/assets/4-quick-look.jpg" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="feature">
@@ -178,7 +140,7 @@
           <h2>Just start typing</h2>
           <p>Click the desktop and type, or press Ctrl+Alt+Space from anywhere. Search finds what's in every box and tab, including the folders you show on your desktop.</p>
         </div>
-        <div class="media glass"><video data-src="assets/5-search.mp4" poster="assets/5-search.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="media glass"><video data-src="/assets/5-search.mp4" poster="/assets/5-search.jpg" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="feature">
@@ -186,7 +148,7 @@
           <h2>Light or dark, clear glass</h2>
           <p>SpringDesk follows Windows' light and dark mode. Boxes are clear glass: only their edges catch the light, and names stay readable on any wallpaper. Lower the transparency and the glass frosts over. It follows live wallpapers too.</p>
         </div>
-        <div class="media glass"><video data-src="assets/6-frost.mp4" poster="assets/6-frost.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="media glass"><video data-src="/assets/6-frost.mp4" poster="/assets/6-frost.jpg" muted loop playsinline preload="none"></video></div>
       </section>
     </div>
 
@@ -201,7 +163,7 @@
       <h2>Questions</h2>
       <details class="glass">
         <summary>How much is it?</summary>
-        <p>Try SpringDesk free for 7 days. After that it's a single purchase in the Microsoft Store: no subscription, and updates come with it. The Store shows the price in your currency.</p>
+        <p>Try SpringDesk free for 7 days. After that it's a one-time purchase in the Microsoft Store, with updates included and no subscription. Until January 1, 2027 it's US$4.99 instead of US$7.99; the Store shows the price in your currency.</p>
       </details>
       <details class="glass">
         <summary>Does SpringDesk move my files?</summary>
@@ -212,8 +174,16 @@
         <p>No, SpringDesk needs Windows 11.</p>
       </details>
       <details class="glass">
-        <summary>I use another desktop organizer. Can I switch?</summary>
-        <p>Yes. Quit the other organizer, start SpringDesk, and it sorts your desktop into boxes on its first run. You can rearrange everything from there.</p>
+        <summary>How is it different from Fences?</summary>
+        <p>Fences is the best-known desktop organizer and has more options, such as custom sorting rules and colored fences, and it runs on Windows 10 too. SpringDesk is simpler and costs less: a one-time purchase that is cheaper than one year of the Fences subscription, new files sorted by type without setting up rules, Space to preview files, and typing on the desktop to search. <a href="/fences-alternative/">See the full comparison</a>.</p>
+      </details>
+      <details class="glass">
+        <summary>I use Fences or another desktop organizer. Can I switch?</summary>
+        <p>Yes. Quit the other organizer first (SpringDesk asks you to if Fences is running), then start SpringDesk: it sorts your desktop into boxes on its first run, and you can rearrange everything from there. Layouts from other apps aren't imported.</p>
+      </details>
+      <details class="glass">
+        <summary>Does it collect my data?</summary>
+        <p>No. There's no account, no ads and no data collection; everything happens on your PC. Read the <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">privacy policy</a>.</p>
       </details>
       <details class="glass">
         <summary>Is it in my language?</summary>
@@ -225,11 +195,20 @@
       </details>
     </div>
 
+    <div class="more">
+      <h2>Choosing a desktop organizer?</h2>
+      <ul>
+        <li><a class="glass" href="/fences-alternative/">SpringDesk or Fences?</a></li>
+        <li><a class="glass" href="/best-desktop-organizer-windows-11/">Desktop organizers for Windows 11, compared</a></li>
+        <li><a class="glass" href="/guides/organize-windows-11-desktop/">How to organize your Windows 11 desktop</a></li>
+      </ul>
+    </div>
+
     <div class="closing">
       <h2>Give your desktop some room.</h2>
       <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-bottom">
-        <img class="dark" src="assets/store-badge-dark.svg" alt="Get it from Microsoft">
-        <img class="light" src="assets/store-badge-light.svg" alt="Get it from Microsoft">
+        <img class="dark" src="/assets/store-badge-dark.svg" alt="Get it from Microsoft">
+        <img class="light" src="/assets/store-badge-light.svg" alt="Get it from Microsoft">
         <span class="fine">Free 7-day trial · Windows 11</span>
       </a>
     </div>
@@ -238,24 +217,10 @@
       <span>© 2026 Brock Loong</span>
       <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
       <a href="https://github.com/lchovo/SpringDesk/issues">Support</a>
-      <a href="https://github.com/lchovo/SpringDesk#中文说明">中文</a>
+      <a href="/press/">Press kit</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
     </footer>
   </div>
-
-  <script>
-    // Feature videos load and play only while on screen.
-    const watcher = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        const video = entry.target;
-        if (entry.isIntersecting) {
-          if (!video.src) video.src = video.dataset.src;
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      }
-    }, { threshold: 0.4 });
-    document.querySelectorAll('video[data-src]').forEach(video => watcher.observe(video));
-  </script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
