@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpringDesk changelog: every update to the Windows 11 desktop organizer</title>
+  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.5.3 (2026-10-22). Updates arrive automatically through the Microsoft Store.">
+  <link rel="canonical" href="https://springdesk.app/changelog/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
+      <nav>
+        <a href="/#features">Features</a>
+        <a href="/fences-alternative/">Compare</a>
+        <a href="/#faq">FAQ</a>
+        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-changelog">Get it</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <h1>Changelog</h1>
+      <p class="lede">Every SpringDesk update, newest first. Updates are free and arrive automatically through the Microsoft Store. Found a bug? Email <a href="mailto:SpringDesk@outlook.com">SpringDesk@outlook.com</a> or <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a>. Every report is read, and fixes ship as Store updates.</p>
+      <p class="byline">Latest version: 1.5.3, 2026-10-22</p>
+
+      <h2 id="v1.5.3">1.5.3 <span class="byline">· October 22, 2026</span></h2>
+        <ul>
+          <li>Fixed: right-clicking an icon sometimes showed no menu at all, mostly with a quick click on PCs with programs such as WPS that add to the menu.</li>
+          <li>Easier box selection: only an icon&#x27;s picture and name pick it up now. Press anywhere else in a box, also between and below icons, to drag a selection box.</li>
+          <li>Boxes are now as far from the screen&#x27;s edges as from each other.</li>
+          <li>Fixed: after a file was dropped into a folder box, the box sometimes scrolled to the wrong place instead of to the file.</li>
+          <li>The Recycle Bin&#x27;s icon in a box now shows when it&#x27;s empty or full, as on Windows&#x27; desktop.</li>
+          <li>Files dragged from a folder box onto the empty desktop are moved or copied as Windows would (copied from another drive or with Ctrl).</li>
+          <li>Fixed: after switching from a picture wallpaper to a plain colour, the boxes kept showing the old picture.</li>
+          <li>Fixed: with &quot;Enable SpringDesk&quot; off, typing on the desktop right after SpringDesk started still opened its search.</li>
+          <li>The edge of a box looks steadier on a busy wallpaper.</li>
+          <li>Safer layouts: a layout file held by another program at start is backed up before anything is saved over it, and a failed save is tried again.</li>
+          <li>Smaller fixes: an icon that couldn&#x27;t be shown for a moment is fetched again; renaming report.txt.txt with extensions hidden keeps its extension.</li>
+          <li>Fixed: a strip of wallpaper across a box rolled up under the pointer.</li>
+          <li>Much less memory used while you&#x27;re not using the boxes.</li>
+        </ul>
+      <h2 id="v1.5.2">1.5.2 <span class="byline">· October 21, 2026</span></h2>
+        <ul>
+          <li>Fixed: box titles and icon names no longer switch between white and black when a box moves, rolls up or sits over a brighter patch of the wallpaper. All boxes on a screen now share a steady text colour, with a firmer halo over brighter or busier parts.</li>
+          <li>Fixed: switching from a static wallpaper to a live wallpaper no longer leaves the old wallpaper inside the boxes&#x27; borders, and the borders no longer lag behind a live wallpaper.</li>
+          <li>Fixed: rolling up a box no longer pulls the bottom edge up or leaves a thin line across the title bar.</li>
+          <li>Lower memory use.</li>
+        </ul>
+      <h2 id="v1.5.1">1.5.1 <span class="byline">· October 21, 2026</span></h2>
+        <ul>
+          <li>Fixed: with a live wallpaper on two screens, the boxes on one screen could suddenly turn into plain grey panels. When one screen&#x27;s background can&#x27;t be read for a moment, its boxes now keep the last picture they had (or use the wallpaper file).</li>
+          <li>Fixed: with a live wallpaper, SpringDesk&#x27;s memory use could keep growing over time.</li>
+        </ul>
+      <h2 id="v1.5.0">1.5.0 <span class="byline">· October 20, 2026</span></h2>
+        <ul>
+          <li>New look for the boxes: glass. At 100% transparency (the new default) a box is completely clear, with no tint and no blur; only its edge shows, bending the wallpaper a little like the rim of thick glass, with a fine line of light. On a busy wallpaper the edge is a little firmer so the box keeps its shape.</li>
+          <li>Settings › Appearance now has one Transparency slider instead of &quot;Glass&quot; and &quot;Opacity&quot;. Lower it and the glass frosts over, which makes text easier to read on a busy wallpaper. Your current look is carried over.</li>
+          <li>Boxes stay calm until you point at them: then the rim lights up, brightest on the side nearest the pointer, and a soft light follows it.</li>
+          <li>A rolled-up box is just its name on the desktop. Point at it and its glass strip appears.</li>
+          <li>Names are white with a soft dark halo, as on Windows&#x27; desktop, so they stay readable on any wallpaper; over a very light wallpaper they turn near-black.</li>
+        </ul>
+      <h2 id="v1.4.9">1.4.9 <span class="byline">· October 20, 2026</span></h2>
+        <ul>
+          <li>Fixed: on some PCs Windows&#x27; own desktop icons kept blinking on and off behind the boxes. SpringDesk no longer changes Windows&#x27; &quot;Show desktop icons&quot; setting, and puts back any change 1.4.8 made.</li>
+          <li>Fixed: files dragged from elsewhere (another computer, a remote session) can be dropped on the empty desktop again.</li>
+          <li>Something made with New on the desktop still opens in its box ready to rename, and now only then: files saved or downloaded to the desktop don&#x27;t start renaming.</li>
+          <li>&quot;Show desktop icons&quot; in the desktop&#x27;s View menu works as before 1.4.8: off, it hides the boxes too.</li>
+          <li>Quitting always brings Windows&#x27; icons back at once, even when File Explorer is busy.</li>
+        </ul>
+      <h2 id="v1.4.8">1.4.8 <span class="byline">· October 20, 2026</span></h2>
+        <ul>
+          <li>Switching SpringDesk off, or quitting it, puts Windows&#x27; own desktop icons back exactly where they were. New files go where Windows puts new icons.</li>
+          <li>Windows&#x27; icons are now hidden with Windows&#x27; own &quot;Show desktop icons&quot; setting: nothing on the empty desktop can touch them, and New on the desktop menu always works. Ticking &quot;Show desktop icons&quot; switches SpringDesk off; unticking it switches it on.</li>
+          <li>Something you make on the desktop (New, Ctrl+Shift+N) opens in its box with its name ready to type.</li>
+          <li>One selection on the whole desktop, as in Windows.</li>
+          <li>Icons follow when you change which program opens a file type.</li>
+          <li>Right-click menus show the moment you release the button.</li>
+          <li>No more freeze when File Explorer restarts, and no more getting stuck when quitting with a menu open.</li>
+          <li>The tray menu matches the boxes&#x27; menus. Smaller download.</li>
+        </ul>
+      <h2 id="v1.4.7">1.4.7 <span class="byline">· October 19, 2026</span></h2>
+        <ul>
+          <li>Settings › General › Desktop now has one switch: Use SpringDesk. Turn it off to get Windows&#x27; own desktop back without quitting. Your boxes and layout are kept, and you can turn it on again any time; the tray menu has the switch too. It replaces the two switches for desktop icons, whose combinations were confusing.</li>
+          <li>A document opened from a box no longer sometimes stays behind other windows (seen with programs that keep one window, like WPS).</li>
+        </ul>
+      <h2 id="v1.4.6">1.4.6 <span class="byline">· October 19, 2026</span></h2>
+        <ul>
+          <li>Dragging files into and out of boxes follows the Windows rules: within a drive they move; to or from another drive, a USB stick or a network folder they&#x27;re copied. Ctrl copies, Shift moves.</li>
+          <li>Fixed: on some PCs, This PC never appeared in a box. SpringDesk now shows exactly the system icons Windows shows and follows the desktop icon settings right away.</li>
+          <li>Safety: after a click on the empty desktop, Ctrl+A, Delete or Enter could act on Windows&#x27; hidden desktop icons. They no longer do.</li>
+          <li>If SpringDesk is ended in Task Manager, Windows&#x27; desktop icons come back at once.</li>
+          <li>Search finds Chinese names by full pinyin too, and keeps what you typed if you look at another window.</li>
+          <li>In a box: Shift+arrow keys select several icons, Ctrl+Shift+N makes a folder, Alt+Enter shows Properties.</li>
+          <li>During the free trial, Settings › About shows the days left and a Buy button.</li>
+          <li>Smaller fixes: downloads in progress wait quietly in the Inbox; network shortcuts no longer slow things down off the network; old logs are cleaned up.</li>
+        </ul>
+      <h2 id="v1.4.5">1.4.5 <span class="byline">· October 19, 2026</span></h2>
+        <ul>
+          <li>Fixed: on some PCs the Microsoft Store version never managed to save your boxes, so after a restart or an update they went back to an older layout. They&#x27;re saved now, and the first start of this version brings back the boxes as you last left them.</li>
+          <li>Dropping files into a box from other programs now works the way it does on the Windows desktop, including drags that can only be copied. They stay in the box you drop them on.</li>
+          <li>Ctrl+Z in a box undoes your last file operation (move, rename, delete…), as on the desktop.</li>
+          <li>After renaming, the box keeps the keyboard, so the next key works there.</li>
+          <li>If SpringDesk ever has to use a backup of your layout, it tells you which day&#x27;s.</li>
+        </ul>
+      <h2 id="v1.4.4">1.4.4 <span class="byline">· October 19, 2026</span></h2>
+        <ul>
+          <li>Fixed: choosing New from the empty desktop&#x27;s right-click menu showed &quot;File System Error (16389)&quot;. It works again.</li>
+          <li>Fixed: new spreadsheets and presentations made with New (WPS) now go to their tab in the sorting box. A new file that only shares its name with an old deleted one is treated as new.</li>
+          <li>A file in the sorting box renamed to another type moves to the tab for its new type.</li>
+          <li>Drag a file out of a box onto the empty desktop and it flies into the Inbox, which flashes it, so you can see where it went.</li>
+          <li>Renaming shows the whole name, however long, as on the Windows desktop.</li>
+          <li>If the layout file is ever damaged (say, by a power cut), your boxes come back from the latest daily backup.</li>
+          <li>When SpringDesk quits, Windows&#x27; own desktop icons come back first, so the desktop is never left empty.</li>
+          <li>Diagnostics no longer note other programs&#x27; window titles, and leave your user name out of paths.</li>
+          <li>Smaller fixes for renames that only change capitals, downloads that arrive while you drag files, and previews of pictures and zips.</li>
+        </ul>
+      <h2 id="v1.4.3">1.4.3 <span class="byline">· October 18, 2026</span></h2>
+        <ul>
+          <li>After you&#x27;ve used SpringDesk for a few days, it asks once whether you&#x27;d like to rate it in the Microsoft Store. You can also rate it any time from Settings › About.</li>
+        </ul>
+      <h2 id="v1.4.2">1.4.2 <span class="byline">· October 18, 2026</span></h2>
+        <ul>
+          <li>Copy a file in a box and paste it into the same tab: you get &quot;name - Copy&quot;, as in File Explorer.</li>
+          <li>While renaming, dragging across the name selects text instead of picking up the icon.</li>
+        </ul>
+      <h2 id="v1.4.1">1.4.1 <span class="byline">· October 18, 2026</span></h2>
+        <ul>
+          <li>Resize a box from its corners too, not just its edges.</li>
+          <li>Boxes can be much smaller: down to 2 icons wide and 1 row tall.</li>
+          <li>New frosted glass (Settings &gt; Appearance &gt; Glass): the wallpaper behind a box melts into soft, bright colour, so a busy wallpaper no longer shows through. It follows live wallpapers too.</li>
+        </ul>
+      <h2 id="v1.4.0">1.4.0 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>First release in the Microsoft Store, with a 7-day free trial.</li>
+        </ul>
+
+      <h2>Before the Microsoft Store</h2>
+      <p>Versions 1.0 to 1.3 (October 16–17, 2026) were early free builds on GitHub. They are no longer available; the Store version replaced them and takes over their layouts.</p>
+    </main>
+
+    <footer>
+      <span>© 2026 Brock Loong</span>
+      <a href="/">SpringDesk</a>
+      <a href="/changelog/">Changelog</a>
+      <a href="/press/">Press kit</a>
+      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
+      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
+      <a href="mailto:SpringDesk@outlook.com">SpringDesk@outlook.com</a>
+    </footer>
+  </div>
+  <script src="/assets/site.js"></script>
+</body>
+</html>
