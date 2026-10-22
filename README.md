@@ -2,7 +2,7 @@
 
 Organize your Windows 11 desktop into translucent boxes.
 
-**Website: [springdesk.app](https://springdesk.app)** · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
+**Website: [springdesk.app](https://springdesk.app)** · [Trailer on YouTube](https://youtu.be/UWI1lqZpAkI) · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
 
 A desktop organizer for Windows 11: icons in translucent boxes, new files sorted by type on their own, Space to preview, type on the desktop to search. One-time purchase in the Microsoft Store, 7-day free trial, no subscription.
 

@@ -41,3 +41,4 @@ Compared with other desktop organizers: SpringDesk costs less than one year of a
 - [Privacy policy](https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md)
 - [Support and bug reports](https://github.com/lchovo/SpringDesk/issues), or email SpringDesk@outlook.com
 - [README on GitHub](https://github.com/lchovo/SpringDesk)
+- [Trailer on YouTube](https://youtu.be/UWI1lqZpAkI) and the [SpringDesk channel](https://www.youtube.com/@SpringDeskApp)
