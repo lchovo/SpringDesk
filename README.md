@@ -59,7 +59,7 @@ Right-click the tray icon and untick "Use SpringDesk" (also in Settings → Gene
 Typing on the desktop to search needs to receive keystrokes, which some security software flags. Allow it, or turn the feature off in Settings → General.
 
 **Something went wrong.**
-Settings → About → Export diagnostics, and send me the zip: email SpringDesk@outlook.com or open an issue. It holds logs and your layout, with file names but no file contents.
+Settings → About → Export diagnostics, and send me the zip: email contact@springdesk.app or open an issue. It holds logs and your layout, with file names but no file contents.
 
 ---
 
@@ -108,7 +108,7 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 "在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能的话，可以在 设置 → 通用 里关掉。
 
 **遇到问题怎么办？**
-设置 → 关于 → 导出诊断信息，把生成的压缩包发给我：发邮件到 SpringDesk@outlook.com，或在 GitHub 提 issue。里面是日志和分区布局，有桌面上的文件名，没有文件内容。
+设置 → 关于 → 导出诊断信息，把生成的压缩包发给我：发邮件到 contact@springdesk.app，或在 GitHub 提 issue。里面是日志和分区布局，有桌面上的文件名，没有文件内容。
 
 ### 更新日志
 

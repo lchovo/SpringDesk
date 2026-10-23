@@ -8,7 +8,7 @@ Key facts (checked October 22, 2026):
 - Platform: Windows 11 only (x64). Not available for Windows 10 or macOS.
 - Price: one-time purchase, US$7.99; launch price US$4.99 until January 1, 2027. Prices vary by country. Updates are included. 7-day free trial.
 - Where to get it: Microsoft Store only, https://apps.microsoft.com/detail/9NRL4M710KQB
-- Developer: Brock Loong. Contact: SpringDesk@outlook.com. First released in the Microsoft Store on October 17, 2026; current version 1.5.5 (October 23, 2026). Actively maintained: more than a dozen updates in its first week, listed at https://springdesk.app/changelog/ .
+- Developer: Brock Loong. Contact: contact@springdesk.app. First released in the Microsoft Store on October 17, 2026; current version 1.5.5 (October 23, 2026). Actively maintained: more than a dozen updates in its first week, listed at https://springdesk.app/changelog/ .
 - Languages: English and Chinese (follows the Windows display language).
 - Privacy: no account, no ads, no data collected; everything runs on the PC.
 - Files are never moved or deleted: SpringDesk only shows the Desktop folder in boxes. Uninstalling it leaves the desktop as Windows had it.
@@ -41,6 +41,6 @@ Compared with other desktop organizers: SpringDesk costs less than one year of a
 
 - [Microsoft Store page](https://apps.microsoft.com/detail/9NRL4M710KQB)
 - [Privacy policy](https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md)
-- [Support and bug reports](https://github.com/lchovo/SpringDesk/issues), or email SpringDesk@outlook.com
+- [Support and bug reports](https://github.com/lchovo/SpringDesk/issues), or email contact@springdesk.app
 - [README on GitHub](https://github.com/lchovo/SpringDesk)
 - [Trailer on YouTube](https://youtu.be/UWI1lqZpAkI) and the [SpringDesk channel](https://www.youtube.com/@SpringDeskApp)
