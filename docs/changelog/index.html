@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk changelog: every update to the Windows 11 desktop organizer</title>
-  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.5.3 (2026-10-22). Updates arrive automatically through the Microsoft Store.">
+  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.5.5 (2026-10-23). Updates arrive automatically through the Microsoft Store.">
   <link rel="canonical" href="https://springdesk.app/changelog/">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css">
@@ -24,8 +24,21 @@
     <main class="article">
       <h1>Changelog</h1>
       <p class="lede">Every SpringDesk update, newest first. Updates are free and arrive automatically through the Microsoft Store. Found a bug? Email <a href="mailto:SpringDesk@outlook.com">SpringDesk@outlook.com</a> or <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a>. Every report is read, and fixes ship as Store updates.</p>
-      <p class="byline">Latest version: 1.5.3, 2026-10-22</p>
+      <p class="byline">Latest version: 1.5.5, 2026-10-23</p>
 
+      <h2 id="v1.5.5">1.5.5 <span class="byline">· October 23, 2026</span></h2>
+        <ul>
+          <li>The tray icon&#x27;s menu has &quot;Roll up all boxes&quot; (or &quot;Unroll all boxes&quot; when they&#x27;re all rolled up), and is in groups: making boxes, all boxes at once, SpringDesk itself, and quitting.</li>
+          <li>New boxes are made from the tray icon&#x27;s menu; a box&#x27;s own right-click menu is only about that box now.</li>
+          <li>The right-click menus of a box&#x27;s title, its tabs and its empty space are in groups too, with &quot;Open in File Explorer&quot; always at the top.</li>
+          <li>A box you drag stands out: it frosts, gets a ring in the accent colour and goes over the other boxes until it has settled into its place. Over another box&#x27;s title, where it would join that box, it fades so you can see that title light up.</li>
+          <li>Fixed: after dragging a box, a line showed inside its edge until the pointer left the box.</li>
+          <li>Fixed: pushing a locked box that was rolled up squeezed its &quot;Boxes are locked&quot; hint into a heap of text.</li>
+        </ul>
+      <h2 id="v1.5.4">1.5.4 <span class="byline">· October 23, 2026</span></h2>
+        <ul>
+          <li>Fixed: programs opened from a box (WPS, a browser...) were counted as part of SpringDesk in Task Manager, so SpringDesk seemed to use over 1 GB of memory, and ending SpringDesk there closed those programs too. They now open the way they do from Windows&#x27; desktop, on their own.</li>
+        </ul>
       <h2 id="v1.5.3">1.5.3 <span class="byline">· October 22, 2026</span></h2>
         <ul>
           <li>Fixed: right-clicking an icon sometimes showed no menu at all, mostly with a quick click on PCs with programs such as WPS that add to the menu.</li>
@@ -144,7 +157,6 @@
     <footer>
       <span>© 2026 Brock Loong</span>
       <a href="/">SpringDesk</a>
-      <a href="/changelog/">Changelog</a>
       <a href="/press/">Press kit</a>
       <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
       <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
