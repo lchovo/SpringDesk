@@ -1,10 +1,10 @@
 # SpringDesk
 
-Organize your Windows 11 desktop into translucent boxes.
+Clear glass boxes for your Windows 11 desktop.
 
 **Website: [springdesk.app](https://springdesk.app)** · [Trailer on YouTube](https://youtu.be/UWI1lqZpAkI) · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
 
-A desktop organizer for Windows 11: icons in translucent boxes, new files sorted by type on their own, Space to preview, type on the desktop to search. One-time purchase in the Microsoft Store, 7-day free trial, no subscription.
+The desktop organizer made for Windows 11: icons in clear glass boxes, new files that put themselves away, Space to look inside, type on the desktop to find anything. One-time purchase in the Microsoft Store, 7-day free trial, no subscription.
 
 [中文说明](#中文说明)
 
@@ -65,7 +65,7 @@ Settings → About → Export diagnostics, and send me the zip: email SpringDesk
 
 ## 中文说明
 
-Windows 11 桌面整理工具：把桌面上的图标放进一个个半透明的分区里。
+专为 Windows 11 打造的桌面整理工具：桌面图标收进一块块透明玻璃分区，新文件自己归位，按空格就能看，打字就能找。
 
 ### 能做什么
 
@@ -112,4 +112,4 @@ Windows 设置 → 应用 → 已安装的应用 → SpringDesk → 卸载。桌
 
 ### 更新日志
 
-见 [商店页](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github) 的"此版本中的新增功能"。
+见 [springdesk.app/changelog](https://springdesk.app/changelog/)（英文），或商店页的"此版本中的新增功能"。
