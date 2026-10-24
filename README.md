@@ -2,7 +2,7 @@
 
 Clear glass boxes for your Windows 11 desktop.
 
-**Website: [springdesk.app](https://springdesk.app)** · [Trailer on YouTube](https://youtu.be/M9wpgey3Quk) · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
+**Website: [springdesk.app](https://springdesk.app)** · [Trailer on YouTube](https://youtu.be/a07C5bPUmJs) · [Microsoft Store](https://apps.microsoft.com/detail/9NRL4M710KQB?cid=github)
 
 The desktop organizer made for Windows 11: icons in clear glass boxes, new files that put themselves away, Space to look inside, type on the desktop to find anything. One-time purchase in the Microsoft Store, 7-day free trial, no subscription.
 
