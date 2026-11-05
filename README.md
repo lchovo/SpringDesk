@@ -16,7 +16,7 @@ The desktop organizer made for Windows 11: icons in clear glass boxes, new files
 - **Tabs**: several groups of icons in one box — drop a box onto another box's title bar to merge them
 - **Folder boxes**: a box that shows a folder, such as Downloads
 - **Sorted for you**: on first run your desktop is sorted by type into apps, files, folders and downloads; anything unclear goes to the Inbox. New files on the desktop find their place automatically
-- **Desktop search**: click the desktop or a box and just type, or press Ctrl+Alt+Space anytime
+- **Desktop search**: press Alt+Space from anywhere, or click the desktop or a box and just type
 - **Quick Look**: select an icon and press Space to see pictures, videos, music, text and PDFs without opening them; other files show their details. The arrow keys move to the next one
 - **Light and dark**: follows Windows, or pick one in Settings → Appearance
 - **Settings**: theme and opacity, the sorting box, layout lock, daily layout backups
@@ -73,7 +73,7 @@ Settings → About → Export diagnostics, and send me the zip: email contact@sp
 - **标签页**：一个分区里放几组图标；把一个分区拖到另一个分区的标题栏上，就合并成标签页
 - **文件夹门户**：分区里直接显示某个文件夹（比如"下载"）的内容
 - **自动整理**：第一次使用时按类型分好"软件 / 文件 / 文件夹 / 下载"，分不清的放进"临时分区"；以后桌面上的新文件也会自动归位
-- **桌面搜索**：点一下桌面或分区后直接打字就能搜，中文打拼音，全拼或首字母都行（比如 weixin 或 wx 找到微信）；也可以随时按 Ctrl+Alt+空格
+- **桌面搜索**：点一下桌面或分区后直接打字就能搜，中文打拼音，全拼或首字母都行（比如 weixin 或 wx 找到微信）；在任何地方按 Alt+空格 也行
 - **空格预览**：选中图标按空格，不用打开就能看图片、视频、音乐、文本和 PDF；其他文件显示信息。方向键看下一个
 - **浅色和深色**：跟随 Windows，也可以在 设置 → 外观 里选
 - **设置**：主题和不透明度、收纳门户、锁定分区、每天自动备份布局

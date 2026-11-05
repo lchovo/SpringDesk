@@ -20,7 +20,7 @@ Features:
 - Folder boxes that show any folder, such as Downloads, on the desktop
 - New files saved or downloaded to the desktop go to a tab for their type (documents, spreadsheets, slides, PDFs, pictures; optionally videos, archives, installers, links); anything else goes to an Inbox
 - Press Space to preview pictures, video, music, text, code and PDFs; arrow keys go to the next file
-- Click the desktop and type to search every box and tab, or press Ctrl+Alt+Space from anywhere; Chinese names can be found by pinyin
+- Press Alt+Space from anywhere (even with other windows open), or click the desktop and type, to search every box and tab; Chinese names can be found by pinyin
 - Clear glass that follows the wallpaper, including live wallpapers; frosts over at lower transparency; light and dark themes
 - A separate layout for each resolution and scaling (useful with Remote Desktop and docking), and daily layout backups
 - Windows' own right-click menu, drag and drop, cut, copy, paste, F2 to rename, Delete to the Recycle Bin

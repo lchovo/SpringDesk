@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk changelog: every update to the Windows 11 desktop organizer</title>
-  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.5.9 (2026-11-04). Updates arrive automatically through the Microsoft Store.">
+  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.7.1 (2026-11-05). Updates arrive automatically through the Microsoft Store.">
   <link rel="canonical" href="https://springdesk.app/changelog/">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css">
@@ -24,8 +24,45 @@
     <main class="article">
       <h1>Changelog</h1>
       <p class="lede">Every SpringDesk update, newest first. Updates are free and arrive automatically through the Microsoft Store. Found a bug? Email <a href="mailto:contact@springdesk.app">contact@springdesk.app</a> or <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a>. Every report is read, and fixes ship as Store updates.</p>
-      <p class="byline">Latest version: 1.5.9, 2026-11-04</p>
+      <p class="byline">Latest version: 1.7.1, 2026-11-05</p>
 
+      <h2 id="v1.7.1">1.7.1 <span class="byline">· November 5, 2026</span></h2>
+        <ul>
+          <li>With a live wallpaper (Wallpaper Engine), the glass shows the live wallpaper again. In 1.7.0 it couldn&#x27;t copy it: the boxes turned a flat grey while you dragged one, and every box clouded over.</li>
+          <li>If you move SpringDesk&#x27;s icon out of the hidden icons onto the taskbar, it now stays there through updates (after this update, move it out once more).</li>
+          <li>A calmer Settings window: switches no longer slide from off to on every time it opens, and they&#x27;re a little smaller, with a softer motion when you flip them. Pages fade in, a small mark shows which page you&#x27;re on, and the scrollbar only appears while you scroll.</li>
+        </ul>
+      <h2 id="v1.7.0">1.7.0 <span class="byline">· November 5, 2026</span></h2>
+        <ul>
+          <li>Double-click an empty spot on the desktop to hide all your boxes and see just the wallpaper; double-click again to bring them back. You can turn this off in Settings › General.</li>
+          <li>You can change the shortcuts: in Settings › General, click the shortcut under &quot;Roll all boxes up and down&quot; or &quot;Search from anywhere&quot;, then press the new one.</li>
+          <li>Dragging a box between two screens with different scaling no longer stutters halfway across: it keeps its size on the way and takes the new screen&#x27;s size once it lands.</li>
+          <li>With a live wallpaper, the glass no longer shows the Windows wallpaper picture instead of the live one.</li>
+          <li>Less memory: switching SpringDesk off gives its memory back at once, it gives memory back soon after you&#x27;ve used it, and dragging boxes between screens no longer makes it shoot up.</li>
+          <li>The transparency slider in Settings › Appearance follows the mouse smoothly.</li>
+        </ul>
+      <h2 id="v1.6.0">1.6.0 <span class="byline">· November 5, 2026</span></h2>
+        <ul>
+          <li>Dragging a box no longer hitches on high-resolution screens or with a live wallpaper: the soft glow behind the names is drawn once instead of on every move.</li>
+          <li>Rolling all boxes up or down (Ctrl+Alt+H, or the tray menu) moves every box together, starting and ending at the same moment, and more smoothly.</li>
+          <li>SpringDesk uses less memory: rolling boxes up and down no longer adds to it, and memory it no longer needs goes back to Windows while you&#x27;re away from the keyboard.</li>
+          <li>Search from anywhere now opens with Alt+Space, the shortcut launchers use (it was Ctrl+Alt+Space). If another app already uses Alt+Space, SpringDesk uses Ctrl+Alt+Space and Settings says so.</li>
+        </ul>
+      <h2 id="v1.5.10">1.5.10 <span class="byline">· November 4, 2026</span></h2>
+        <ul>
+          <li>Dragging a box is much smoother, above all with a live wallpaper and on high-resolution screens: it follows the mouse without the long hitches.</li>
+          <li>With a live wallpaper, SpringDesk now uses far less memory.</li>
+          <li>In a narrow box with several tabs, the tab names show as much as fits, and resting the mouse on one shows its whole name.</li>
+          <li>With a preview open, clicking a file in another box shows that file instead of closing the preview.</li>
+          <li>Pressing the right button on an icon and letting go somewhere else no longer opens a menu.</li>
+          <li>Two folder tabs with a file of the same name no longer get mixed up.</li>
+          <li>A file moved to another box right after you opened it no longer jumps back.</li>
+          <li>A folder tab on a network drive or USB disk comes back by itself when the drive is back.</li>
+          <li>If another program had the search shortcut at start, it starts working once that program lets go of it.</li>
+          <li>Saving your layout is safer: a power cut in the middle of a save keeps your boxes, and restoring an older layout first backs up the current one.</li>
+          <li>When there&#x27;s no room for a new box, the message suggests making boxes smaller or deleting ones you don&#x27;t need.</li>
+          <li>After creating a new file in a box, its name opens for editing only when it&#x27;s clear which file is new.</li>
+        </ul>
       <h2 id="v1.5.9">1.5.9 <span class="byline">· November 4, 2026</span></h2>
         <ul>
           <li>Fixed: on some screens (4K at 175 %, for example) and in narrow boxes, the whole name of a selected icon was cut off after two lines, and at the bottom of a box, where the name moves up over its picture, its last line was cut off too. The whole name now always shows.</li>
