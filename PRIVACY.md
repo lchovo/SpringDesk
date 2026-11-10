@@ -1,6 +1,6 @@
 # SpringDesk privacy policy
 
-Last updated: October 18, 2026
+Last updated: November 10, 2026
 
 SpringDesk is a desktop organizer for Windows 11. It works entirely on your PC.
 
@@ -21,11 +21,9 @@ personal data.
 
 ## Internet
 
-- The version installed from the Microsoft Store gets its updates through the Store and doesn't connect to the
-  internet itself.
-- The version downloaded from GitHub checks GitHub for new versions from time to time. GitHub receives the usual
-  information of a web request, such as your IP address, under GitHub's own privacy statement. SpringDesk sends
-  nothing else.
+SpringDesk itself doesn't connect to the internet. It's installed and updated through the Microsoft Store, and
+Windows checks your Store license (the free trial, or your purchase) with Microsoft, under Microsoft's privacy
+statement. SpringDesk only gets the answer: on trial or bought, and when the trial ends.
 
 ## Diagnostics
 
@@ -41,7 +39,7 @@ Questions about privacy: email contact@springdesk.app, or open an issue at githu
 
 # SpringDesk 隐私政策
 
-最后更新：2026 年 10 月 18 日
+最后更新：2026 年 11 月 10 日
 
 SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行。
 
@@ -57,8 +55,7 @@ SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行
 
 ## 联网
 
-- 从微软商店安装的版本通过商店更新，自己不联网。
-- 从 GitHub 下载的版本会不时到 GitHub 检查有没有新版本。GitHub 会收到普通网页请求都有的信息（比如 IP 地址），适用 GitHub 自己的隐私声明。SpringDesk 不发送其他任何东西。
+SpringDesk 自己不联网。它通过微软商店安装和更新；商店许可（免费试用或已购买）由 Windows 向微软查询，适用微软的隐私声明。SpringDesk 只拿到结果：试用还是已购买、试用哪天结束。
 
 ## 诊断信息
 
