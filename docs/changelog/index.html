@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk changelog: every update to the Windows 11 desktop organizer</title>
-  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.9.0 (2026-11-14). Updates arrive automatically through the Microsoft Store.">
+  <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.10.1 (2026-11-16). Updates arrive automatically through the Microsoft Store.">
   <link rel="canonical" href="https://springdesk.app/changelog/">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css">
@@ -24,8 +24,26 @@
     <main class="article">
       <h1>Changelog</h1>
       <p class="lede">Every SpringDesk update, newest first. Updates are free and arrive automatically through the Microsoft Store. Found a bug? Email <a href="mailto:contact@springdesk.app">contact@springdesk.app</a> or <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a>. Every report is read, and fixes ship as Store updates.</p>
-      <p class="byline">Latest version: 1.9.0, 2026-11-14</p>
+      <p class="byline">Latest version: 1.10.1, 2026-11-16</p>
 
+      <h2 id="v1.10.1">1.10.1 <span class="byline">· November 16, 2026</span></h2>
+        <ul>
+          <li>Videos from a recent iPhone now play in the preview (Space). Before, the preview switched to the file&#x27;s details a moment later. Videos recorded upright on a phone are shown upright, and videos with &quot;#&quot; in their name play too.</li>
+          <li>A file the preview can&#x27;t play shows its details straight away the next time, without flickering.</li>
+          <li>Switching to another tab of a box shows its icons at once. After the screen&#x27;s scaling had changed, they could take a few seconds.</li>
+        </ul>
+      <h2 id="v1.10.0">1.10.0 <span class="byline">· November 16, 2026</span></h2>
+        <ul>
+          <li>One layout on every screen. When the screens change (you connect from another device with a remote-control program, plug in a monitor, change the scaling), your boxes keep their arrangement and only get smaller or bigger with the screen. Before, every resolution had a layout of its own, and on a screen SpringDesk hadn&#x27;t seen before, boxes could end up on top of each other.</li>
+          <li>Back on your usual screen, every box is exactly where you left it. A box you moved, resized or added while on another screen comes along; the others stay as they were.</li>
+          <li>The layouts SpringDesk kept for other resolutions are no longer used: your layout is the one on screen when this update arrives. The layout from before is kept as a backup (Settings › General › Restore an earlier layout).</li>
+          <li>Fixes a fault of 1.9.1: after unlocking the PC or after the screens changed, the boxes could freeze, or vanish while right-clicks still brought up their menus, until SpringDesk was restarted. SpringDesk now checks whether its boxes really are on the screen, and if they aren&#x27;t for a while, it restarts itself: the boxes are gone for about a second and come back as they were.</li>
+        </ul>
+      <h2 id="v1.9.1">1.9.1 <span class="byline">· November 16, 2026</span></h2>
+        <ul>
+          <li>Right-clicking the empty desktop while a menu of a box, or of a file in a box, was still open brought up Windows&#x27; menu instead of SpringDesk&#x27;s. Now that menu closes and SpringDesk&#x27;s desktop menu opens.</li>
+          <li>After starting some games or game launchers, or connecting with a remote-control program, SpringDesk could go on drawing its boxes over and over in the background: the boxes looked frozen (no light under the mouse, edges from an old wallpaper), one processor core was kept busy and SpringDesk&#x27;s memory grew by about 100 MB an hour until it was restarted. SpringDesk now notices this within seconds, stops it and goes on drawing the boxes another way; a box whose picture is stuck for any other reason is brought back too.</li>
+        </ul>
       <h2 id="v1.9.0">1.9.0 <span class="byline">· November 14, 2026</span></h2>
         <ul>
           <li>Right-clicking the empty desktop now opens SpringDesk&#x27;s own menu, with only things that work: View (the icon size in your boxes), New, Paste, Add box, Roll up all boxes, Lock boxes, Display settings, Personalize, Next desktop background, Use SpringDesk and Settings. Before, it was Windows&#x27; menu, where View, Sort by and Refresh did nothing because your icons live in boxes.</li>
