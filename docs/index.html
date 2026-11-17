@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk: the desktop organizer made for Windows 11</title>
   <meta name="description" content="Clear glass boxes for your Windows 11 desktop. SpringDesk keeps it tidy by itself: new files put themselves away, Space looks inside, typing finds anything. Free 7-day trial, then buy once.">
+  <meta name="theme-color" content="#0e0a13">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SpringDesk: clear glass. Clean desktop.">
   <meta property="og:description" content="The desktop organizer made for Windows 11. New files put themselves away, Space looks inside, typing finds anything. Buy once, no subscription.">
@@ -16,7 +17,9 @@
   <link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/">
   <link rel="alternate" hreflang="x-default" href="https://springdesk.app/">
   <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,9 +56,10 @@
           "New files on the desktop sort themselves into tabs by type, with no rules to set up",
           "Folder boxes that show any folder, such as Downloads, on the desktop",
           "Press Space to preview pictures, videos, music, text and PDFs",
-          "Type on the desktop to search every box",
-          "A separate layout for each resolution and scaling, with daily backups",
-          "Light and dark themes, clear or frosted glass",
+          "Type on the desktop, or press Alt+Space from anywhere, to search every box",
+          "Double-click the desktop to hide every box and see just the wallpaper",
+          "One layout that follows you across screens, with daily backups",
+          "Light and dark themes, clear or frosted glass, three icon sizes",
           "One-time purchase, no subscription; 7-day free trial",
           "No account, no ads, no data collected"
         ],
@@ -72,7 +76,7 @@
           { "@type": "Question", "name": "How is SpringDesk different from Fences?", "acceptedAnswer": { "@type": "Answer", "text": "Fences is the best-known desktop organizer, with more options such as custom sorting rules and colors for each fence, and it runs on Windows 10 too. SpringDesk takes a different approach: clear glass made for Windows 11, new files sorted by type with nothing to set up, Space to look inside files and typing on the desktop to find them, all for one payment that is less than a year of the Fences subscription." } },
           { "@type": "Question", "name": "I use Fences or another desktop organizer. Can I switch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Quit the other organizer first (SpringDesk asks you to if Fences is running), then start SpringDesk: it sorts your desktop into boxes on its first run, and you can rearrange everything from there. Layouts from other apps aren't imported." } },
           { "@type": "Question", "name": "Does SpringDesk collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "No. There's no account, no ads and no data collection; everything happens on your PC." } },
-          { "@type": "Question", "name": "Is SpringDesk actively maintained?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpringDesk had more than a dozen updates in its first week in the Microsoft Store (from October 17, 2026), most of them fixes and improvements people asked for. Every change is listed in the changelog, and updates install automatically through the Store." } },
+          { "@type": "Question", "name": "Is SpringDesk actively maintained?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpringDesk is looked after continuously: problems get fixed, and what people write in about decides what gets worked on next. If something doesn't behave the way you expect, write to contact@springdesk.app. Every change is listed in the changelog, and updates install automatically through the Store." } },
           { "@type": "Question", "name": "Is SpringDesk in my language?", "acceptedAnswer": { "@type": "Answer", "text": "SpringDesk is in English and Chinese, and follows your Windows display language." } }
         ]
       }
@@ -81,175 +85,326 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-      <nav>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
         <a href="#features">Features</a>
+        <a href="#price">Price</a>
+        <a href="#faq">Questions</a>
         <a href="/fences-alternative/">Compare</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-header">Get it</a>
       </nav>
-    </header>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-header">Try it free</a>
+    </div>
+  </header>
 
-    <div class="hero">
-      <p class="eyebrow">The desktop organizer made for Windows 11</p>
-      <h1>Clear glass.<br>Clean desktop.</h1>
-      <p class="lede">Your wallpaper breathes again. Every file finds its place the moment it lands, and waits quietly beneath your windows.</p>
-      <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-hero">
-        <img class="dark" src="/assets/store-badge-dark.svg" alt="Get it from Microsoft">
-        <img class="light" src="/assets/store-badge-light.svg" alt="Get it from Microsoft">
-        <span class="fine">Free for 7 days · then US$4.99, once · no subscription</span>
-      </a>
-      <div class="movie glass">
-        <video src="/assets/1-sorted.mp4" poster="/assets/1-sorted.jpg" autoplay muted loop playsinline></video>
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div class="hero-head">
+          <div>
+            <p class="label">The desktop organizer made for Windows 11</p>
+            <h1>Clear glass.<br>Clean <em>desktop.</em></h1>
+          </div>
+          <div class="hero-side">
+            <p class="lede">Your wallpaper breathes again. Every file finds its place the moment it lands, and waits quietly beneath your windows.</p>
+            <div class="cta">
+              <a class="badge" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-hero"><img src="/assets/store-badge-light.svg" alt="Get it from Microsoft" width="205" height="56"></a>
+              <a class="btn btn-lg btn-quiet" href="https://youtu.be/a07C5bPUmJs" data-film-id="a07C5bPUmJs" data-title="SpringDesk: day one on a Windows 11 desktop"><span class="play" aria-hidden="true"></span>Watch the film <span class="label">1:52</span></a>
+            </div>
+            <p class="fine">Free for 7 days · then US$4.99, once · no subscription</p>
+          </div>
+        </div>
+
+        <div class="stage" id="stage" data-state="on">
+          <div class="screen">
+            <img src="/assets/hero-tidy.jpg" alt="A Windows 11 desktop at night over a desert dune: every icon sits in a clear glass box at the edges, and the wallpaper is open in the middle" width="1600" height="900" fetchpriority="high">
+            <img class="is-off" src="/assets/hero-messy.jpg" alt="" width="1600" height="900">
+            <video data-film="on" data-src="/assets/1-sorted.mp4" data-src-hd="/assets/1-sorted-hd.mp4" muted playsinline preload="none" aria-label="A desktop covered in icons. SpringDesk starts and every icon settles into a clear glass box"></video>
+            <video data-film="off" data-src="/assets/9-off.mp4" data-src-hd="/assets/9-off-hd.mp4" muted playsinline preload="none" aria-label="SpringDesk is switched off and every icon is back where it was on the Windows desktop"></video>
+          </div>
+          <div class="power">
+            <button class="switch" type="button" role="switch" aria-checked="true">
+              <span>Use SpringDesk</span>
+              <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+              <span class="switch-state" aria-hidden="true"><span data-on>On</span><span data-off>Off</span></span>
+            </button>
+            <p class="power-hint"><span data-on>Go on, switch it off.</span><span data-off>Nothing moved. Switch it back on.</span></p>
+          </div>
+        </div>
+        <script>(function(s){if(!document.documentElement.classList.contains('anim'))return;s.dataset.state='off';s.querySelector('.switch').setAttribute('aria-checked','false')})(document.getElementById('stage'))</script>
+
+        <ul class="pillars">
+          <li class="reveal"><span class="pix pix-pink" aria-hidden="true"></span><h3>Made for Windows 11</h3><p>Designed to feel like it was always there.</p></li>
+          <li class="reveal"><span class="pix pix-mint" aria-hidden="true"></span><h3>Tidy by itself</h3><p>Sorted on day one, and it stays that way.</p></li>
+          <li class="reveal"><span class="pix pix-sun" aria-hidden="true"></span><h3>Yours for good</h3><p>Pay once. Every update ahead is yours.</p></li>
+        </ul>
+      </section>
+
+      <div class="tour" id="features">
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">Tidy by itself</p>
+            <h2>Every new file finds its <em>place.</em></h2>
+            <p>Fresh downloads and documents settle into their own tabs. No setup, no rules, and nothing gets lost.</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/3-new-files-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/3-new-files-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/3-new-files.mp4" data-src-hd="/assets/3-new-files-hd.mp4" muted loop playsinline preload="none" aria-label="A boarding pass is downloaded in a browser and lands in the PDF tab of a box on the desktop"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">Clear glass</p>
+            <h2>So clear, it's barely <em>there.</em></h2>
+            <p>Only the edges catch the light, so your wallpaper stays whole. Everything else works just as it always has.</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/8-glass-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/8-glass-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/8-glass.mp4" data-src-hd="/assets/8-glass-hd.mp4" muted loop playsinline preload="none" aria-label="A live aurora wallpaper moving behind clear glass boxes; then every box rolls up and the whole sky shows"></video>
+            </div>
+          </div>
+        </section>
+
+        <div class="duo">
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/4-quick-look-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/4-quick-look-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/4-quick-look.mp4" muted loop playsinline preload="none" aria-label="A picture is selected in a box; pressing Space shows it large, and the arrow keys step through the next ones"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key key-wide">Space</kbd></span></div>
+            <h2>Look inside anything. Press <em>Space.</em></h2>
+            <p>Tap Space for an instant look at photos, documents and video. Step through the rest with the arrow keys.</p>
+          </section>
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/5-search-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/5-search-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/5-search.mp4" muted loop playsinline preload="none" aria-label="Typing a few letters on the desktop finds a document in one of the boxes"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key">Alt</kbd>+<kbd class="key key-wide">Space</kbd></span></div>
+            <h2>Lost something? Start <em>typing.</em></h2>
+            <p>Click the desktop and type a name, or press Alt+Space from anywhere. It's there before you finish the word.</p>
+          </section>
+        </div>
+
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">Folder boxes</p>
+            <h2>Skip File Explorer. Keep the <em>focus.</em></h2>
+            <p>Your Downloads, or the project you're on, stays open right on the wallpaper. Always up to date, right where your eyes already are.</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/7-folders-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/7-folders-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/7-folders.mp4" data-src-hd="/assets/7-folders-hd.mp4" muted loop playsinline preload="none" aria-label="One box shows three folders as tabs; a screenshot is dragged from it straight into an email"></video>
+            </div>
+          </div>
+        </section>
+
+        <div class="duo">
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/2-tabs-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/2-tabs-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/2-tabs.mp4" muted loop playsinline preload="none" aria-label="A meeting is about to start; every box rolls up to its title, the screen is shared, and afterwards the boxes unroll where they were"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key">Ctrl</kbd>+<kbd class="key">Alt</kbd>+<kbd class="key">H</kbd></span></div>
+            <h2>Ready to share your <em>screen.</em></h2>
+            <p>Roll your boxes up to clear the view before the call starts. One click brings your whole desktop back, exactly where you left it.</p>
+          </section>
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/6-frost-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/6-frost-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/6-frost.mp4" muted loop playsinline preload="none" aria-label="The same boxes at night in the dark theme; the glass lights up softly under the pointer"></video>
+              </div>
+            </div>
+            <div class="kicker"><p class="label">Light · Dark · Frost</p></div>
+            <h2>Light, dark, or <em>frosted.</em></h2>
+            <p>The glass follows Windows from light to dark. When your wallpaper gets lively, add a little frost and every name stays clear.</p>
+          </section>
+        </div>
+
+        <section class="band">
+          <header class="band-head reveal">
+            <p class="label">Also in the box</p>
+            <h2>And the little <em>things.</em></h2>
+          </header>
+          <ul class="details reveal">
+            <li><strong>Double-click, all clear</strong>Double-click the desktop and every box steps aside. Again, and they're back.</li>
+            <li><strong>One layout, every screen</strong>Dock, undock or connect from afar. Your boxes keep their arrangement.</li>
+            <li><strong>Tabs in a drop</strong>Drop one box onto another and they share a home.</li>
+            <li><strong>Icons your size</strong>Small, medium or large, just like the Windows desktop.</li>
+            <li><strong>Live wallpapers welcome</strong>Whatever moves behind the glass shows through it.</li>
+            <li><strong>Your shortcuts</strong>Change them to the ones your hands already know.</li>
+            <li><strong>A menu that makes sense</strong>Right-click the desktop and every entry does something.</li>
+            <li><strong>There when you sign in</strong>Your desktop is ready seconds after Windows is.</li>
+          </ul>
+        </section>
       </div>
+
+      <section class="band price" id="price">
+        <div class="price-copy reveal">
+          <p class="label">One payment</p>
+          <h2>Yours for <em>good.</em></h2>
+          <p>Pay once. Every update ahead is yours.</p>
+          <a class="btn btn-lg" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-price">Try it free for 7 days</a>
+          <p class="fine">From the Microsoft Store, in your own currency.</p>
+        </div>
+        <div class="receipt reveal" role="group" aria-label="What SpringDesk costs">
+          <p class="r-brand"><img src="/assets/icon.png" alt="" width="32" height="32">SpringDesk</p>
+          <p class="r-sub">Microsoft Store · Windows 11</p>
+          <dl>
+            <div><dt>7-day trial</dt><dd>Free</dd></div>
+            <div><dt>SpringDesk</dt><dd><s>$7.99</s>$4.99</dd></div>
+            <div><dt>Every update</dt><dd>Included</dd></div>
+            <div><dt>Subscription</dt><dd>None</dd></div>
+            <div><dt>Account</dt><dd>None</dd></div>
+          </dl>
+          <p class="r-total"><span>Total, once</span><strong>US$4.99</strong></p>
+          <p class="r-note">Launch price until January 1, 2027. Prices vary by country.</p>
+          <div class="r-code" aria-hidden="true"></div>
+          <p class="r-thanks">Thank you. Enjoy the view.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <header class="band-head reveal">
+          <p class="label">Underneath</p>
+          <h2>Calm on the surface. Careful <em>underneath.</em></h2>
+        </header>
+        <ul class="trust-list reveal">
+          <li><h3>Your files never move</h3>SpringDesk only arranges the view. Close it anytime and your desktop is just as you left it.</li>
+          <li><h3>From the Microsoft Store</h3>Verified by Microsoft, installed in seconds, updated quietly in the background.</li>
+          <li><h3>Your layout, kept safe</h3>One arrangement on every screen you use, backed up every day.</li>
+          <li><h3>Private by design</h3>No account, no ads, no tracking. Everything stays on your PC.</li>
+        </ul>
+        <a class="pulse reveal" href="/changelog/">Version 1.10.1 · November 16, 2026 · See what's new</a>
+      </section>
+
+      <section class="band faq" id="faq">
+        <header class="faq-head reveal">
+          <p class="label">Before you try it</p>
+          <h2>Questions</h2>
+          <p>Anything else? Write to <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>.</p>
+        </header>
+        <div class="faq-list reveal">
+          <details>
+            <summary>How much is it?</summary>
+            <p>Try SpringDesk free for 7 days. After that it's one payment in the Microsoft Store, with every update included and no subscription. The launch price is US$4.99 instead of US$7.99 until January 1, 2027; the Store shows the price in your currency.</p>
+          </details>
+          <details>
+            <summary>Does SpringDesk move my files?</summary>
+            <p>No. Your files stay in your Desktop folder; SpringDesk only shows them in boxes. Uninstall it and your desktop is exactly as it was.</p>
+          </details>
+          <details>
+            <summary>Does it work on Windows 10?</summary>
+            <p>No. SpringDesk is made for Windows 11 and nothing else, so it can look and feel like part of it: it follows Windows 11's light and dark mode and uses Windows' own right-click menu. It doesn't run on Windows 10.</p>
+          </details>
+          <details>
+            <summary>How is it different from Fences?</summary>
+            <p>Fences is the best-known desktop organizer, with more options such as custom sorting rules and colors for each fence, and it runs on Windows 10 too. SpringDesk takes a different approach: clear glass made for Windows 11, new files sorted by type with nothing to set up, Space to look inside files and typing on the desktop to find them, all for one payment that is less than a year of the Fences subscription. <a href="/fences-alternative/">See the full comparison</a>.</p>
+          </details>
+          <details>
+            <summary>I use Fences or another desktop organizer. Can I switch?</summary>
+            <p>Yes. Quit the other organizer first (SpringDesk asks you to if Fences is running), then start SpringDesk: it sorts your desktop into boxes on its first run, and you can rearrange everything from there. Layouts from other apps aren't imported.</p>
+          </details>
+          <details>
+            <summary>Does it collect my data?</summary>
+            <p>No. There's no account, no ads and no data collection; everything happens on your PC. Read the <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">privacy policy</a>.</p>
+          </details>
+          <details>
+            <summary>Is SpringDesk actively maintained?</summary>
+            <p>Yes. SpringDesk is looked after continuously: problems get fixed, and what people write in about decides what gets worked on next. If something doesn't behave the way you expect, write to <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>. Every change is listed in the <a href="/changelog/">changelog</a>, and updates install automatically through the Store.</p>
+          </details>
+          <details>
+            <summary>Is it in my language?</summary>
+            <p>SpringDesk is in English and Chinese, and follows your Windows display language.</p>
+          </details>
+          <details>
+            <summary>Something isn't working.</summary>
+            <p>Open Settings › About › Export diagnostics and <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a> with the zip, or email it to <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>. It holds logs and your layout, with file names but no file contents.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="band band-quiet">
+        <header class="band-head reveal">
+          <p class="label">Still deciding</p>
+          <h2>Choosing a desktop organizer?</h2>
+        </header>
+        <ul class="more reveal">
+          <li><a href="/fences-alternative/"><span class="label">Comparison</span><strong>SpringDesk or Fences?</strong></a></li>
+          <li><a href="/best-desktop-organizer-windows-11/"><span class="label">Roundup</span><strong>Desktop organizers for Windows 11, compared</strong></a></li>
+          <li><a href="/guides/organize-windows-11-desktop/"><span class="label">Guide</span><strong>How to organize your Windows 11 desktop</strong></a></li>
+        </ul>
+      </section>
     </div>
 
-    <div class="pillars">
-      <div class="glass"><h3>Made for Windows 11</h3><p>Designed to feel like it was always there.</p></div>
-      <div class="glass"><h3>Tidy by itself</h3><p>Sorted on day one, and it stays that way.</p></div>
-      <div class="glass"><h3>Yours for good</h3><p>Pay once. Every update ahead is yours.</p></div>
-    </div>
-
-    <div id="features">
-      <section class="feature">
-        <div class="copy">
-          <h2>So clear, it's barely there.</h2>
-          <p>Only the edges catch the light, so your wallpaper stays whole. Everything else works just as it always has.</p>
+    <section class="closing">
+      <picture class="dune" aria-hidden="true">
+        <source media="(max-width: 700px)" srcset="/assets/dune-sm.jpg">
+        <img src="/assets/dune.jpg" alt="" loading="lazy" decoding="async" width="2400" height="1350">
+      </picture>
+      <div class="wrap">
+        <h2 class="reveal">Lose the clutter.<br>Keep the <em>wallpaper.</em></h2>
+        <div class="cta reveal">
+          <a class="badge" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-bottom"><img src="/assets/store-badge-light.svg" alt="Get it from Microsoft" width="205" height="56"></a>
         </div>
-        <div class="media glass"><video data-src="/assets/8-glass.mp4" poster="/assets/8-glass.jpg" muted loop playsinline preload="none" aria-label="A live aurora wallpaper moving behind clear glass boxes; then every box rolls up and the whole sky shows"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Every new file finds its place.</h2>
-          <p>Fresh downloads and documents settle into their own tabs. No setup, no rules, and nothing gets lost.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/3-new-files.mp4" poster="/assets/3-new-files.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Skip File Explorer. Keep the focus.</h2>
-          <p>Your Downloads, or the project you're on, stays open right on the wallpaper. Always up to date, right where your eyes already are.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/7-folders.mp4" poster="/assets/7-folders.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Look inside anything. Press Space.</h2>
-          <p>Tap Space for an instant look at photos, documents and video. Step through the rest with the arrow keys.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/4-quick-look.mp4" poster="/assets/4-quick-look.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Lost something? Start typing.</h2>
-          <p>Click the desktop and type a name. It's there before you finish the word.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/5-search.mp4" poster="/assets/5-search.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Ready to share your screen.</h2>
-          <p>Roll your boxes up to clear the view before the call starts. One click brings your whole desktop back, exactly where you left it.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/2-tabs.mp4" poster="/assets/2-tabs.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>Light, dark, or frosted.</h2>
-          <p>The glass follows Windows from light to dark. When your wallpaper gets lively, add a little frost and every name stays clear.</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/6-frost.mp4" poster="/assets/6-frost.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-    </div>
-
-    <div class="trust">
-      <h2>Calm on the surface. Careful underneath.</h2>
-      <div class="media glass" style="max-width:760px;margin:0 auto 24px"><video data-src="/assets/9-off.mp4" poster="/assets/9-off.jpg" muted loop playsinline preload="none" aria-label="SpringDesk is switched off and every icon is back where it was on the Windows desktop"></video></div>
-      <div class="grid">
-        <div class="glass"><h3>Your files never move</h3><p>SpringDesk only arranges the view. Close it anytime and your desktop is just as you left it.</p></div>
-        <div class="glass"><h3>From the Microsoft Store</h3><p>Verified by Microsoft, installed in seconds, updated quietly in the background.</p></div>
-        <div class="glass"><h3>Your layout, kept safe</h3><p>Remembered for every display you use, and backed up every day.</p></div>
-        <div class="glass"><h3>Private by design</h3><p>No account, no ads, no tracking. Everything stays on your PC.</p></div>
+        <p class="fine reveal">Free for 7 days · Made for Windows 11</p>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="faq" id="faq">
-      <h2>Questions</h2>
-      <details class="glass">
-        <summary>How much is it?</summary>
-        <p>Try SpringDesk free for 7 days. After that it's one payment in the Microsoft Store, with every update included and no subscription. The launch price is US$4.99 instead of US$7.99 until January 1, 2027; the Store shows the price in your currency.</p>
-      </details>
-      <details class="glass">
-        <summary>Does SpringDesk move my files?</summary>
-        <p>No. Your files stay in your Desktop folder; SpringDesk only shows them in boxes. Uninstall it and your desktop is exactly as it was.</p>
-      </details>
-      <details class="glass">
-        <summary>Does it work on Windows 10?</summary>
-        <p>No. SpringDesk is made for Windows 11 and nothing else, so it can look and feel like part of it: it follows Windows 11's light and dark mode and uses Windows' own right-click menu. It doesn't run on Windows 10.</p>
-      </details>
-      <details class="glass">
-        <summary>How is it different from Fences?</summary>
-        <p>Fences is the best-known desktop organizer, with more options such as custom sorting rules and colors for each fence, and it runs on Windows 10 too. SpringDesk takes a different approach: clear glass made for Windows 11, new files sorted by type with nothing to set up, Space to look inside files and typing on the desktop to find them, all for one payment that is less than a year of the Fences subscription. <a href="/fences-alternative/">See the full comparison</a>.</p>
-      </details>
-      <details class="glass">
-        <summary>I use Fences or another desktop organizer. Can I switch?</summary>
-        <p>Yes. Quit the other organizer first (SpringDesk asks you to if Fences is running), then start SpringDesk: it sorts your desktop into boxes on its first run, and you can rearrange everything from there. Layouts from other apps aren't imported.</p>
-      </details>
-      <details class="glass">
-        <summary>Does it collect my data?</summary>
-        <p>No. There's no account, no ads and no data collection; everything happens on your PC. Read the <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">privacy policy</a>.</p>
-      </details>
-      <details class="glass">
-        <summary>Is SpringDesk actively maintained?</summary>
-        <p>Yes. SpringDesk had more than a dozen updates in its first week in the Microsoft Store (from October 17, 2026), most of them fixes and improvements people asked for. Every change is listed in the changelog, and updates install automatically through the Store.</p>
-      </details>
-      <details class="glass">
-        <summary>Is it in my language?</summary>
-        <p>SpringDesk is in English and Chinese, and follows your Windows display language.</p>
-      </details>
-      <details class="glass">
-        <summary>Something isn't working.</summary>
-        <p>Open Settings › About › Export diagnostics and <a href="https://github.com/lchovo/SpringDesk/issues">open an issue</a> with the zip, or email it to <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>. It holds logs and your layout, with file names but no file contents.</p>
-      </details>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
     </div>
-
-    <div class="more">
-      <h2>Choosing a desktop organizer?</h2>
-      <ul>
-        <li><a class="glass" href="/fences-alternative/">SpringDesk or Fences?</a></li>
-        <li><a class="glass" href="/best-desktop-organizer-windows-11/">Desktop organizers for Windows 11, compared</a></li>
-        <li><a class="glass" href="/guides/organize-windows-11-desktop/">How to organize your Windows 11 desktop</a></li>
-      </ul>
-    </div>
-
-    <div class="closing">
-      <h2>Lose the clutter.<br>Keep the wallpaper.</h2>
-      <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-bottom">
-        <img class="dark" src="/assets/store-badge-dark.svg" alt="Get it from Microsoft">
-        <img class="light" src="/assets/store-badge-light.svg" alt="Get it from Microsoft">
-        <span class="fine">Free for 7 days · Made for Windows 11</span>
-      </a>
-    </div>
-
-    <footer>
-      <span>© 2026 Brock Loong</span>
-      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
-      <a href="https://github.com/lchovo/SpringDesk/issues">Support</a>
-      <a href="/changelog/">Changelog</a>
-      <a href="/press/">Press kit</a>
-      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
-      <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>
-    </footer>
-  </div>
+  </footer>
   <script src="/assets/site.js"></script>
 </body>
 </html>

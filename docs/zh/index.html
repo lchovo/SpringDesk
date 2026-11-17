@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk：专为 Windows 11 打造的桌面整理工具</title>
   <meta name="description" content="透明玻璃分区，让 Windows 11 桌面自己保持清爽：新文件自己归位，按空格就能看，打字就能找。免费试用 7 天，一次买断，不订阅。">
+  <meta name="theme-color" content="#0e0a13">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SpringDesk：通透玻璃，清爽桌面">
   <meta property="og:description" content="专为 Windows 11 打造的桌面整理工具。新文件自己归位，按空格就能看，打字就能找。一次买断，不订阅。">
@@ -17,11 +18,9 @@
   <link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/">
   <link rel="alternate" hreflang="x-default" href="https://springdesk.app/">
   <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
-  <style>
-    h1, .copy h2 { letter-spacing: 0; }
-    body { font-family: "Segoe UI Variable Text", "Segoe UI", "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif; }
-  </style>
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +53,7 @@
           { "@type": "Question", "name": "SpringDesk 多少钱？", "acceptedAnswer": { "@type": "Answer", "text": "可以先免费试用 7 天，之后在微软商店一次买断，以后的更新全包含，不订阅。中国大陆早鸟价 18 元（原价 28 元），到 2027 年 1 月 1 日；其他地区以商店显示的价格为准。" } },
           { "@type": "Question", "name": "桌面上的文件会被移走吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。文件一直在原来的桌面文件夹里，SpringDesk 只是把它们显示在分区里。卸载后桌面和原来一样。" } },
           { "@type": "Question", "name": "支持 Windows 10 吗？", "acceptedAnswer": { "@type": "Answer", "text": "不支持。SpringDesk 只为 Windows 11 而做，所以能和系统融为一体：跟随 Windows 11 的浅色和深色模式，右键就是 Windows 自己的菜单。" } },
-          { "@type": "Question", "name": "SpringDesk 还在持续更新吗？", "acceptedAnswer": { "@type": "Answer", "text": "是的。2026 年 10 月 17 日上架微软商店后，第一周就更新了十几次，大多是按用户反馈做的修复和改进。更新由微软商店自动安装。" } },
+          { "@type": "Question", "name": "SpringDesk 还在持续更新吗？", "acceptedAnswer": { "@type": "Answer", "text": "是的。SpringDesk 一直有人维护：问题会修，接下来做什么也看大家的反馈。哪里用着不顺手，写信到 contact@springdesk.app。每次的改动都在更新日志里，更新由微软商店自动安装。" } },
           { "@type": "Question", "name": "会收集我的数据吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。没有账号、没有广告、不收集数据，一切都在你的电脑上完成。" } }
         ]
       }
@@ -63,160 +62,301 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/zh/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-      <nav>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/zh/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="导航">
         <a href="#features">功能</a>
+        <a href="#price">价格</a>
         <a href="#faq">常见问题</a>
         <a href="/" hreflang="en" lang="en">English</a>
-        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-header">获取</a>
       </nav>
-    </header>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-header">免费试用</a>
+    </div>
+  </header>
 
-    <div class="hero">
-      <p class="eyebrow">专为 Windows 11 打造的桌面整理工具</p>
-      <h1>通透玻璃，<br>清爽桌面。</h1>
-      <p class="lede">壁纸重现开阔，桌面归于宁静。每一份文件都有自己的位置，静候在窗口之下。</p>
-      <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-hero">
-        <img class="dark" src="/assets/store-badge-dark.svg" alt="从微软商店获取">
-        <img class="light" src="/assets/store-badge-light.svg" alt="从微软商店获取">
-        <span class="fine">免费试用 7 天 · 早鸟价 18 元，一次买断 · 不订阅</span>
-      </a>
-      <div class="movie glass">
-        <video src="/assets/1-sorted.mp4" poster="/assets/1-sorted.jpg" autoplay muted loop playsinline></video>
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div class="hero-head">
+          <div>
+            <p class="label">专为 Windows 11 打造的桌面整理工具</p>
+            <h1>通透玻璃，<br>清爽<em>桌面</em>。</h1>
+          </div>
+          <div class="hero-side">
+            <p class="lede">壁纸重现开阔，桌面归于宁静。每一份文件都有自己的位置，静候在窗口之下。</p>
+            <div class="cta">
+              <a class="badge" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-hero"><img src="/assets/store-badge-light.svg" alt="从微软商店获取" width="205" height="56"></a>
+              <a class="btn btn-lg btn-quiet" href="https://youtu.be/a07C5bPUmJs" data-film-id="a07C5bPUmJs" data-title="SpringDesk：桌面上的第一天" data-close="关闭"><span class="play" aria-hidden="true"></span>看短片 <span class="label">1:52</span></a>
+            </div>
+            <p class="fine">免费试用 7 天 · 早鸟价 18 元，一次买断 · 不订阅</p>
+          </div>
+        </div>
+
+        <div class="stage" id="stage" data-state="on">
+          <div class="screen">
+            <img src="/assets/hero-tidy.jpg" alt="夜色沙丘壁纸上的 Windows 11 桌面：图标都收在两侧的透明玻璃分区里，中间的壁纸完整露出来" width="1600" height="900" fetchpriority="high">
+            <img class="is-off" src="/assets/hero-messy.jpg" alt="" width="1600" height="900">
+            <video data-film="on" data-src="/assets/1-sorted.mp4" data-src-hd="/assets/1-sorted-hd.mp4" muted playsinline preload="none" aria-label="铺满图标的桌面。SpringDesk 启动后，每个图标都落进一个透明玻璃分区"></video>
+            <video data-film="off" data-src="/assets/9-off.mp4" data-src-hd="/assets/9-off-hd.mp4" muted playsinline preload="none" aria-label="关掉 SpringDesk，每个图标都回到 Windows 桌面上原来的位置"></video>
+          </div>
+          <div class="power">
+            <button class="switch" type="button" role="switch" aria-checked="true">
+              <span>启用 SpringDesk</span>
+              <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+              <span class="switch-state" aria-hidden="true"><span data-on>开</span><span data-off>关</span></span>
+            </button>
+            <p class="power-hint"><span data-on>试试把它关掉。</span><span data-off>什么都没动。再打开吧。</span></p>
+          </div>
+        </div>
+        <script>(function(s){if(!document.documentElement.classList.contains('anim'))return;s.dataset.state='off';s.querySelector('.switch').setAttribute('aria-checked','false')})(document.getElementById('stage'))</script>
+
+        <ul class="pillars">
+          <li class="reveal"><span class="pix pix-pink" aria-hidden="true"></span><h3>专为 Windows 11 而生</h3><p>像 Windows 原生自带的一样自然。</p></li>
+          <li class="reveal"><span class="pix pix-mint" aria-hidden="true"></span><h3>自己保持整齐</h3><p>打开即见秩序，日常井井有条。</p></li>
+          <li class="reveal"><span class="pix pix-sun" aria-hidden="true"></span><h3>一次买断</h3><p>一次付费，以后的更新全部包含。</p></li>
+        </ul>
+      </section>
+
+      <div class="tour" id="features">
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">自己保持整齐</p>
+            <h2>新文件，自己找到<em>家</em></h2>
+            <p>新保存的文件与下载，各自落入对应的标签页。不用定规则，也不会遗漏。</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/3-new-files-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/3-new-files-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/3-new-files.mp4" data-src-hd="/assets/3-new-files-hd.mp4" muted loop playsinline preload="none" aria-label="在浏览器里下载一张登机牌，它直接落进桌面分区的 PDF 标签页"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">透明玻璃</p>
+            <h2>通透得像<em>不存在</em></h2>
+            <p>唯有微光勾勒边缘，整张壁纸通透可见。日常的所有操作，依然熟悉顺手。</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/8-glass-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/8-glass-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/8-glass.mp4" data-src-hd="/assets/8-glass-hd.mp4" muted loop playsinline preload="none" aria-label="动态极光壁纸在透明玻璃分区后面流动；分区全部卷起后，整片夜空露出来"></video>
+            </div>
+          </div>
+        </section>
+
+        <div class="duo">
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/4-quick-look-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/4-quick-look-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/4-quick-look.mp4" muted loop playsinline preload="none" aria-label="选中分区里的一张图片，按空格放大查看，再用方向键翻看后面几张"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key key-wide">Space</kbd></span></div>
+            <h2>按下空格，一眼<em>看穿</em></h2>
+            <p>按下空格键，图片、文档与视频立刻呈现眼前。轻点方向键，顺畅翻看下一个。</p>
+          </section>
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/5-search-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/5-search-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/5-search.mp4" muted loop playsinline preload="none" aria-label="在桌面上打几个字母，就找到了某个分区里的一份文档"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key">Alt</kbd>+<kbd class="key key-wide">Space</kbd></span></div>
+            <h2>想找什么？直接<em>打字</em></h2>
+            <p>点一下桌面直接输入，或者在任何地方按 Alt+空格。要找的文件随字浮现。</p>
+          </section>
+        </div>
+
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">文件夹门户</p>
+            <h2>文件夹不用开，专注不用<em>断</em>。</h2>
+            <p>把下载或项目文件夹直接铺展在桌面上。无需层层点开窗口，随手取用。</p>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/7-folders-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/7-folders-still.jpg" alt="" loading="lazy" decoding="async" width="1600" height="900">
+              <video data-src="/assets/7-folders.mp4" data-src-hd="/assets/7-folders-hd.mp4" muted loop playsinline preload="none" aria-label="一个分区里用标签页放着三个文件夹；把其中一张截图直接拖进邮件"></video>
+            </div>
+          </div>
+        </section>
+
+        <div class="duo">
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/2-tabs-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/2-tabs-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/2-tabs.mp4" muted loop playsinline preload="none" aria-label="会议快开始了：所有分区卷起只剩标题，共享屏幕；散会后分区在原位展开"></video>
+              </div>
+            </div>
+            <div class="kicker"><span class="keys"><kbd class="key">Ctrl</kbd>+<kbd class="key">Alt</kbd>+<kbd class="key">H</kbd></span></div>
+            <h2>一键清爽，从容<em>入会</em>。</h2>
+            <p>开会前一键卷起所有分区，只留干净的壁纸。散会后再点一下，桌面分毫不差地回来。</p>
+          </section>
+          <section class="scene reveal">
+            <div class="film" style="--glow: url(/assets/6-frost-glow.jpg)">
+              <div class="film-in">
+                <img src="/assets/6-frost-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+                <video data-src="/assets/6-frost.mp4" muted loop playsinline preload="none" aria-label="夜晚、深色主题下的同一组分区；鼠标经过时玻璃泛起柔光"></video>
+              </div>
+            </div>
+            <div class="kicker"><p class="label">浅色 · 深色 · 雾面</p></div>
+            <h2>浅色、深色，还有<em>雾面</em></h2>
+            <p>随系统的浅色与深色自如切换。壁纸太花时，调出一层轻柔雾面，文字依然清楚。</p>
+          </section>
+        </div>
+
+        <section class="band">
+          <header class="band-head reveal">
+            <p class="label">分区里还有</p>
+            <h2>小地方，也<em>讲究</em>。</h2>
+          </header>
+          <ul class="details reveal">
+            <li><strong>双击，一片清爽</strong>双击桌面空白处，分区全部让开；再双击，原样回来。</li>
+            <li><strong>一套布局，所有屏幕</strong>接显示器、拔扩展坞、远程连进来，分区的排列都不变。</li>
+            <li><strong>一拖就是标签页</strong>把一个分区拖到另一个上，它们就合成标签页。</li>
+            <li><strong>图标大小随你</strong>小、中、大三种，和 Windows 桌面一样。</li>
+            <li><strong>动态壁纸也行</strong>玻璃后面动的画面，照样透出来。</li>
+            <li><strong>快捷键你说了算</strong>改成你顺手的那一组。</li>
+            <li><strong>右键菜单，项项有用</strong>在桌面空白处点右键，每一项都管用。</li>
+            <li><strong>登录就在</strong>开机登录后几秒，桌面就准备好了。</li>
+          </ul>
+        </section>
       </div>
+
+      <section class="band price" id="price">
+        <div class="price-copy reveal">
+          <p class="label">一次付清</p>
+          <h2>一次<em>买断</em></h2>
+          <p>一次付费，以后的更新全部包含。</p>
+          <a class="btn btn-lg" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-price">免费试用 7 天</a>
+          <p class="fine">在微软商店购买，按你所在地区的货币结算。</p>
+        </div>
+        <div class="receipt reveal" role="group" aria-label="SpringDesk 的价格">
+          <p class="r-brand"><img src="/assets/icon.png" alt="" width="32" height="32">SpringDesk</p>
+          <p class="r-sub">微软商店 · Windows 11</p>
+          <dl>
+            <div><dt>试用 7 天</dt><dd>免费</dd></div>
+            <div><dt>SpringDesk</dt><dd><s>28 元</s>18 元</dd></div>
+            <div><dt>以后的更新</dt><dd>全包含</dd></div>
+            <div><dt>订阅</dt><dd>无</dd></div>
+            <div><dt>账号</dt><dd>无</dd></div>
+          </dl>
+          <p class="r-total"><span>合计，只付一次</span><strong>18 元</strong></p>
+          <p class="r-note">早鸟价到 2027 年 1 月 1 日。其他地区以商店显示的价格为准。</p>
+          <div class="r-code" aria-hidden="true"></div>
+          <p class="r-thanks">谢谢惠顾，壁纸请慢用。</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <header class="band-head reveal">
+          <p class="label">看不见的地方</p>
+          <h2>表面通透，内里<em>稳妥</em>。</h2>
+        </header>
+        <ul class="trust-list reveal">
+          <li><h3>文件一个都不动</h3>只整理视野，不移动、不删除任何文件。随时退出，桌面原样回来。</li>
+          <li><h3>来自微软商店</h3>经微软审核，一键安装，后台静默更新。</li>
+          <li><h3>布局有备份</h3>所有屏幕用同一套布局，每天自动备份。</li>
+          <li><h3>不收集数据</h3>无账号，无广告，不追踪。一切只留在你的电脑里。</li>
+        </ul>
+        <a class="pulse reveal" href="/changelog/">版本 1.10.1 · 2026 年 11 月 16 日 · 更新日志</a>
+      </section>
+
+      <section class="band faq" id="faq">
+        <header class="faq-head reveal">
+          <p class="label">试用之前</p>
+          <h2>常见问题</h2>
+          <p>还有别的问题？写信到 <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>。</p>
+        </header>
+        <div class="faq-list reveal">
+          <details>
+            <summary>多少钱？</summary>
+            <p>可以先免费试用 7 天，之后在微软商店一次买断，以后的更新全包含，不订阅。中国大陆早鸟价 18 元（原价 28 元），到 2027 年 1 月 1 日；其他地区以商店显示的价格为准。</p>
+          </details>
+          <details>
+            <summary>桌面上的文件会被移走吗？</summary>
+            <p>不会。文件一直在原来的桌面文件夹里，SpringDesk 只是把它们显示在分区里。卸载后桌面和原来一样。</p>
+          </details>
+          <details>
+            <summary>支持 Windows 10 吗？</summary>
+            <p>不支持。SpringDesk 只为 Windows 11 而做，所以能和系统融为一体：跟随 Windows 11 的浅色和深色模式，右键就是 Windows 自己的菜单。</p>
+          </details>
+          <details>
+            <summary>在用别的桌面整理工具，能换过来吗？</summary>
+            <p>可以。先退出原来的工具（检测到 Fences 在运行时，SpringDesk 会提醒你退出），再打开 SpringDesk，它会把桌面按类型整理进分区，之后随意调整。其他软件的布局不能导入。</p>
+          </details>
+          <details>
+            <summary>还在持续更新吗？</summary>
+            <p>是的。SpringDesk 一直有人维护：问题会修，接下来做什么也看大家的反馈。哪里用着不顺手，写信到 <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>。每次的改动都在<a href="/changelog/">更新日志</a>里（英文），更新由微软商店自动安装。</p>
+          </details>
+          <details>
+            <summary>安全软件（360、火绒等）弹出提示？</summary>
+            <p>"在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能，可以在 设置 › 通用 里关掉。</p>
+          </details>
+          <details>
+            <summary>会收集我的数据吗？</summary>
+            <p>不会。没有账号、没有广告、不收集数据，一切都在你的电脑上完成。见<a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">隐私政策</a>。</p>
+          </details>
+          <details>
+            <summary>遇到问题怎么办？</summary>
+            <p>打开 设置 › 关于 › 导出诊断信息，把压缩包附在 <a href="https://github.com/lchovo/SpringDesk/issues">GitHub Issues</a> 里，或发邮件到 <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>。里面是日志和分区布局，有桌面上的文件名，没有文件内容。</p>
+          </details>
+        </div>
+      </section>
     </div>
 
-    <div class="pillars">
-      <div class="glass"><h3>专为 Windows 11 而生</h3><p>像 Windows 原生自带的一样自然。</p></div>
-      <div class="glass"><h3>自己保持整齐</h3><p>打开即见秩序，日常井井有条。</p></div>
-      <div class="glass"><h3>一次买断</h3><p>一次付费，以后的更新全部包含。</p></div>
-    </div>
-
-    <div id="features">
-      <section class="feature">
-        <div class="copy">
-          <h2>通透得像不存在</h2>
-          <p>唯有微光勾勒边缘，整张壁纸通透可见。日常的所有操作，依然熟悉顺手。</p>
+    <section class="closing">
+      <picture class="dune" aria-hidden="true">
+        <source media="(max-width: 700px)" srcset="/assets/dune-sm.jpg">
+        <img src="/assets/dune.jpg" alt="" loading="lazy" decoding="async" width="2400" height="1350">
+      </picture>
+      <div class="wrap">
+        <h2 class="reveal">告别杂乱，<br>留住<em>壁纸</em>。</h2>
+        <div class="cta reveal">
+          <a class="badge" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-bottom"><img src="/assets/store-badge-light.svg" alt="从微软商店获取" width="205" height="56"></a>
         </div>
-        <div class="media glass"><video data-src="/assets/8-glass.mp4" poster="/assets/8-glass.jpg" muted loop playsinline preload="none" aria-label="动态极光壁纸在透明玻璃分区后面流动；分区全部卷起后，整片夜空露出来"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>新文件，自己找到家</h2>
-          <p>新保存的文件与下载，各自落入对应的标签页。不用定规则，也不会遗漏。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/3-new-files.mp4" poster="/assets/3-new-files.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>文件夹不用开，专注不用断。</h2>
-          <p>把下载或项目文件夹直接铺展在桌面上。无需层层点开窗口，随手取用。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/7-folders.mp4" poster="/assets/7-folders.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>按下空格，一眼看穿</h2>
-          <p>按下空格键，图片、文档与视频立刻呈现眼前。轻点方向键，顺畅翻看下一个。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/4-quick-look.mp4" poster="/assets/4-quick-look.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>想找什么？直接打字</h2>
-          <p>点一下桌面直接输入，要找的文件随字浮现。不用打开搜索窗口，也不用停下手中的事。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/5-search.mp4" poster="/assets/5-search.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>一键清爽，从容入会。</h2>
-          <p>开会前一键卷起所有分区，只留干净的壁纸。散会后再点一下，桌面分毫不差地回来。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/2-tabs.mp4" poster="/assets/2-tabs.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-
-      <section class="feature">
-        <div class="copy">
-          <h2>浅色、深色，还有雾面</h2>
-          <p>随系统的浅色与深色自如切换。壁纸太花时，调出一层轻柔雾面，文字依然清楚。</p>
-        </div>
-        <div class="media glass"><video data-src="/assets/6-frost.mp4" poster="/assets/6-frost.jpg" muted loop playsinline preload="none"></video></div>
-      </section>
-    </div>
-
-    <div class="trust">
-      <h2>表面通透，内里稳妥。</h2>
-      <div class="media glass" style="max-width:760px;margin:0 auto 24px"><video data-src="/assets/9-off.mp4" poster="/assets/9-off.jpg" muted loop playsinline preload="none" aria-label="关掉 SpringDesk，每个图标都回到 Windows 桌面上原来的位置"></video></div>
-      <div class="grid">
-        <div class="glass"><h3>文件一个都不动</h3><p>只整理视野，不移动、不删除任何文件。随时退出，桌面原样回来。</p></div>
-        <div class="glass"><h3>来自微软商店</h3><p>经微软审核，一键安装，后台静默更新。</p></div>
-        <div class="glass"><h3>布局有备份</h3><p>每块屏幕、每种缩放都记得住，每天自动备份。</p></div>
-        <div class="glass"><h3>不收集数据</h3><p>无账号，无广告，不追踪。一切只留在你的电脑里。</p></div>
+        <p class="fine reveal">免费试用 7 天 · 专为 Windows 11 打造</p>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="faq" id="faq">
-      <h2>常见问题</h2>
-      <details class="glass">
-        <summary>多少钱？</summary>
-        <p>可以先免费试用 7 天，之后在微软商店一次买断，以后的更新全包含，不订阅。中国大陆早鸟价 18 元（原价 28 元），到 2027 年 1 月 1 日；其他地区以商店显示的价格为准。</p>
-      </details>
-      <details class="glass">
-        <summary>桌面上的文件会被移走吗？</summary>
-        <p>不会。文件一直在原来的桌面文件夹里，SpringDesk 只是把它们显示在分区里。卸载后桌面和原来一样。</p>
-      </details>
-      <details class="glass">
-        <summary>支持 Windows 10 吗？</summary>
-        <p>不支持。SpringDesk 只为 Windows 11 而做，所以能和系统融为一体：跟随 Windows 11 的浅色和深色模式，右键就是 Windows 自己的菜单。</p>
-      </details>
-      <details class="glass">
-        <summary>在用别的桌面整理工具，能换过来吗？</summary>
-        <p>可以。先退出原来的工具（检测到 Fences 在运行时，SpringDesk 会提醒你退出），再打开 SpringDesk，它会把桌面按类型整理进分区，之后随意调整。其他软件的布局不能导入。</p>
-      </details>
-      <details class="glass">
-        <summary>还在持续更新吗？</summary>
-        <p>是的。2026 年 10 月 17 日上架微软商店后，第一周就更新了十几次，大多是按用户反馈做的修复和改进。每次的改动都在<a href="/changelog/">更新日志</a>里（英文），更新由微软商店自动安装。</p>
-      </details>
-      <details class="glass">
-        <summary>安全软件（360、火绒等）弹出提示？</summary>
-        <p>"在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能，可以在 设置 › 通用 里关掉。</p>
-      </details>
-      <details class="glass">
-        <summary>会收集我的数据吗？</summary>
-        <p>不会。没有账号、没有广告、不收集数据，一切都在你的电脑上完成。见<a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">隐私政策</a>。</p>
-      </details>
-      <details class="glass">
-        <summary>遇到问题怎么办？</summary>
-        <p>打开 设置 › 关于 › 导出诊断信息，把压缩包附在 <a href="https://github.com/lchovo/SpringDesk/issues">GitHub Issues</a> 里，或发邮件到 <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>。里面是日志和分区布局，有桌面上的文件名，没有文件内容。</p>
-      </details>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/zh/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>专为 Windows 11 打造的桌面整理工具。</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="#features">功能</a></li>
+            <li><a href="#price">价格</a></li>
+            <li><a href="/changelog/">更新日志（英文）</a></li>
+            <li><a href="/" hreflang="en" lang="en">English</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>联系</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">支持</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">隐私政策</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
     </div>
-
-    <div class="closing">
-      <h2>告别杂乱，<br>留住壁纸。</h2>
-      <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-bottom">
-        <img class="dark" src="/assets/store-badge-dark.svg" alt="从微软商店获取">
-        <img class="light" src="/assets/store-badge-light.svg" alt="从微软商店获取">
-        <span class="fine">免费试用 7 天 · 专为 Windows 11 打造</span>
-      </a>
-    </div>
-
-    <footer>
-      <span>© 2026 Brock Loong</span>
-      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">隐私政策</a>
-      <a href="https://github.com/lchovo/SpringDesk/issues">支持</a>
-      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
-      <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>
-      <a href="/" hreflang="en" lang="en">English</a>
-    </footer>
-  </div>
+  </footer>
   <script src="/assets/site.js"></script>
 </body>
 </html>

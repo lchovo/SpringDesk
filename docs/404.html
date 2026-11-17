@@ -5,18 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found · SpringDesk</title>
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e0a13">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-    </header>
-    <div class="hero">
-      <h1>This page isn't here.</h1>
-      <p class="lede">It may have moved. Try the <a href="/">home page</a>, <a href="/best-desktop-organizer-windows-11/">desktop organizers compared</a> or the <a href="/press/">press kit</a>.</p>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
+        <a href="/fences-alternative/">Compare</a>
+      </nav>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-404">Try it free</a>
     </div>
-  </div>
+  </header>
+
+  <main class="wrap lost">
+    <img src="/assets/icon.png" alt="" width="128" height="128">
+    <p class="label">404</p>
+    <h1>This page isn't on the <em>desktop.</em></h1>
+    <p class="lede">It may have moved. Try the <a href="/">home page</a>, <a href="/best-desktop-organizer-windows-11/">desktop organizers compared</a> or the <a href="/press/">press kit</a>.</p>
+  </main>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

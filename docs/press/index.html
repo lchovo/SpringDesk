@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk press kit: facts, descriptions, screenshots and trailer</title>
   <meta name="description" content="Everything you need to write about SpringDesk, the desktop organizer for Windows 11: fact sheet, descriptions, screenshots, icon and trailer to download.">
+  <meta name="theme-color" content="#0e0a13">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SpringDesk press kit">
   <meta property="og:description" content="Fact sheet, descriptions, screenshots, icon and trailer.">
@@ -13,20 +14,27 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://springdesk.app/press/">
   <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-      <nav>
-        <a href="/#features">Features</a>
-        <a href="/fences-alternative/">Compare</a>
-        <a href="/#faq">FAQ</a>
-        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-press">Get it</a>
-      </nav>
-    </header>
+  <div class="sky" aria-hidden="true"></div>
 
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
+        <a href="/fences-alternative/">Compare</a>
+      </nav>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-press">Try it free</a>
+    </div>
+  </header>
+
+  <div class="wrap">
     <main class="article">
       <h1>Press kit</h1>
       <p class="lede">Everything you need to write about or film SpringDesk. Use any of it freely in coverage of the app.</p>
@@ -41,7 +49,7 @@
             <tr><th>Tagline</th><td>Clear glass. Clean desktop.</td></tr>
             <tr><th>Developer</th><td>Brock Loong</td></tr>
             <tr><th>Released</th><td>October 17, 2026, in the Microsoft Store</td></tr>
-            <tr><th>Current version</th><td>1.5.5 (October 23, 2026)</td></tr>
+            <tr><th>Current version</th><td>1.10.1 (November 16, 2026)</td></tr>
             <tr><th>Platform</th><td>Windows 11 (x64)</td></tr>
             <tr><th>Price</th><td>One-time purchase, US$7.99; launch price US$4.99 until January 1, 2027. 7-day free trial. Local prices vary.</td></tr>
             <tr><th>Languages</th><td>English, Chinese</td></tr>
@@ -66,7 +74,7 @@
         <li><strong>Press Space to look inside</strong> pictures, video, music, text and PDFs, like Quick Look on a Mac.</li>
         <li><strong>Type on the desktop to search</strong> every box, or press Alt+Space from anywhere.</li>
         <li><strong>Clear glass that follows the wallpaper</strong>, live wallpapers included; it frosts over at lower transparency.</li>
-        <li><strong>A layout for each display setup</strong>, so boxes come back in place after Remote Desktop or a new monitor; daily layout backups.</li>
+        <li><strong>One layout on every screen</strong>, so boxes keep their arrangement after Remote Desktop or a new monitor; daily layout backups.</li>
         <li><strong>One-time purchase</strong>, cheaper than a year of the best-known subscription organizer.</li>
       </ul>
 
@@ -94,17 +102,46 @@
       <h2>Review copies and contact</h2>
       <p>Writing about SpringDesk or making a video? I'm happy to send a free code for the full version and answer questions. Email <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>.</p>
     </main>
-
-    <footer>
-      <span>© 2026 Brock Loong</span>
-      <a href="/">SpringDesk</a>
-      <a href="/fences-alternative/">SpringDesk or Fences</a>
-      <a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a>
-      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
-      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
-      <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>
-    </footer>
   </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
+    </div>
+  </footer>
   <script src="/assets/site.js"></script>
 </body>
 </html>

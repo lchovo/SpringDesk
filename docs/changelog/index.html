@@ -5,21 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpringDesk changelog: every update to the Windows 11 desktop organizer</title>
   <meta name="description" content="What changed in each version of SpringDesk, the desktop organizer for Windows 11. Latest: 1.10.1 (2026-11-16). Updates arrive automatically through the Microsoft Store.">
+  <meta name="theme-color" content="#0e0a13">
   <link rel="canonical" href="https://springdesk.app/changelog/">
   <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-      <nav>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
         <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
         <a href="/fences-alternative/">Compare</a>
-        <a href="/#faq">FAQ</a>
-        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-changelog">Get it</a>
       </nav>
-    </header>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-changelog">Try it free</a>
+    </div>
+  </header>
+
+  <div class="wrap">
 
     <main class="article">
       <h1>Changelog</h1>
@@ -255,16 +264,46 @@
       <h2>Before the Microsoft Store</h2>
       <p>Versions 1.0 to 1.3 (October 16–17, 2026) were early free builds on GitHub. They are no longer available; the Store version replaced them and takes over their layouts.</p>
     </main>
-
-    <footer>
-      <span>© 2026 Brock Loong</span>
-      <a href="/">SpringDesk</a>
-      <a href="/press/">Press kit</a>
-      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
-      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
-      <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>
-    </footer>
   </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
+    </div>
+  </footer>
   <script src="/assets/site.js"></script>
 </body>
 </html>

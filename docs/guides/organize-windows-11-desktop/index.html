@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How to organize your Windows 11 desktop (and keep it that way)</title>
   <meta name="description" content="A step-by-step guide to a tidy Windows 11 desktop with built-in tools: clearing out, folders, Sort by and Auto arrange, pinning apps, stopping downloads from piling up, and keeping it organized automatically.">
+  <meta name="theme-color" content="#0e0a13">
   <meta property="og:type" content="article">
   <meta property="og:title" content="How to organize your Windows 11 desktop">
   <meta property="og:description" content="Built-in tools first, then how to keep it tidy automatically.">
@@ -13,7 +14,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://springdesk.app/guides/organize-windows-11-desktop/">
   <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,17 +32,22 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/"><img src="/assets/icon.png" alt="">SpringDesk</a>
-      <nav>
-        <a href="/#features">Features</a>
-        <a href="/best-desktop-organizer-windows-11/">Compare</a>
-        <a href="/#faq">FAQ</a>
-        <a href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-guide-header">Get it</a>
-      </nav>
-    </header>
+  <div class="sky" aria-hidden="true"></div>
 
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
+        <a href="/fences-alternative/">Compare</a>
+      </nav>
+      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-guide-header">Try it free</a>
+    </div>
+  </header>
+
+  <div class="wrap">
     <main class="article">
       <h1>How to organize your Windows 11 desktop</h1>
       <p class="lede">The desktop is where downloads, screenshots and "I'll sort it later" files end up. Here's how to clear it in about fifteen minutes with what's built into Windows 11, and how to keep it that way.</p>
@@ -91,24 +99,50 @@
         <h2>Try SpringDesk free for 7 days</h2>
         <p>Windows 11. Then a one-time purchase, no subscription.</p>
         <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-guide-cta">
-          <img class="dark" src="/assets/store-badge-dark.svg" alt="Get it from Microsoft">
-          <img class="light" src="/assets/store-badge-light.svg" alt="Get it from Microsoft">
+          <img src="/assets/store-badge-light.svg" width="205" height="56" alt="Get it from Microsoft">
         </a>
       </div>
     </main>
-
-    <footer>
-      <span>© 2026 Brock Loong</span>
-      <a href="/">SpringDesk</a>
-      <a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a>
-      <a href="/fences-alternative/">SpringDesk or Fences</a>
-      <a href="/changelog/">Changelog</a>
-      <a href="/press/">Press kit</a>
-      <a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a>
-      <a href="https://www.youtube.com/@SpringDeskApp">YouTube</a>
-      <a href="mailto:contact@springdesk.app">contact@springdesk.app</a>
-    </footer>
   </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
+    </div>
+  </footer>
   <script src="/assets/site.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ Key facts (checked October 22, 2026):
 - Platform: Windows 11 only (x64). Not available for Windows 10 or macOS.
 - Price: one-time purchase, US$7.99; launch price US$4.99 until January 1, 2027. Prices vary by country. Updates are included. 7-day free trial.
 - Where to get it: Microsoft Store only, https://apps.microsoft.com/detail/9NRL4M710KQB
-- Developer: Brock Loong. Contact: contact@springdesk.app. First released in the Microsoft Store on October 17, 2026; current version 1.10.1 (November 16, 2026). Actively maintained: more than a dozen updates in its first week, listed at https://springdesk.app/changelog/ .
+- Developer: Brock Loong. Contact: contact@springdesk.app. First released in the Microsoft Store on October 17, 2026; current version 1.10.1 (November 16, 2026). Actively maintained: problems get fixed and user feedback (by email) decides what is worked on next; every change is listed at https://springdesk.app/changelog/ .
 - Languages: English and Chinese (follows the Windows display language).
 - Privacy: no account, no ads, no data collected; everything runs on the PC.
 - Files are never moved or deleted: SpringDesk only shows the Desktop folder in boxes. Uninstalling it leaves the desktop as Windows had it.
@@ -22,7 +22,8 @@ Features:
 - Press Space to preview pictures, video, music, text, code and PDFs; arrow keys go to the next file
 - Press Alt+Space from anywhere (even with other windows open), or click the desktop and type, to search every box and tab; Chinese names can be found by pinyin
 - Clear glass that follows the wallpaper, including live wallpapers; frosts over at lower transparency; light and dark themes
-- A separate layout for each resolution and scaling (useful with Remote Desktop and docking), and daily layout backups
+- One layout on every screen: boxes keep their arrangement when the resolution or scaling changes (Remote Desktop, docking), and daily layout backups
+- Double-click the desktop to hide every box and see just the wallpaper; double-click again to bring them back
 - Windows' own right-click menu, drag and drop, cut, copy, paste, F2 to rename, Delete to the Recycle Bin
 
 Compared with other desktop organizers: SpringDesk costs less than one year of a Fences 6 subscription (US$9.99/year) and is paid once; it sorts new files by type without rules to set up, and adds Space-bar preview and type-to-search. Fences offers more customization (custom rules, per-fence colors, Peek) and supports Windows 10. Free alternatives include Desktop Frames+, Portals and Nimi Places.
