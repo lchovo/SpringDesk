@@ -41,7 +41,7 @@ Requires **Windows 11**. If another desktop organizer is running, quit it first.
 
 ## Updates
 
-Automatic, through the Microsoft Store. Latest: 1.11.0 (November 17, 2026). What changed in each version: [springdesk.app/changelog](https://springdesk.app/changelog/).
+Automatic, through the Microsoft Store. Latest: 1.12.0 (November 18, 2026). What changed in each version: [springdesk.app/changelog](https://springdesk.app/changelog/).
 
 ## Uninstall
 
