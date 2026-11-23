@@ -1,6 +1,6 @@
 # SpringDesk privacy policy
 
-Last updated: November 10, 2026
+Last updated: November 22, 2026
 
 SpringDesk is a desktop organizer for Windows 11. It works entirely on your PC.
 
@@ -17,7 +17,9 @@ personal data.
 - To draw the boxes' glass, SpringDesk copies the desktop background (the wallpaper, not your windows) into
   memory. The copy is never saved or sent.
 - Your layout (boxes, tabs, settings) and a few daily backups of it are saved in your user folder
-  (%APPDATA%\SpringDesk). Log files for troubleshooting are saved in %LOCALAPPDATA%\SpringDesk.
+  (%APPDATA%\SpringDesk). A copy of the latest layout is kept in Documents\SpringDesk, so your boxes can come back
+  after you reinstall SpringDesk; if your Documents folder is synced (for example by OneDrive), that copy is synced
+  with it. Log files for troubleshooting are saved in %LOCALAPPDATA%\SpringDesk.
 
 ## Internet
 
@@ -39,7 +41,7 @@ Questions about privacy: email contact@springdesk.app, or open an issue at githu
 
 # SpringDesk 隐私政策
 
-最后更新：2026 年 11 月 10 日
+最后更新：2026 年 11 月 22 日
 
 SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行。
 
@@ -51,7 +53,7 @@ SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行
 
 - 为了把桌面显示在分区里，SpringDesk 会读取桌面上各项的名称和图标，以及你选择在文件夹门户里显示的文件夹的内容。只有在显示缩略图、或你按空格预览时，才会读取文件的内容，也从不把任何东西发出去。
 - 为了画出分区的玻璃效果，SpringDesk 会把桌面背景（壁纸，不包括你的窗口）复制到内存里。这份复制不保存、不发送。
-- 你的布局（分区、标签页、设置）和每天的几份备份保存在你的用户文件夹里（%APPDATA%\SpringDesk）。用于排查问题的日志保存在 %LOCALAPPDATA%\SpringDesk。
+- 你的布局（分区、标签页、设置）和每天的几份备份保存在你的用户文件夹里（%APPDATA%\SpringDesk）。最新布局的一份副本保存在 文档\SpringDesk 里，重新安装 SpringDesk 后可以用它找回分区；如果你的文档文件夹在同步（例如 OneDrive），这份副本也会跟着同步。用于排查问题的日志保存在 %LOCALAPPDATA%\SpringDesk。
 
 ## 联网
 
