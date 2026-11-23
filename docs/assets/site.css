@@ -68,7 +68,7 @@ strong { color: var(--sand); font-weight: 600; }
   color: var(--ember);
   margin: 0 0 18px;
 }
-:lang(zh) .label { font-size: 13px; letter-spacing: 0.12em; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .label { font-size: 13px; letter-spacing: 0.12em; }
 .fine { font-size: 14px; color: var(--sand-3); }
 
 /* The sky behind the top of every page */
@@ -99,6 +99,46 @@ strong { color: var(--sand); font-weight: 600; }
 .tabs a:hover { color: var(--sand); background: var(--panel); }
 .tabs a[aria-current] { color: var(--sand); background: rgba(255, 240, 225, 0.12); }
 
+/* Language: top right, next to the button, where people look for it. A <details>, so it works without scripts. */
+.bar-end { display: flex; align-items: center; gap: 10px; }
+.lang { position: relative; border-radius: 10px; background: none; box-shadow: none; }
+.lang:hover, .lang[open] { background: none; }
+.lang::details-content, .lang[open]::details-content { block-size: auto; overflow: visible; transition: none; }
+.lang summary { gap: 7px; padding: 7px 10px; border-radius: 10px; font: 14px/1.4 var(--sans); color: var(--sand-2); white-space: nowrap; transition: background-color 0.2s, color 0.2s; }
+.lang summary:hover, .lang[open] summary { color: var(--sand); background: var(--panel-2); }
+.lang summary::after { width: 6px; height: 6px; margin: 0 1px 3px 1px; border-color: currentColor; }
+.globe { flex: none; fill: none; stroke: currentColor; stroke-width: 1.2; }
+.lang ul {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 184px; margin: 0; padding: 6px; list-style: none;
+  display: grid; gap: 1px; border-radius: 14px;
+  background: rgba(23, 16, 31, 0.94);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(18px) saturate(1.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 0 0 1px var(--edge), 0 24px 48px -16px rgba(0, 0, 0, 0.7);
+}
+.lang ul a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 7px 12px; border-radius: 9px; font-size: 15px; line-height: 1.4; color: var(--sand-2); text-decoration: none; letter-spacing: normal; }
+.lang ul a:hover { color: var(--sand); background: var(--panel-2); }
+.lang ul a[aria-current] { color: var(--sand); }
+.lang ul a[aria-current]::after { content: ""; width: 6px; height: 6px; background: var(--ember); box-shadow: 0 0 8px var(--ember); }
+
+/* "This page is in your language too": a quiet note at the bottom, once (site.js) */
+.lang-hint {
+  position: fixed; left: 50%; bottom: 20px; z-index: 70; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 4px; padding: 5px 5px 5px 16px; border-radius: 14px; max-width: calc(100vw - 32px);
+  background: rgba(23, 16, 31, 0.94);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(18px) saturate(1.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 0 0 1px var(--edge), 0 24px 48px -16px rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+}
+.lang-hint a { padding: 6px 4px; color: var(--sand); text-decoration: none; white-space: nowrap; }
+.lang-hint a::after { content: " →"; color: var(--ember); }
+.lang-hint a:hover { color: var(--ember-hi); }
+.lang-hint button { width: 34px; height: 34px; border: 0; border-radius: 10px; background: none; color: var(--sand-3); font: 20px/1 var(--sans); cursor: pointer; }
+.lang-hint button:hover { color: var(--sand); background: var(--panel-2); }
+html.anim .lang-hint { animation: hint-in 0.5s var(--ease) both; }
+@keyframes hint-in { from { opacity: 0; transform: translate(-50%, 12px); } }
+
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 8px 16px; border-radius: 10px;
@@ -122,7 +162,7 @@ strong { color: var(--sand); font-weight: 600; }
 .hero { padding: clamp(36px, 7vh, 84px) 0 0; }
 .hero-head { display: grid; grid-template-columns: minmax(0, 1.36fr) minmax(0, 1fr); gap: 48px; align-items: end; }
 .hero h1 { font-size: clamp(50px, 7vw, 100px); line-height: 0.98; letter-spacing: -0.04em; }
-:lang(zh) .hero h1 { letter-spacing: -0.01em; line-height: 1.12; font-size: clamp(46px, 6.4vw, 92px); }
+:is(:lang(zh), :lang(ja), :lang(ko)) .hero h1 { letter-spacing: -0.01em; line-height: 1.12; font-size: clamp(46px, 6.4vw, 92px); }
 .lede { font-size: clamp(18px, 1.5vw, 20px); line-height: 1.5; color: var(--sand-2); max-width: 30em; }
 .hero-side .lede { margin-bottom: 28px; }
 .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
@@ -166,11 +206,11 @@ strong { color: var(--sand); font-weight: 600; }
 .switch[aria-checked="true"] .switch-thumb { transform: translateX(22px); background: #24160c; }
 .switch[aria-checked="true"]:active .switch-thumb { transform: translateX(18px); }
 .switch-state { font: 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--sand-2); min-width: 2.4em; text-align: left; }
-:lang(zh) .switch-state { font-size: 13px; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .switch-state { font-size: 13px; }
 .switch [data-on], .switch[aria-checked="true"] [data-off] { display: none; }
 .switch[aria-checked="true"] [data-on] { display: inline; }
 .power-hint { font: 11px/1.4 var(--mono); letter-spacing: 0.04em; color: rgba(246, 239, 228, 0.78); text-align: center; text-shadow: 0 1px 6px rgba(14, 10, 19, 0.9); }
-:lang(zh) .power-hint { font-size: 13px; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .power-hint { font-size: 13px; }
 .stage[data-state="off"] .power-hint [data-on], .stage[data-state="on"] .power-hint [data-off] { display: none; }
 
 /* Three things to remember: the three boxes on the icon's screen */
@@ -201,7 +241,7 @@ strong { color: var(--sand); font-weight: 600; }
 .scene-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 16px 56px; align-items: end; margin-bottom: clamp(28px, 4vh, 44px); }
 .scene-head .label { grid-column: 1 / -1; margin-bottom: 0; }
 .scene h2, .band h2 { font-size: clamp(34px, 4.6vw, 60px); line-height: 1.04; letter-spacing: -0.03em; }
-:lang(zh) .scene h2, :lang(zh) .band h2 { letter-spacing: -0.005em; line-height: 1.2; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .scene h2, :is(:lang(zh), :lang(ja), :lang(ko)) .band h2 { letter-spacing: -0.005em; line-height: 1.2; }
 .scene-head p:not(.label) { font-size: 18px; max-width: 27em; padding-bottom: 6px; }
 
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 0 clamp(80px, 13vh, 150px); }
@@ -225,7 +265,7 @@ kbd.key-wide { min-width: 150px; }
 .band { padding: 0 0 clamp(80px, 13vh, 150px); }
 .band-head { margin-bottom: clamp(28px, 4vh, 44px); }
 .band-quiet h2 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.025em; }
-.details { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 40px; }
+.details { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 40px; }
 .details li { padding: 22px 0 26px; border-top: 1px solid var(--edge-2); font-size: 15px; line-height: 1.55; }
 .details strong { display: block; font: 600 17px/1.35 var(--display); margin-bottom: 6px; }
 
@@ -244,7 +284,7 @@ kbd.key-wide { min-width: 150px; }
   -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / var(--tooth) 51% repeat-x, conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top / var(--tooth) 51% repeat-x;
   mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / var(--tooth) 51% repeat-x, conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top / var(--tooth) 51% repeat-x;
 }
-:lang(zh) .receipt { font-family: var(--mono), var(--sans); font-size: 13px; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .receipt { font-family: var(--mono), var(--sans); font-size: 13px; }
 .r-brand { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 22px; line-height: 1; color: var(--ink); }
 .r-brand img { width: 32px; height: 32px; image-rendering: pixelated; }
 .r-sub { text-align: center; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.7; }
@@ -262,11 +302,11 @@ kbd.key-wide { min-width: 150px; }
 .r-thanks { text-align: center; text-transform: uppercase; letter-spacing: 0.08em; }
 
 /* Trust */
-.trust-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 40px; }
+.trust-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 40px; }
 .trust-list li { padding: 24px 0 28px; border-top: 1px solid var(--edge); font-size: 16px; }
 .trust-list h3 { font-size: 19px; letter-spacing: -0.01em; margin: 0 0 8px; }
 .pulse { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; padding: 8px 14px 8px 12px; border-radius: 10px; font: 11px/1.4 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--sand-2); text-decoration: none; background: var(--panel); box-shadow: inset 0 0 0 1px var(--edge-2); }
-:lang(zh) .pulse { font-size: 13px; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .pulse { font-size: 13px; }
 .pulse:hover { color: var(--sand); background: var(--panel-2); }
 .pulse::before { content: ""; width: 6px; height: 6px; background: var(--led); box-shadow: 0 0 10px var(--led); }
 
@@ -299,7 +339,7 @@ details[open]::details-content { block-size: auto; }
 .closing .dune img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; display: block; }
 .closing .dune::after { content: ""; position: absolute; inset: 0; background: linear-gradient(var(--night) 0%, rgba(14, 10, 19, 0.55) 22%, rgba(14, 10, 19, 0) 48%, rgba(14, 10, 19, 0) 78%, var(--night) 100%); }
 .closing h2 { font-size: clamp(42px, 6.6vw, 92px); line-height: 1; letter-spacing: -0.04em; margin-bottom: 40px; text-shadow: 0 2px 40px rgba(14, 10, 19, 0.5); }
-:lang(zh) .closing h2 { letter-spacing: -0.01em; line-height: 1.15; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .closing h2 { letter-spacing: -0.01em; line-height: 1.15; }
 .closing .cta { justify-content: center; }
 .closing .fine { color: var(--sand-2); margin-top: 16px; }
 
@@ -310,7 +350,7 @@ details[open]::details-content { block-size: auto; }
 .foot .brand img { width: 40px; height: 40px; }
 .foot-about p { margin-top: 16px; max-width: 22em; color: var(--sand-3); }
 .foot h3 { font: 11px/1.4 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--sand-3); margin: 6px 0 14px; }
-:lang(zh) .foot h3 { font-size: 13px; }
+:is(:lang(zh), :lang(ja), :lang(ko)) .foot h3 { font-size: 13px; }
 .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
 .foot ul a { color: var(--sand-2); text-decoration: none; }
 .foot ul a:hover { color: var(--sand); }
@@ -377,7 +417,6 @@ figcaption { font-size: 14px; color: var(--sand-3); padding: 10px 8px 6px; }
 @media (max-width: 1000px) {
   .hero-head { grid-template-columns: 1fr; gap: 26px; align-items: start; }
   .hero h1 { font-size: clamp(46px, 11.6vw, 92px); }
-  .details, .trust-list { grid-template-columns: repeat(2, 1fr); }
   .price { grid-template-columns: 1fr; gap: 56px; }
   .receipt { max-width: 420px; margin: 0 auto; width: 100%; }
   .faq { grid-template-columns: 1fr; gap: 28px; }
@@ -388,6 +427,7 @@ figcaption { font-size: 14px; color: var(--sand-3); padding: 10px 8px 6px; }
 @media (max-width: 760px) {
   body { font-size: 16px; }
   .tabs { display: none; }
+  .details, .trust-list { grid-template-columns: 1fr; }
   .pillars { grid-template-columns: 1fr; }
   .pillars li { padding: 22px 0 26px; }
   .scene-head { grid-template-columns: 1fr; }
@@ -404,11 +444,21 @@ figcaption { font-size: 14px; color: var(--sand-3); padding: 10px 8px 6px; }
   .closing { padding-bottom: clamp(220px, 36vh, 360px); }
 }
 @media (max-width: 520px) {
-  .details, .trust-list { grid-template-columns: 1fr; }
   .foot-in { grid-template-columns: 1fr 1fr; }
   .badge img, .get img { height: 52px; }
   kbd.key-wide { min-width: 110px; }
   .receipt { padding: 30px 22px 36px; }
+}
+/* A phone: the offer sits under the top bar, off the switch; the menu shows just the globe */
+@media (max-width: 760px) {
+  .lang-hint { top: 72px; bottom: auto; }
+  html.anim .lang-hint { animation-name: hint-down; }
+}
+@keyframes hint-down { from { opacity: 0; transform: translate(-50%, -12px); } }
+@media (max-width: 440px) {
+  .lang summary span { display: none; }
+  .lang summary { padding: 8px; }
+  .bar-end { gap: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -421,6 +471,25 @@ html:not(.js) .power { display: none; }
 /* Glows reach past the page's edges; they must not make it scroll sideways */
 main { overflow-x: clip; }
 
-/* Chinese: YaHei is already dense, so no tightening anywhere */
-html:lang(zh) body { letter-spacing: 0.02em; }
-html:lang(zh) :is(h1, h2, h3, summary, .details strong, .more strong) { letter-spacing: 0.02em; }
+/* Chinese, Japanese, Korean: their fonts are already dense, so no tightening anywhere */
+html:is(:lang(zh), :lang(ja), :lang(ko)) body { letter-spacing: 0.02em; }
+html:is(:lang(zh), :lang(ja), :lang(ko)) :is(h1, h2, h3, summary, .details strong, .more strong) { letter-spacing: 0.02em; }
+
+/* Each language's own Windows font (YaHei would draw Japanese, Korean and Traditional Chinese with the wrong shapes) */
+html:lang(ja) {
+  --sans: "Segoe UI Variable Text", "Segoe UI", "Yu Gothic UI", "Meiryo UI", "Hiragino Sans", system-ui, sans-serif;
+  --display: "Segoe UI Variable Display", "Segoe UI", "Yu Gothic UI", "Meiryo UI", "Hiragino Sans", system-ui, sans-serif;
+}
+html:lang(ko) {
+  --sans: "Segoe UI Variable Text", "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+  --display: "Segoe UI Variable Display", "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+}
+html:lang(zh-Hant) {
+  --sans: "Segoe UI Variable Text", "Segoe UI", "Microsoft JhengHei UI", "PingFang TC", system-ui, sans-serif;
+  --display: "Segoe UI Variable Display", "Segoe UI", "Microsoft JhengHei UI", "PingFang TC", system-ui, sans-serif;
+}
+
+/* Line breaks: Japanese at phrase boundaries (Chrome and Edge), never inside a word; Korean only at spaces */
+:lang(ja) :is(h1, h2, h3, .lede, .scene-head p, .duo p) { word-break: auto-phrase; }
+:lang(ko) { word-break: keep-all; }
+:lang(ja) .hero h1 { font-size: clamp(38px, 4.6vw, 66px); }

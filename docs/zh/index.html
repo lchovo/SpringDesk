@@ -15,7 +15,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://springdesk.app/zh/">
   <link rel="alternate" hreflang="en" href="https://springdesk.app/">
+  <link rel="alternate" hreflang="de" href="https://springdesk.app/de/">
+  <link rel="alternate" hreflang="es" href="https://springdesk.app/es/">
+  <link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://springdesk.app/it/">
+  <link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/">
+  <link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/">
+  <link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/">
   <link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/">
   <link rel="alternate" hreflang="x-default" href="https://springdesk.app/">
   <link rel="icon" href="/favicon.ico">
   <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
@@ -27,6 +35,7 @@
     "@graph": [
       {
         "@type": "SoftwareApplication",
+        "@id": "https://springdesk.app/zh/#app",
         "name": "SpringDesk",
         "description": "专为 Windows 11 打造的桌面整理工具：把桌面图标收进透明玻璃分区，新文件按类型自动归位、不用设置规则，按空格预览文件，在桌面上打字搜索。微软商店一次买断，可免费试用 7 天。",
         "url": "https://springdesk.app/zh/",
@@ -34,8 +43,16 @@
         "applicationSubCategory": "桌面整理",
         "operatingSystem": "Windows 11",
         "softwareVersion": "1.14.0",
-        "inLanguage": ["zh-Hans", "en"],
+        "datePublished": "2026-10-17",
+        "inLanguage": [
+          "en",
+          "zh-Hans"
+        ],
         "image": "https://springdesk.app/assets/icon-300.png",
+        "screenshot": [
+          "https://springdesk.app/assets/01-overview.jpg",
+          "https://springdesk.app/assets/og.jpg"
+        ],
         "installUrl": "https://apps.microsoft.com/detail/9NRL4M710KQB",
         "offers": {
           "@type": "Offer",
@@ -45,23 +62,112 @@
           "availability": "https://schema.org/InStock",
           "url": "https://apps.microsoft.com/detail/9NRL4M710KQB"
         },
-        "author": { "@type": "Person", "name": "Brock Loong", "url": "https://github.com/lchovo" }
+        "featureList": [
+          "透明玻璃分区，动态壁纸也透得出来",
+          "标签页，分区能卷起到只剩标题",
+          "桌面上的新文件按类型自动进对应的标签页，不用设置规则",
+          "文件夹门户：把下载等任意文件夹放在桌面上，子文件夹也能在分区里直接打开",
+          "按空格预览图片、视频、音乐、文本和 PDF",
+          "在桌面上直接打字，或在任何地方按 Alt+空格，搜索所有分区",
+          "双击桌面藏起所有分区；离开电脑时分区可以自动淡出",
+          "一次买断，不订阅；免费试用 7 天",
+          "无账号、无广告、不收集数据"
+        ],
+        "sameAs": [
+          "https://www.youtube.com/@SpringDeskApp",
+          "https://github.com/lchovo/SpringDesk"
+        ],
+        "video": {
+          "@type": "VideoObject",
+          "name": "SpringDesk: day one on a Windows 11 desktop",
+          "description": "Day one with SpringDesk on a Windows 11 desktop: downloads that put themselves away, everything rolled up before a meeting, a project's folders in one box, Space to look inside, typing to find, and clear glass over any wallpaper.",
+          "thumbnailUrl": "https://i.ytimg.com/vi/a07C5bPUmJs/hqdefault.jpg",
+          "uploadDate": "2026-10-25T04:06:00+08:00",
+          "duration": "PT1M52S",
+          "contentUrl": "https://youtu.be/a07C5bPUmJs",
+          "embedUrl": "https://www.youtube.com/embed/a07C5bPUmJs"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Brock Loong",
+          "url": "https://github.com/lchovo",
+          "email": "contact@springdesk.app"
+        }
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "SpringDesk 多少钱？", "acceptedAnswer": { "@type": "Answer", "text": "可以先免费试用 7 天，之后在微软商店一次买断，以后的更新全包含，不订阅。中国大陆早鸟价 18 元（原价 28 元），到 2027 年 1 月 1 日；其他地区以商店显示的价格为准。" } },
-          { "@type": "Question", "name": "桌面上的文件会被移走吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。文件一直在原来的桌面文件夹里，SpringDesk 只是把它们显示在分区里。卸载后桌面和原来一样。" } },
-          { "@type": "Question", "name": "支持 Windows 10 吗？", "acceptedAnswer": { "@type": "Answer", "text": "不支持。SpringDesk 只为 Windows 11 而做，所以能和系统融为一体：跟随 Windows 11 的浅色和深色模式，右键就是 Windows 自己的菜单。" } },
-          { "@type": "Question", "name": "SpringDesk 还在持续更新吗？", "acceptedAnswer": { "@type": "Answer", "text": "是的。SpringDesk 一直有人维护：问题会修，接下来做什么也看大家的反馈。哪里用着不顺手，写信到 contact@springdesk.app。每次的改动都在更新日志里，更新由微软商店自动安装。" } },
-          { "@type": "Question", "name": "会收集我的数据吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。没有账号、没有广告、不收集数据，一切都在你的电脑上完成。" } }
+          {
+            "@type": "Question",
+            "name": "多少钱？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以先免费试用 7 天，之后在微软商店一次买断，以后的更新全包含，不订阅。中国大陆早鸟价 18 元（原价 28 元），到 2027 年 1 月 1 日；其他地区以商店显示的价格为准。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "桌面上的文件会被移走吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不会。文件一直在原来的桌面文件夹里，SpringDesk 只是把它们显示在分区里。卸载后桌面和原来一样。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持 Windows 10 吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不支持。SpringDesk 只为 Windows 11 而做，所以能和系统融为一体：跟随 Windows 11 的浅色和深色模式，右键就是 Windows 自己的菜单。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "在用别的桌面整理工具，能换过来吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。先退出原来的工具（检测到 Fences 在运行时，SpringDesk 会提醒你退出），再打开 SpringDesk，它会把桌面按类型整理进分区，之后随意调整。其他软件的布局不能导入。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "还在持续更新吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "是的。SpringDesk 一直有人维护：问题会修，接下来做什么也看大家的反馈。哪里用着不顺手，写信到 contact@springdesk.app。每次的改动都在更新日志里（英文），更新由微软商店自动安装。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "安全软件（360、火绒等）弹出提示？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "“在桌面上打字就搜索”需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能，可以在 设置 › 通用 里关掉。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "会收集我的数据吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不会。没有账号、没有广告、不收集数据，一切都在你的电脑上完成。见隐私政策。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "遇到问题怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "打开 设置 › 关于 › 导出诊断信息，把压缩包附在 GitHub Issues 里，或发邮件到 contact@springdesk.app。里面是日志和分区布局，有桌面上的文件名，没有文件内容。"
+            }
+          }
         ]
       }
     ]
   }
   </script>
 </head>
-<body>
+<body data-home>
   <div class="sky" aria-hidden="true"></div>
 
   <header class="bar">
@@ -71,9 +177,27 @@
         <a href="#features">功能</a>
         <a href="#price">价格</a>
         <a href="#faq">常见问题</a>
-        <a href="/" hreflang="en" lang="en">English</a>
       </nav>
-      <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-header">免费试用</a>
+      <div class="bar-end">
+<!-- languages -->
+        <details class="lang" data-close="关闭">
+          <summary aria-label="语言: 简体中文"><svg class="globe" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2.2 2.4-2.2 10.6 0 13M8 1.5c2.2 2.4 2.2 10.6 0 13"/></svg><span>简体中文</span></summary>
+          <ul>
+            <li><a href="/" hreflang="en" lang="en" data-lang="en" data-suggest="View in English">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de" data-lang="de" data-suggest="Auf Deutsch ansehen">Deutsch</a></li>
+            <li><a href="/es/" hreflang="es" lang="es" data-lang="es" data-suggest="Ver en español">Español</a></li>
+            <li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr" data-suggest="Voir en français">Français</a></li>
+            <li><a href="/it/" hreflang="it" lang="it" data-lang="it" data-suggest="Vedi in italiano">Italiano</a></li>
+            <li><a href="/pt/" hreflang="pt" lang="pt-BR" data-lang="pt-BR" data-suggest="Ver em português">Português</a></li>
+            <li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" data-suggest="日本語で見る">日本語</a></li>
+            <li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" data-suggest="한국어로 보기">한국어</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans" data-suggest="查看中文版" aria-current="page">简体中文</a></li>
+            <li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-Hant" data-suggest="查看繁體中文版">繁體中文</a></li>
+          </ul>
+        </details>
+<!-- /languages -->
+        <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-zh-header">免费试用</a>
+      </div>
     </div>
   </header>
 
@@ -108,7 +232,7 @@
               <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
               <span class="switch-state" aria-hidden="true"><span data-on>开</span><span data-off>关</span></span>
             </button>
-            <p class="power-hint"><span data-on>试试把它关掉。</span><span data-off>什么都没动。再打开吧。</span></p>
+            <p class="power-hint"><span data-on>试试把它关掉。</span><span data-off>桌面还是原来的样子。再打开吧。</span></p>
           </div>
         </div>
         <script>(function(s){if(!document.documentElement.classList.contains('anim'))return;s.dataset.state='off';s.querySelector('.switch').setAttribute('aria-checked','false')})(document.getElementById('stage'))</script>
@@ -139,7 +263,7 @@
           <header class="scene-head reveal">
             <p class="label">透明玻璃</p>
             <h2>通透得像<em>不存在</em></h2>
-            <p>唯有微光勾勒边缘，整张壁纸通透可见。日常的所有操作，依然熟悉顺手。</p>
+            <p>唯有微光勾勒边缘，整张壁纸通透可见。会动的壁纸也一样。</p>
           </header>
           <div class="film reveal" style="--glow: url(/assets/8-glass-glow.jpg)">
             <div class="film-in">
@@ -178,7 +302,7 @@
           <header class="scene-head reveal">
             <p class="label">文件夹门户</p>
             <h2>文件夹不用开，专注不用<em>断</em>。</h2>
-            <p>把下载或项目文件夹直接铺展在桌面上。无需层层点开窗口，随手取用。</p>
+            <p>把下载或项目文件夹直接铺展在桌面上。子文件夹也在分区里一层层打开，不用另开窗口。</p>
           </header>
           <div class="film reveal" style="--glow: url(/assets/7-folders-glow.jpg)">
             <div class="film-in">
@@ -188,30 +312,19 @@
           </div>
         </section>
 
-        <div class="duo">
-          <section class="scene reveal">
-            <div class="film" style="--glow: url(/assets/2-tabs-glow.jpg)">
-              <div class="film-in">
-                <img src="/assets/2-tabs-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
-                <video data-src="/assets/2-tabs.mp4" muted loop playsinline preload="none" aria-label="会议快开始了：所有分区卷起只剩标题，共享屏幕；散会后分区在原位展开"></video>
-              </div>
-            </div>
-            <div class="kicker"><span class="keys"><kbd class="key">Ctrl</kbd>+<kbd class="key">Alt</kbd>+<kbd class="key">H</kbd></span></div>
+        <section class="scene">
+          <header class="scene-head reveal">
+            <p class="label">卷起</p>
             <h2>一键清爽，从容<em>入会</em>。</h2>
             <p>开会前一键卷起所有分区，只留干净的壁纸。散会后再点一下，桌面分毫不差地回来。</p>
-          </section>
-          <section class="scene reveal">
-            <div class="film" style="--glow: url(/assets/6-frost-glow.jpg)">
-              <div class="film-in">
-                <img src="/assets/6-frost-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
-                <video data-src="/assets/6-frost.mp4" muted loop playsinline preload="none" aria-label="夜晚、深色主题下的同一组分区；鼠标经过时玻璃泛起柔光"></video>
-              </div>
+          </header>
+          <div class="film reveal" style="--glow: url(/assets/2-tabs-glow.jpg)">
+            <div class="film-in">
+              <img src="/assets/2-tabs-still.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720">
+              <video data-src="/assets/2-tabs.mp4" muted loop playsinline preload="none" aria-label="会议快开始了：所有分区卷起只剩标题，共享屏幕；散会后分区在原位展开"></video>
             </div>
-            <div class="kicker"><p class="label">浅色 · 深色 · 雾面</p></div>
-            <h2>浅色、深色，还有<em>雾面</em></h2>
-            <p>随系统的浅色与深色自如切换。壁纸太花时，调出一层轻柔雾面，文字依然清楚。</p>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <section class="band">
           <header class="band-head reveal">
@@ -220,17 +333,8 @@
           </header>
           <ul class="details reveal">
             <li><strong>双击，一片清爽</strong>双击桌面空白处，分区全部让开；再双击，原样回来。</li>
-            <li><strong>一套布局，所有屏幕</strong>接显示器、拔扩展坞、远程连进来，分区的排列都不变。</li>
+            <li><strong>人一走，只留壁纸</strong>离开电脑一会儿，分区慢慢淡出，只剩壁纸。你一回来，它们也回来。</li>
             <li><strong>一拖就是标签页</strong>把一个分区拖到另一个上，它们就合成标签页。</li>
-            <li><strong>图标大小随你</strong>小、中、大三种，和 Windows 桌面一样。</li>
-            <li><strong>动态壁纸也行</strong>玻璃后面动的画面，照样透出来。</li>
-            <li><strong>快捷键你说了算</strong>改成你顺手的那一组。</li>
-            <li><strong>右键菜单，项项有用</strong>在桌面空白处点右键，每一项都管用。</li>
-            <li><strong>登录就在</strong>开机登录后几秒，桌面就准备好了。</li>
-            <li><strong>分区里也能搜</strong>点放大镜，打几个字，只留对得上的。</li>
-            <li><strong>每个标签页都记得</strong>切走再切回来，还停在刚才那里。</li>
-            <li><strong>换个文件夹，分区不动</strong>文件夹门户能改看别的文件夹，位置照旧。</li>
-            <li><strong>顺着排，倒着排</strong>从 A 到 Z、从新到旧都行，每个标签页各记各的。</li>
           </ul>
         </section>
       </div>
@@ -266,9 +370,8 @@
           <h2>表面通透，内里<em>稳妥</em>。</h2>
         </header>
         <ul class="trust-list reveal">
-          <li><h3>文件一个都不动</h3>只整理视野，不移动、不删除任何文件。随时退出，桌面原样回来。</li>
+          <li><h3>文件一个都不动</h3>只整理视野，不移动、不删除任何文件。随时关掉，桌面还是原来的样子。</li>
           <li><h3>来自微软商店</h3>经微软审核，一键安装，后台静默更新。</li>
-          <li><h3>布局有备份</h3>所有屏幕用同一套布局，每天自动备份。</li>
           <li><h3>不收集数据</h3>无账号，无广告，不追踪。一切只留在你的电脑里。</li>
         </ul>
         <a class="pulse reveal" href="/changelog/">版本 1.14.0 · 2026 年 11 月 23 日 · 更新日志</a>
@@ -303,7 +406,7 @@
           </details>
           <details>
             <summary>安全软件（360、火绒等）弹出提示？</summary>
-            <p>"在桌面上打字就搜索"需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能，可以在 设置 › 通用 里关掉。</p>
+            <p>“在桌面上打字就搜索”需要接收键盘输入，有的安全软件会提示，选择允许就行。不想用这个功能，可以在 设置 › 通用 里关掉。</p>
           </details>
           <details>
             <summary>会收集我的数据吗？</summary>
@@ -345,7 +448,6 @@
             <li><a href="#features">功能</a></li>
             <li><a href="#price">价格</a></li>
             <li><a href="/changelog/">更新日志（英文）</a></li>
-            <li><a href="/" hreflang="en" lang="en">English</a></li>
           </ul>
         </div>
         <div>

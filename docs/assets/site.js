@@ -174,3 +174,53 @@ function fileFor(video) {
     dialog.showModal();
   });
 })();
+
+// The language menu closes like a menu: a click elsewhere or Esc. Picking a language is remembered.
+(function () {
+  const menu = document.querySelector('.lang');
+  if (!menu) return;
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+  menu.querySelectorAll('a[data-lang]').forEach(link => link.addEventListener('click', () => {
+    try { localStorage.setItem('springdesk-lang', link.dataset.lang); } catch (e) { /* storage blocked */ }
+  }));
+})();
+
+// A home page in another language than the visitor's, when theirs exists: a quiet offer, once. Never a redirect.
+(function () {
+  const menu = document.querySelector('.lang');
+  if (!menu || !document.body.hasAttribute('data-home')) return;
+  let chosen;
+  try { chosen = localStorage.getItem('springdesk-lang'); } catch (e) { return; }
+  if (chosen) return;
+  const links = new Map([...menu.querySelectorAll('a[data-lang]')].map(link => [link.dataset.lang, link]));
+  const here = menu.querySelector('a[aria-current]');
+  if (!here) return;
+  let wanted;
+  for (const tag of navigator.languages || [navigator.language || '']) {
+    const t = tag.toLowerCase();
+    const code = t.startsWith('zh') ? (/hant|tw|hk|mo/.test(t) ? 'zh-Hant' : 'zh-Hans')
+               : t.startsWith('pt') ? 'pt-BR' : t.split('-')[0];
+    if (links.has(code)) { wanted = code; break; }
+  }
+  if (!wanted || wanted === here.dataset.lang) return;
+  const target = links.get(wanted);
+  const note = document.createElement('div');
+  note.className = 'lang-hint';
+  note.lang = target.lang;
+  const go = document.createElement('a');
+  go.href = target.getAttribute('href');
+  go.hreflang = target.hreflang;
+  go.textContent = target.dataset.suggest;
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.textContent = '×';
+  close.setAttribute('aria-label', menu.dataset.close || 'Close');
+  const remember = code => { try { localStorage.setItem('springdesk-lang', code); } catch (e) { /* storage blocked */ } };
+  go.addEventListener('click', () => remember(wanted));
+  close.addEventListener('click', () => { remember(here.dataset.lang); note.remove(); });
+  note.append(go, close);
+  document.body.append(note);
+})();

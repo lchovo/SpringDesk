@@ -1,17 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- home pages: tools/site/home.py -->
   <url>
     <loc>https://springdesk.app/</loc>
     <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/de/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/es/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/fr/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/it/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/pt/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/ja/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <url>
+    <loc>https://springdesk.app/ko/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
   </url>
   <url>
     <loc>https://springdesk.app/zh/</loc>
     <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
   </url>
+  <url>
+    <loc>https://springdesk.app/zh-hant/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://springdesk.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://springdesk.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://springdesk.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://springdesk.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://springdesk.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://springdesk.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://springdesk.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://springdesk.app/"/>
+  </url>
+  <!-- /home pages -->
   <url><loc>https://springdesk.app/fences-alternative/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://springdesk.app/best-desktop-organizer-windows-11/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://springdesk.app/guides/organize-windows-11-desktop/</loc><lastmod>2026-11-11</lastmod></url>
