@@ -351,9 +351,83 @@
         <ul>
           <li>Nouveau : première version dans le Microsoft Store, avec 7 jours d’essai gratuit.</li>
         </ul>
-
       <h2>Avant le Microsoft Store</h2>
       <p>Les versions 1.0 à 1.3 (16–17 octobre 2026) étaient d’anciennes versions gratuites sur GitHub. Elles ne sont plus disponibles ; la version du Store les a remplacées et reprend leurs dispositions.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· 17 octobre 2026</span></h2>
+        <ul>
+          <li>Corrigé : les miniatures de photos dans les boîtes pouvaient s’afficher à l’envers. Elles sont désormais à l’endroit.</li>
+          <li>Corrigé : un nom d’icône qui tenait tout juste sur une ligne pouvait perdre sa dernière lettre (comme « Packing List.tx »). Les noms longs passent désormais à la ligne suivante.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· 17 octobre 2026</span></h2>
+        <ul>
+          <li>Corrigé : les longs fichiers texte en chinois pouvaient s’afficher en caractères illisibles dans l’aperçu. Ils s’affichent désormais proprement.</li>
+          <li>Corrigé : lors de l’aperçu avec plusieurs icônes sélectionnées, les touches fléchées pouvaient sortir de la sélection au lieu de parcourir uniquement ces éléments. Elles suivent désormais les boutons ‹ › et conservent votre sélection.</li>
+          <li>Corrigé : l’aperçu d’images que Windows ne sait pas ouvrir seul (comme une photo HEIC d’iPhone sans extension) pouvait laisser SpringDesk consommer davantage de mémoire ensuite. La mémoire revient désormais à la normale après la fermeture.</li>
+          <li>Corrigé : modifier et enregistrer une image sur le bureau ne mettait pas sa miniature à jour aussitôt. La nouvelle miniature apparaît désormais immédiatement.</li>
+          <li>Corrigé : dans une boîte de dossier triée par date de modification, modifier un fichier ne le faisait pas remonter en haut. Les fichiers modifiés remontent désormais en tête.</li>
+          <li>Corrigé : rétablir une ancienne disposition pouvait aussi réinitialiser votre thème, les interrupteurs des paramètres et l’état de verrouillage. La restauration ne ramène désormais que vos boîtes.</li>
+          <li>Corrigé : de nouveaux fichiers du bureau pouvaient manquer lorsqu’il n’y avait pas de boîte de réception (par exemple après avoir rétabli une ancienne disposition ou lorsque l’écran était rempli de boîtes). SpringDesk crée désormais une boîte de réception ou ajoute le fichier dans un nouvel onglet s’il n’y a plus de place.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· 17 octobre 2026</span></h2>
+        <ul>
+          <li>Nouveau : appuyez sur Espace sur une icône sélectionnée pour en afficher l’aperçu sans ouvrir le fichier, puis appuyez sur Espace ou Échap pour le fermer. SpringDesk affiche directement images, vidéos, audio, texte, code et PDF, et montre une fiche d’informations pour Word, Excel, PowerPoint, les archives zip, les programmes, les dossiers et autres éléments.</li>
+          <li>Nouveau : parcourez les aperçus avec les touches fléchées (ou uniquement parmi les éléments sélectionnés quand plusieurs sont choisis), cliquez sur une autre icône pour changer, zoomez et déplacez les images, lisez directement les vidéos ou appuyez sur Entrée pour ouvrir. Les boutons du haut permettent de choisir « Ouvrir avec … », d’agrandir ou de fermer.</li>
+          <li>Nouveau : utilisez les touches fléchées dans une boîte pour déplacer la sélection, comme sur le bureau Windows.</li>
+          <li>Nouveau : thèmes clair et sombre pour les boîtes, les Paramètres, les boîtes de dialogue, les menus, la recherche et le menu de la zone de notification. Choisissez Clair, Sombre ou Automatique dans Paramètres › Apparence › Thème (Automatique suit Windows immédiatement) ; les teintes de couleur sont retirées tandis que le curseur d’opacité reste en place.</li>
+          <li>Amélioré : Paramètres › Général › Bureau place « Afficher les icônes du Bureau » et « Afficher aussi les icônes propres à Windows » côte à côte, et votre choix pour les icônes de Windows est désormais mémorisé.</li>
+          <li>Amélioré : « Paramètres… » a été retiré du menu contextuel de chaque boîte ; ouvrez les Paramètres depuis l’icône de la zone de notification.</li>
+          <li>Amélioré : lors de la première utilisation, la colonne de droite place Dossiers au-dessus de la boîte de tri et de la boîte de dossier Téléchargements afin que les deux restent côte à côte.</li>
+          <li>Corrigé : les noms de fichiers dans les résultats de recherche sur le bureau apparaissaient en noir sur un fond sombre. Ils sont désormais lisibles.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· 17 octobre 2026</span></h2>
+        <ul>
+          <li>Nouveau : SpringDesk prend désormais en charge l’anglais en plus du chinois. Il suit la langue d’affichage de Windows, ou vous pouvez en changer à tout moment dans Paramètres › Général › Langue avec effet immédiat.</li>
+          <li>Nouveau : les noms par défaut attribués par SpringDesk à vos boîtes et onglets (Boîte de réception, Favoris, Onglet 2 et onglets de la boîte de tri) changent avec la langue, tandis que les noms que vous avez saisis restent tels quels. En anglais, ces noms sont box, sorting box, folder box et Inbox.</li>
+          <li>Nouveau : Paramètres remplace le centre de contrôle avec quatre pages (Général, Tri, Apparence et À propos), regroupant les options liées et affichant les informations de version, les mises à jour et l’export du diagnostic dans À propos.</li>
+          <li>Nouveau : les invites et confirmations utilisent désormais la boîte de dialogue dépolie propre à SpringDesk avec des boutons d’action (« Supprimer », « Restaurer ») au lieu de boîtes Oui / Non génériques.</li>
+          <li>Amélioré : renommer, verrouiller et supprimer une boîte reviennent dans le menu contextuel de chaque boîte, et « Rétablir une ancienne disposition » se trouve dans Paramètres › Général.</li>
+          <li>Amélioré : « Ramener les boîtes hors écran » a été retiré, car SpringDesk garde automatiquement chaque boîte à l’écran au démarrage et lors des changements d’affichage.</li>
+          <li>Amélioré : les dispositions sont désormais sauvegardées une fois par jour avant la première modification de la journée au lieu de ne conserver que les dix dernières modifications, afin qu’un grand réaménagement n’efface jamais les jours précédents. Rétablir une sauvegarde enregistre d’abord votre disposition actuelle, ne touche jamais à vos fichiers et place les fichiers plus récents ou renommés dans la boîte de réception.</li>
+          <li>Amélioré : les textes dans toute l’application sont plus courts et plus cohérents, et les options de tri du menu contextuel d’une boîte sont désormais regroupées sous Trier par.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· 17 octobre 2026</span></h2>
+        <ul>
+          <li>Nouveau : la boîte « Fichiers » devient une boîte de tri avec un onglet par type de fichier (documents, feuilles de calcul, présentations, PDF et images, plus en option vidéos, archives, programmes d’installation, liens web et icônes système), tout en gardant vos fichiers existants à leur place.</li>
+          <li>Nouveau : activez ou désactivez les onglets de la boîte de tri et le tri automatique par type par un clic droit sur la barre de titre › Onglets ou sur la nouvelle page Tri du centre de contrôle. Activer le tri automatique transfère les fichiers correspondants depuis la boîte de réception, et fermer un onglet renvoie ses fichiers dans la boîte de réception.</li>
+          <li>Nouveau : faites glisser depuis un espace vide dans une boîte pour sélectionner plusieurs icônes, comme sur le bureau Windows. Maintenez Ctrl pour ajouter ou retirer des éléments, et approchez du bord supérieur ou inférieur pour faire défiler.</li>
+          <li>Nouveau : faites un clic droit sur l’onglet ou la barre de titre d’une boîte de dossier › Ouvrir dans l’Explorateur pour ouvrir son dossier même lorsque la boîte est pleine.</li>
+          <li>Amélioré : les onglets de la boîte de tri n’acceptent que les types de fichiers qui leur correspondent et renvoient les éléments incompatibles d’où ils viennent.</li>
+          <li>Amélioré : les nouveaux raccourcis de programmes et les nouveaux dossiers patientent dans la boîte de réception au lieu de se ranger automatiquement.</li>
+          <li>Amélioré : copier et couper entre les boîtes et l’Explorateur de fichiers fonctionnent comme sous Windows, avec la boîte de dialogue de conflit de Windows lorsqu’un nom est déjà pris et « nom - Copie » lors du collage dans le même dossier. Entre boîtes du bureau, couper déplace l’icône tandis que copier affiche une indication invitant à utiliser Couper.</li>
+          <li>Amélioré : Ctrl+C, Ctrl+X et Suppr répondent immédiatement, et le premier clic droit après le démarrage de SpringDesk ne marque plus de temps d’arrêt.</li>
+          <li>Corrigé : la consommation de mémoire de SpringDesk pouvait augmenter lentement au fil des clics droits ou des copies. La mémoire reste désormais stable.</li>
+          <li>Corrigé : basculer une option sur la page Tri ou un onglet dans la boîte de tri faisait rejouer l’animation à tous les autres interrupteurs de la page. Ils restent désormais immobiles.</li>
+          <li>Corrigé : les fichiers créés dans une boîte avec Nouveau pouvaient apparaître brièvement dans la boîte de réception ou sauter vers un onglet de la boîte de tri. Ils restent désormais dans la boîte où vous les avez créés, tandis que les fichiers venant d’ailleurs continuent d’être triés par type.</li>
+          <li>Corrigé : enregistrer un fichier du bureau dans Excel ou Word pouvait le sortir de la boîte où vous l’aviez placé. Il reste désormais à sa place.</li>
+          <li>Corrigé : déplacer une icône vers un nouvel emplacement dans la même boîte pouvait la faire revenir en volant depuis son ancienne place au lieu de se poser directement.</li>
+          <li>Corrigé : les raccourcis clavier tels que Ctrl+C, Ctrl+X, Ctrl+V, Suppr et F2 ne fonctionnaient qu’juste après avoir cliqué sur une icône. Ils fonctionnent désormais après un clic n’importe où dans une boîte, y compris sur un espace vide, un onglet ou la barre de titre.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· 16 octobre 2026</span></h2>
+        <ul>
+          <li>Nouveau : première version, proposée gratuitement sur GitHub. Anciennement DeskFlow, désormais SpringDesk. Nécessite Windows 11.</li>
+          <li>Nouveau : créez, renommez, déplacez et redimensionnez les boîtes, ou enroulez une boîte jusqu’à sa barre de titre.</li>
+          <li>Nouveau : organisez plusieurs groupes d’icônes en onglets dans une même boîte, et déposez une boîte sur la barre de titre d’une autre pour les fusionner.</li>
+          <li>Nouveau : affichez n’importe quel dossier (comme Téléchargements) directement sur votre bureau dans une boîte de dossier.</li>
+          <li>Nouveau : organisez automatiquement votre bureau à la première utilisation en boîtes pour les programmes, fichiers, dossiers et téléchargements, les éléments non classés étant placés dans la boîte de réception.</li>
+          <li>Nouveau : rangez les nouveaux fichiers du bureau par type dans les boîtes correspondantes.</li>
+          <li>Nouveau : alignez les boîtes sur une grille afin qu’elles restent ordonnées sans se chevaucher.</li>
+          <li>Nouveau : verrouillez votre disposition pour éviter les déplacements accidentels.</li>
+          <li>Nouveau : placez les icônes récemment ouvertes en tête de leur boîte.</li>
+          <li>Nouveau : survolez une icône pour voir les mêmes détails de fichier que ceux affichés par Windows.</li>
+          <li>Nouveau : désactivez l’option « Afficher les icônes du Bureau » de Windows pour masquer également vos boîtes.</li>
+          <li>Nouveau : cliquez sur le bureau ou dans une boîte et commencez à taper pour rechercher, y compris par initiales pinyin chinoises (par exemple taper « wx » pour trouver « 微信 »).</li>
+          <li>Nouveau : appuyez sur Ctrl+Alt+Espace pour rechercher de n’importe où.</li>
+          <li>Nouveau : réglez la transparence et la teinte, verrouillez votre disposition et sauvegardez ou restaurez vos dispositions dans le centre de contrôle.</li>
+          <li>Nouveau : un programme d’installation, avec lancement de SpringDesk par défaut au démarrage de Windows.</li>
+          <li>Nouveau : recevez une notification lorsqu’une nouvelle version est prête et redémarrez en un clic pour mettre à jour.</li>
+          <li>Nouveau : exportez le diagnostic dans centre de contrôle › À propos lors du signalement d’un problème.</li>
+          <li>Nouveau : mettez à niveau depuis DeskFlow en conservant vos boîtes et votre réglage de démarrage, l’ancienne version étant supprimée automatiquement.</li>
+        </ul>
     </main>
   </div>
 

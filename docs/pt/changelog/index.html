@@ -351,9 +351,83 @@
         <ul>
           <li>Novo: primeiro lançamento na Microsoft Store, com 7 dias de avaliação gratuita.</li>
         </ul>
-
       <h2>Antes da Microsoft Store</h2>
       <p>As versões 1.0 a 1.3 (16 a 17 de outubro de 2026) foram compilações gratuitas iniciais no GitHub. Elas não estão mais disponíveis; a versão da Store as substituiu e assume seus layouts.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· 17 de outubro de 2026</span></h2>
+        <ul>
+          <li>Corrigido: as miniaturas de fotos nas caixas podiam aparecer de cabeça para baixo. Agora elas são exibidas na orientação correta.</li>
+          <li>Corrigido: um nome de ícone que cabia por pouco em uma linha podia perder a última letra (como “Packing List.tx”). Nomes longos agora quebram para uma segunda linha.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· 17 de outubro de 2026</span></h2>
+        <ul>
+          <li>Corrigido: arquivos de texto longos em chinês podiam aparecer com caracteres ilegíveis na visualização. Agora eles são exibidos corretamente.</li>
+          <li>Corrigido: ao visualizar com vários ícones selecionados, as teclas de seta podiam sair da seleção em vez de percorrer apenas esses itens. Agora elas funcionam como os botões ‹ › e mantêm sua seleção.</li>
+          <li>Corrigido: visualizar imagens que o Windows não consegue abrir sozinho (como uma foto HEIC do iPhone sem a extensão) podia fazer o SpringDesk continuar usando memória extra depois. A memória agora volta ao normal ao fechar.</li>
+          <li>Corrigido: editar e salvar uma imagem na área de trabalho não atualizava sua miniatura na hora. A nova miniatura agora aparece imediatamente.</li>
+          <li>Corrigido: em uma caixa de pasta classificada por data de modificação, editar um arquivo não o movia para o topo. Arquivos alterados agora vão para o topo.</li>
+          <li>Corrigido: restaurar um layout anterior também podia redefinir seu tema, as chaves de configuração e o estado de bloqueio. A restauração agora traz de volta apenas as suas caixas.</li>
+          <li>Corrigido: arquivos novos na área de trabalho podiam sumir quando não havia Caixa de entrada (por exemplo, após restaurar um layout antigo ou quando a tela estava cheia de caixas). O SpringDesk agora cria uma Caixa de entrada ou adiciona o arquivo a uma nova aba quando não há espaço livre.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· 17 de outubro de 2026</span></h2>
+        <ul>
+          <li>Novo: pressione Espaço em um ícone selecionado para visualizá-lo sem abrir o arquivo e pressione Espaço ou Esc para fechar. O SpringDesk exibe imagens, vídeos, áudio, texto, código e PDFs diretamente, e mostra um cartão de detalhes para Word, Excel, PowerPoint, arquivos zip, programas, pastas e outros itens.</li>
+          <li>Novo: navegue pelas visualizações com as teclas de seta (ou apenas entre os itens selecionados quando vários estiverem marcados), clique em outro ícone para alternar, dê zoom e mova imagens, reproduza vídeos diretamente ou pressione Enter para abrir. Os botões superiores permitem escolher “Abrir com …”, maximizar ou fechar.</li>
+          <li>Novo: pressione as teclas de seta dentro de uma caixa para mover a seleção, como na área de trabalho do Windows.</li>
+          <li>Novo: temas claro e escuro nas caixas, Configurações, caixas de diálogo, menus, pesquisa e no menu da bandeja. Escolha Claro, Escuro ou Automático em Configurações › Aparência › Tema (Automático acompanha o Windows imediatamente); as cores de tonalidade foram removidas, enquanto o controle deslizante de opacidade permanece.</li>
+          <li>Melhorado: Configurações › Geral › Área de trabalho coloca “Mostrar ícones da área de trabalho” e “Mostrar também os ícones próprios do Windows” lado a lado, e sua escolha para os ícones próprios do Windows agora é lembrada.</li>
+          <li>Melhorado: removido “Configurações…” do menu do botão direito de cada caixa; abra as Configurações pelo ícone na bandeja.</li>
+          <li>Melhorado: no primeiro uso, a coluna da direita organiza Pastas acima da caixa de triagem e da caixa de pasta Downloads para que as duas fiquem juntas.</li>
+          <li>Corrigido: nomes de arquivos nos resultados da pesquisa na área de trabalho apareciam em texto preto sobre fundo escuro. Agora eles estão legíveis.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· 17 de outubro de 2026</span></h2>
+        <ul>
+          <li>Novo: o SpringDesk agora oferece suporte ao inglês além do chinês. Ele segue o idioma de exibição do Windows, ou você pode trocar quando quiser em Configurações › Geral › Idioma e a alteração passa a valer na hora.</li>
+          <li>Novo: os nomes padrão que o SpringDesk deu às suas caixas e abas (Caixa de entrada, Favoritos, Aba 2 e abas da caixa de triagem) mudam junto com o idioma, enquanto os nomes que você digitou continuam como estão. Em inglês, os nomes são box, sorting box, folder box e Inbox.</li>
+          <li>Novo: Configurações substitui o centro de controle com quatro páginas (Geral, Organização, Aparência e Sobre), agrupando opções relacionadas e exibindo informações de versão, atualizações de software e exportação de diagnóstico em Sobre.</li>
+          <li>Novo: avisos e confirmações agora usam a caixa de diálogo fosca própria do SpringDesk com botões de ação (“Excluir”, “Restaurar”) em vez de caixas genéricas de Sim / Não.</li>
+          <li>Melhorado: renomear, bloquear e excluir uma caixa voltam para o menu do botão direito de cada caixa, e “Restaurar um layout anterior” fica em Configurações › Geral.</li>
+          <li>Melhorado: removido “Trazer de volta caixas fora da tela”, pois o SpringDesk mantém todas as caixas na tela automaticamente na inicialização e quando os monitores mudam.</li>
+          <li>Melhorado: os layouts agora têm cópia de segurança uma vez por dia, antes da primeira alteração do dia, em vez de guardar apenas as últimas dez edições, para que uma grande reorganização nunca apague dias anteriores. Restaurar uma cópia salva seu layout atual primeiro, nunca toca nos seus arquivos e coloca arquivos mais novos ou renomeados na Caixa de entrada.</li>
+          <li>Melhorado: os textos em todo o aplicativo ficaram mais curtos e consistentes, e as opções de classificação no menu do botão direito da caixa agora ficam agrupadas em Classificar por.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· 17 de outubro de 2026</span></h2>
+        <ul>
+          <li>Novo: a caixa “Arquivos” passa a ser uma caixa de triagem com uma aba por tipo de arquivo (documentos, planilhas, apresentações, PDF e imagens, além das opções vídeos, arquivos compactados, instaladores, links da web e ícones do sistema), mantendo seus arquivos existentes onde estavam.</li>
+          <li>Novo: ative ou desative as abas da caixa de triagem e a organização automática por tipo clicando com o botão direito na barra de título › Abas ou na nova página Organização no centro de controle. Ativar a organização automática traz os arquivos correspondentes da Caixa de entrada, e fechar uma aba devolve os arquivos dela para a Caixa de entrada.</li>
+          <li>Novo: arraste a partir de um espaço vazio em uma caixa para selecionar vários ícones, como na área de trabalho do Windows. Segure Ctrl para adicionar ou remover itens e arraste perto da borda superior ou inferior para rolar.</li>
+          <li>Novo: clique com o botão direito na aba ou na barra de título de uma caixa de pasta › Abrir no Explorador de Arquivos para abrir a pasta mesmo quando a caixa estiver cheia.</li>
+          <li>Melhorado: as abas da caixa de triagem aceitam apenas os tipos de arquivo correspondentes, devolvendo os itens incompatíveis para onde vieram.</li>
+          <li>Melhorado: novos atalhos de programas e pastas aguardam na Caixa de entrada em vez de se organizarem automaticamente.</li>
+          <li>Melhorado: copiar e recortar entre caixas e o Explorador de Arquivos funcionam como no Windows, com a caixa de diálogo de conflito do próprio Windows quando um nome já existe e “nome - Copia” ao colar na mesma pasta. Entre caixas da área de trabalho, recortar move o ícone, enquanto copiar mostra uma dica para usar recortar.</li>
+          <li>Melhorado: Ctrl+C, Ctrl+X e Delete respondem imediatamente, e o primeiro clique com o botão direito após iniciar o SpringDesk não trava mais.</li>
+          <li>Corrigido: o uso de memória do SpringDesk podia crescer aos poucos quanto mais você clicava com o botão direito ou copiava. A memória agora permanece estável.</li>
+          <li>Corrigido: alternar uma opção na página Organização ou uma aba na caixa de triagem fazia todas as outras chaves da página repetirem a animação. Agora elas permanecem paradas.</li>
+          <li>Corrigido: arquivos criados dentro de uma caixa com Novo podiam piscar na Caixa de entrada ou pular para uma aba da caixa de triagem. Agora eles permanecem na caixa onde você os criou, enquanto arquivos vindos de outro lugar continuam sendo organizados por tipo.</li>
+          <li>Corrigido: salvar um arquivo da área de trabalho no Excel ou Word podia tirá-lo da caixa onde você o colocou. Agora ele permanece no lugar.</li>
+          <li>Corrigido: arrastar um ícone para um novo lugar na mesma caixa podia fazê-lo voar do lugar antigo em vez de cair direto no lugar novo.</li>
+          <li>Corrigido: atalhos de teclado como Ctrl+C, Ctrl+X, Ctrl+V, Delete e F2 só funcionavam logo após clicar em um ícone. Agora eles funcionam depois de clicar em qualquer lugar dentro de uma caixa, incluindo um espaço vazio, uma aba ou a barra de título.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· 16 de outubro de 2026</span></h2>
+        <ul>
+          <li>Novo: primeiro lançamento, como versão gratuita no GitHub. Antes DeskFlow, agora SpringDesk. Requer o Windows 11.</li>
+          <li>Novo: crie, renomeie, mova e redimensione caixas, ou recolha uma caixa deixando só a barra de título.</li>
+          <li>Novo: organize vários grupos de ícones como abas dentro de uma única caixa e solte uma caixa sobre a barra de título de outra para mesclá-las.</li>
+          <li>Novo: exiba qualquer pasta (como Downloads) diretamente na área de trabalho em uma caixa de pasta.</li>
+          <li>Novo: organiza automaticamente sua área de trabalho no primeiro uso em caixas para programas, arquivos, pastas e downloads, colocando os itens sem categoria na Caixa de entrada.</li>
+          <li>Novo: organiza novos arquivos da área de trabalho em suas caixas correspondentes por tipo.</li>
+          <li>Novo: alinha as caixas a uma grade para que fiquem alinhadas sem se sobrepor.</li>
+          <li>Novo: bloqueie seu layout para evitar arrastos acidentais.</li>
+          <li>Novo: move os ícones abertos recentemente para a frente da caixa.</li>
+          <li>Novo: passe o cursor sobre um ícone para ver os mesmos detalhes do arquivo que o Windows mostra.</li>
+          <li>Novo: desative “Mostrar ícones da área de trabalho” do Windows para ocultar suas caixas também.</li>
+          <li>Novo: clique na área de trabalho ou em uma caixa e comece a digitar para pesquisar, inclusive pelas iniciais em pinyin chinês (como digitar “wx” para encontrar “微信”).</li>
+          <li>Novo: pressione Ctrl+Alt+Espaço para pesquisar de qualquer lugar.</li>
+          <li>Novo: ajuste a transparência e a tonalidade, bloqueie seu layout e faça cópias de segurança ou restaure layouts no centro de controle.</li>
+          <li>Novo: inclui instalador, e o SpringDesk inicia com o Windows por padrão.</li>
+          <li>Novo: receba uma notificação quando uma nova versão estiver pronta e reinicie para atualizar com um clique.</li>
+          <li>Novo: exporte o diagnóstico em centro de controle › Sobre ao relatar um problema.</li>
+          <li>Novo: atualize a partir do DeskFlow mantendo suas caixas e a configuração de inicialização, com a versão antiga removida automaticamente.</li>
+        </ul>
     </main>
   </div>
 

@@ -352,9 +352,83 @@
         <ul>
           <li>New: first release in the Microsoft Store, with a 7-day free trial.</li>
         </ul>
-
       <h2>Before the Microsoft Store</h2>
       <p>Versions 1.0 to 1.3 (October 16–17, 2026) were early free builds on GitHub. They are no longer available; the Store version replaced them and takes over their layouts.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>Fixed: photo thumbnails in boxes could appear upside down. They are now right-side up.</li>
+          <li>Fixed: an icon name that barely fit on one line could lose its last letter (such as “Packing List.tx”). Long names now wrap to a second line instead.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>Fixed: long Chinese text files could appear as garbled characters in preview. They now display cleanly.</li>
+          <li>Fixed: when previewing with several icons selected, the arrow keys could step outside the selection instead of paging through just those items. They now match the ‹ › buttons and keep your selection.</li>
+          <li>Fixed: previewing pictures that Windows cannot open on its own (such as an iPhone HEIC photo without the extension) could leave SpringDesk using extra memory afterward. Memory now returns to normal after closing.</li>
+          <li>Fixed: editing and saving a picture on the desktop did not update its thumbnail right away. The new thumbnail now appears at once.</li>
+          <li>Fixed: in a folder box sorted by date modified, editing a file did not move it to the top. Changed files now move to the top.</li>
+          <li>Fixed: restoring an earlier layout could also reset your theme, settings switches and lock state. Restoring now brings back only your boxes.</li>
+          <li>Fixed: new desktop files could go missing when there was no Inbox (for example, after restoring an older layout or when the screen was full of boxes). SpringDesk now creates an Inbox or adds the file to a new tab when no space is left.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>New: press Space on a selected icon to preview it without opening the file, and press Space or Esc to close. SpringDesk displays pictures, videos, audio, text, code and PDFs directly, and shows a details card for Word, Excel, PowerPoint, zip files, programs, folders and other items.</li>
+          <li>New: move through previews with the arrow keys (or only among your selected items when multiple are chosen), click another icon to switch, zoom and pan pictures, play videos directly, or press Enter to open. Top buttons let you choose “Open with …”, maximize or close.</li>
+          <li>New: press the arrow keys inside a box to move the selection, as on the Windows desktop.</li>
+          <li>New: light and dark themes across boxes, Settings, dialogs, menus, search and the tray menu. Choose Light, Dark or Auto in Settings › Appearance › Theme (Auto follows Windows immediately); tint colors are removed while the opacity slider remains.</li>
+          <li>Improved: Settings › General › Desktop places “Show desktop icons” and “Also show Windows’ own icons” side by side, and your choice for Windows’ own icons is now remembered.</li>
+          <li>Improved: removed “Settings…” from each box’s right-click menu; open Settings from the tray icon instead.</li>
+          <li>Improved: on first use, the right column arranges Folders above the sorting box and the Downloads folder box so the two sit together.</li>
+          <li>Fixed: file names in desktop search results appeared in black text on a dark background. They are now readable.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>New: SpringDesk now supports English alongside Chinese. It follows your Windows display language, or you can switch anytime in Settings › General › Language and the change takes effect at once.</li>
+          <li>New: default names SpringDesk gave your boxes and tabs (Inbox, Favorites, Tab 2 and sorting box tabs) switch with the language, while names you typed stay as they are. In English, the names are box, sorting box, folder box and Inbox.</li>
+          <li>New: Settings replaces the control center with four pages (General, Sorting, Appearance and About), grouping related options together and showing version info, software updates and diagnostics export under About.</li>
+          <li>New: prompts and confirmations now use SpringDesk’s own frosted dialog with action buttons (“Delete”, “Restore”) instead of generic Yes / No dialogs.</li>
+          <li>Improved: renaming, locking and deleting a box move back to each box’s right-click menu, and “Restore an earlier layout” sits in Settings › General.</li>
+          <li>Improved: removed “Bring back off-screen boxes”, as SpringDesk keeps every box on screen automatically at startup and when displays change.</li>
+          <li>Improved: layouts are now backed up once a day before the day’s first change instead of keeping only the last ten edits, so a big rearrangement never pushes out earlier days. Restoring a backup saves your current layout first, never touches your files, and places newer or renamed files in the Inbox.</li>
+          <li>Improved: wording across the app is shorter and more consistent, and sort options in a box’s right-click menu are now grouped under Sort by.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· October 17, 2026</span></h2>
+        <ul>
+          <li>New: the “Files” box becomes a sorting box with one tab per file type (documents, spreadsheets, presentations, PDF and pictures, plus optional videos, archives, installers, web links and system icons), keeping your existing files where they were.</li>
+          <li>New: switch sorting box tabs and per-type auto-sorting on or off by right-clicking the title bar › Tabs or on the new Sorting page in the control center. Turning on auto-sort brings matching files over from the Inbox, and closing a tab returns its files to the Inbox.</li>
+          <li>New: drag from an empty spot in a box to select multiple icons, as on the Windows desktop. Hold Ctrl to add or remove items, and drag near the top or bottom edge to scroll.</li>
+          <li>New: right-click a folder box’s tab or title bar › Open in Explorer to open its folder even when the box is full.</li>
+          <li>Improved: sorting box tabs accept only their matching file types, sending mismatched items back where they came from.</li>
+          <li>Improved: new program shortcuts and folders wait in the Inbox instead of filing themselves automatically.</li>
+          <li>Improved: copying and cutting between boxes and File Explorer work like Windows, with Windows’ own conflict dialog when a name is taken and “name - Copy” when pasting into the same folder. Between desktop boxes, cutting moves the icon while copying shows a hint to use cut instead.</li>
+          <li>Improved: Ctrl+C, Ctrl+X and Delete respond immediately, and the first right-click after starting SpringDesk no longer stalls.</li>
+          <li>Fixed: SpringDesk’s memory use could slowly grow the more you right-clicked or copied. Memory now stays steady.</li>
+          <li>Fixed: toggling one option on the Sorting page or a tab in the sorting box caused all other switches on the page to replay their animation. They now stay still.</li>
+          <li>Fixed: files created inside a box with New could flash in the Inbox or jump to a sorting box tab. They now stay in the box where you created them, while files arriving from elsewhere still sort by type.</li>
+          <li>Fixed: saving a desktop file in Excel or Word could move it out of the box you put it in. It now stays in place.</li>
+          <li>Fixed: dragging an icon to a new spot in the same box could make it fly over from its old spot instead of dropping straight into place.</li>
+          <li>Fixed: keyboard shortcuts such as Ctrl+C, Ctrl+X, Ctrl+V, Delete and F2 only worked right after clicking an icon. They now work after clicking anywhere in a box, including an empty spot, a tab or the title bar.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· October 16, 2026</span></h2>
+        <ul>
+          <li>New: first release, as a free build on GitHub. Formerly DeskFlow, now SpringDesk. Requires Windows 11.</li>
+          <li>New: create, rename, move and resize boxes, or roll a box up to its title bar.</li>
+          <li>New: organize multiple groups of icons as tabs inside one box, and drop a box onto another box’s title bar to merge them.</li>
+          <li>New: show any folder (such as Downloads) directly on your desktop in a folder box.</li>
+          <li>New: automatically sort your desktop on first use into boxes for programs, files, folders and downloads, with uncategorized items placed in the Inbox.</li>
+          <li>New: sort new desktop files into their matching boxes by type.</li>
+          <li>New: snap boxes to a grid so they stay aligned without overlapping.</li>
+          <li>New: lock your layout to prevent accidental drags.</li>
+          <li>New: move recently opened icons to the front of their box.</li>
+          <li>New: hover over an icon to see the same file details Windows shows.</li>
+          <li>New: turn off Windows’ “Show desktop icons” to hide your boxes as well.</li>
+          <li>New: click the desktop or a box and start typing to search, including by Chinese pinyin initials (such as typing “wx” to find “微信”).</li>
+          <li>New: press Ctrl+Alt+Space to search from anywhere.</li>
+          <li>New: adjust transparency and tint, lock your layout, and back up or restore layouts in the control center.</li>
+          <li>New: an installer, and SpringDesk starts with Windows by default.</li>
+          <li>New: get notified when a new version is ready and restart to update in one click.</li>
+          <li>New: export diagnostics in control center › About when reporting an issue.</li>
+          <li>New: upgrade from DeskFlow while keeping your boxes and startup setting, with the old version removed automatically.</li>
+        </ul>
     </main>
   </div>
 

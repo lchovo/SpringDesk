@@ -351,9 +351,83 @@
         <ul>
           <li>Nuevo: primera versión en Microsoft Store, con 7 días de prueba gratuita.</li>
         </ul>
-
       <h2>Antes de Microsoft Store</h2>
       <p>Las versiones 1.0 a 1.3 (16–17 de octubre de 2026) fueron compilaciones gratuitas iniciales en GitHub. Ya no están disponibles; la versión de la Store las sustituyó y conserva sus distribuciones.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· 17 de octubre de 2026</span></h2>
+        <ul>
+          <li>Corregido: las miniaturas de fotos en las cajas podían aparecer boca abajo. Ahora se muestran en la orientación correcta.</li>
+          <li>Corregido: el nombre de un icono que cabía justo en una línea podía perder su última letra (como “Packing List.tx”). Ahora los nombres largos pasan a una segunda línea.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· 17 de octubre de 2026</span></h2>
+        <ul>
+          <li>Corregido: los archivos de texto largos en chino podían mostrarse con caracteres ilegibles en la vista previa. Ahora se muestran con claridad.</li>
+          <li>Corregido: al previsualizar con varios iconos seleccionados, las teclas de flecha podían salirse de la selección en lugar de recorrer solo esos elementos. Ahora coinciden con los botones ‹ › y mantienen tu selección.</li>
+          <li>Corregido: previsualizar imágenes que Windows no puede abrir por sí solo (como una foto HEIC del iPhone sin extensión) podía hacer que SpringDesk siguiera usando memoria adicional después. Ahora la memoria vuelve a la normalidad al cerrar.</li>
+          <li>Corregido: editar y guardar una imagen en el escritorio no actualizaba su miniatura de inmediato. Ahora la nueva miniatura aparece al instante.</li>
+          <li>Corregido: en una caja de carpeta ordenada por fecha de modificación, editar un archivo no lo subía al principio. Ahora los archivos modificados pasan al principio.</li>
+          <li>Corregido: restaurar una distribución anterior también podía restablecer tu tema, los interruptores de configuración y el estado de bloqueo. Ahora restaurar recupera solo tus cajas.</li>
+          <li>Corregido: los archivos nuevos del escritorio podían desaparecer cuando no había bandeja de entrada (por ejemplo, tras restaurar una distribución anterior o cuando la pantalla estaba llena de cajas). SpringDesk ahora crea una bandeja de entrada o añade el archivo a una pestaña nueva cuando no queda espacio.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· 17 de octubre de 2026</span></h2>
+        <ul>
+          <li>Nuevo: pulsa Espacio sobre un icono seleccionado para previsualizarlo sin abrir el archivo, y pulsa Espacio o Esc para cerrar. SpringDesk muestra directamente imágenes, vídeos, audio, texto, código y PDF, y presenta una tarjeta de detalles para Word, Excel, PowerPoint, archivos zip, programas, carpetas y otros elementos.</li>
+          <li>Nuevo: muévete por las vistas previas con las teclas de flecha (o solo entre los elementos seleccionados cuando hay varios), haz clic en otro icono para cambiar, haz zoom y desplaza imágenes, reproduce vídeos directamente o pulsa Entrar para abrir. Los botones superiores permiten elegir “Abrir con …”, maximizar o cerrar.</li>
+          <li>Nuevo: pulsa las teclas de flecha dentro de una caja para mover la selección, igual que en el escritorio de Windows.</li>
+          <li>Nuevo: temas claro y oscuro para cajas, Configuración, diálogos, menús, búsqueda y el menú del área de notificación. Elige Claro, Oscuro o Automático en Configuración › Apariencia › Tema (Automático sigue a Windows de inmediato); se quitan los colores de tinte mientras se mantiene el control deslizante de opacidad.</li>
+          <li>Mejorado: Configuración › General › Escritorio coloca “Mostrar iconos del escritorio” y “Mostrar también los iconos propios de Windows” uno junto al otro, y ahora se recuerda tu elección para los iconos propios de Windows.</li>
+          <li>Mejorado: se quitó “Configuración…” del menú contextual de cada caja; abre Configuración desde el icono del área de notificación.</li>
+          <li>Mejorado: en el primer uso, la columna derecha coloca Carpetas encima de la caja de clasificación y la caja de carpeta Descargas para que queden juntas.</li>
+          <li>Corregido: los nombres de archivo en los resultados de búsqueda del escritorio aparecían en texto negro sobre fondo oscuro. Ahora se leen con claridad.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· 17 de octubre de 2026</span></h2>
+        <ul>
+          <li>Nuevo: SpringDesk ahora admite inglés además de chino. Sigue el idioma de pantalla de Windows, o puedes cambiarlo en cualquier momento en Configuración › General › Idioma con efecto inmediato.</li>
+          <li>Nuevo: los nombres predeterminados que SpringDesk asignó a tus cajas y pestañas (Bandeja de entrada, Favoritos, Pestaña 2 y pestañas de la caja de clasificación) cambian con el idioma, mientras que los nombres que escribiste se mantienen igual. En inglés, los nombres son box, sorting box, folder box e Inbox.</li>
+          <li>Nuevo: Configuración sustituye al centro de control con cuatro páginas (General, Clasificación, Apariencia y Acerca de), agrupando opciones relacionadas y mostrando información de versión, actualizaciones de software y exportación de diagnóstico en Acerca de.</li>
+          <li>Nuevo: los avisos y confirmaciones usan ahora el diálogo esmerilado propio de SpringDesk con botones de acción (“Eliminar”, “Restaurar”) en lugar de diálogos genéricos de Sí / No.</li>
+          <li>Mejorado: cambiar de nombre, bloquear y eliminar una caja vuelven al menú contextual de cada caja, y “Restaurar una distribución anterior” se sitúa en Configuración › General.</li>
+          <li>Mejorado: se quitó “Traer cajas fuera de pantalla”, ya que SpringDesk mantiene cada caja dentro de la pantalla automáticamente al iniciar y cuando cambian las pantallas.</li>
+          <li>Mejorado: las distribuciones se respaldan ahora una vez al día antes del primer cambio del día en lugar de conservar solo las últimas diez ediciones, así una gran reorganización nunca desplaza días anteriores. Al restaurar una copia se guarda primero tu distribución actual, nunca se tocan tus archivos y los archivos más recientes o renombrados se colocan en la bandeja de entrada.</li>
+          <li>Mejorado: la redacción en toda la aplicación es más breve y uniforme, y las opciones de orden en el menú contextual de una caja se agrupan ahora bajo Ordenar por.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· 17 de octubre de 2026</span></h2>
+        <ul>
+          <li>Nuevo: la caja “Archivos” se convierte en una caja de clasificación con una pestaña por tipo de archivo (documentos, hojas de cálculo, presentaciones, PDF e imágenes, además de vídeos, archivos comprimidos, instaladores, enlaces web e iconos del sistema opcionales), manteniendo tus archivos existentes donde estaban.</li>
+          <li>Nuevo: activa o desactiva las pestañas de la caja de clasificación y la clasificación automática por tipo haciendo clic derecho en la barra de título › Pestañas o en la nueva página Clasificación del centro de control. Activar la clasificación automática trae los archivos correspondientes desde la bandeja de entrada, y cerrar una pestaña devuelve sus archivos a la bandeja de entrada.</li>
+          <li>Nuevo: arrastra desde un espacio vacío dentro de una caja para seleccionar varios iconos, igual que en el escritorio de Windows. Mantén Ctrl para añadir o quitar elementos, y arrastra cerca del borde superior o inferior para desplazarte.</li>
+          <li>Nuevo: haz clic derecho en la pestaña o barra de título de una caja de carpeta › Abrir en el Explorador para abrir su carpeta incluso cuando la caja está llena.</li>
+          <li>Mejorado: las pestañas de la caja de clasificación aceptan solo sus tipos de archivo correspondientes y devuelven los elementos que no coinciden a su lugar de origen.</li>
+          <li>Mejorado: los nuevos accesos directos de programas y carpetas esperan en la bandeja de entrada en lugar de archivarse automáticamente.</li>
+          <li>Mejorado: copiar y cortar entre cajas y el Explorador de archivos funcionan como en Windows, con el diálogo de conflicto propio de Windows cuando el nombre ya existe y “nombre - copia” al pegar en la misma carpeta. Entre cajas del escritorio, cortar mueve el icono mientras que copiar muestra un aviso para usar Cortar.</li>
+          <li>Mejorado: Ctrl+C, Ctrl+X y Supr responden de inmediato, y el primer clic derecho tras iniciar SpringDesk ya no se detiene.</li>
+          <li>Corregido: el uso de memoria de SpringDesk podía crecer poco a poco cuanto más hacías clic derecho o copiabas. Ahora la memoria se mantiene estable.</li>
+          <li>Corregido: cambiar una opción en la página Clasificación o una pestaña en la caja de clasificación hacía que todos los demás interruptores de la página volvieran a reproducir su animación. Ahora permanecen quietos.</li>
+          <li>Corregido: los archivos creados dentro de una caja con Nuevo podían parpadear en la bandeja de entrada o saltar a una pestaña de la caja de clasificación. Ahora permanecen en la caja donde los creaste, mientras que los archivos que llegan desde otro sitio se siguen clasificando por tipo.</li>
+          <li>Corregido: guardar un archivo del escritorio en Excel o Word podía sacarlo de la caja en la que lo pusiste. Ahora se queda en su sitio.</li>
+          <li>Corregido: arrastrar un icono a un nuevo sitio dentro de la misma caja podía hacer que volara desde su sitio anterior en lugar de caer directamente en su lugar.</li>
+          <li>Corregido: los atajos de teclado como Ctrl+C, Ctrl+X, Ctrl+V, Supr y F2 solo funcionaban justo después de hacer clic en un icono. Ahora funcionan tras hacer clic en cualquier parte de una caja, incluido un espacio vacío, una pestaña o la barra de título.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· 16 de octubre de 2026</span></h2>
+        <ul>
+          <li>Nuevo: primera versión, publicada gratis en GitHub. Antes DeskFlow, ahora SpringDesk. Requiere Windows 11.</li>
+          <li>Nuevo: crea, cambia de nombre, mueve y cambia el tamaño de las cajas, o enrolla una caja hasta su barra de título.</li>
+          <li>Nuevo: organiza varios grupos de iconos como pestañas dentro de una caja, y suelta una caja sobre la barra de título de otra para combinarlas.</li>
+          <li>Nuevo: muestra cualquier carpeta (como Descargas) directamente en el escritorio dentro de una caja de carpeta.</li>
+          <li>Nuevo: organiza automáticamente tu escritorio en el primer uso en cajas para programas, archivos, carpetas y descargas, colocando los elementos sin categoría en la bandeja de entrada.</li>
+          <li>Nuevo: clasifica por tipo los archivos nuevos del escritorio en sus cajas correspondientes.</li>
+          <li>Nuevo: ajusta las cajas a una cuadrícula para que sigan alineadas sin superponerse.</li>
+          <li>Nuevo: bloquea tu distribución para evitar arrastres accidentales.</li>
+          <li>Nuevo: mueve los iconos abiertos recientemente al principio de su caja.</li>
+          <li>Nuevo: pasa el puntero sobre un icono para ver los mismos detalles de archivo que muestra Windows.</li>
+          <li>Nuevo: desactiva “Mostrar iconos del escritorio” en Windows para ocultar también tus cajas.</li>
+          <li>Nuevo: haz clic en el escritorio o en una caja y empieza a escribir para buscar, incluidas iniciales de pinyin chino (como escribir “wx” para encontrar “微信”).</li>
+          <li>Nuevo: pulsa Ctrl+Alt+Espacio para buscar desde cualquier sitio.</li>
+          <li>Nuevo: ajusta la transparencia y el tinte, bloquea tu distribución y haz copias de respaldo o restaura distribuciones en el centro de control.</li>
+          <li>Nuevo: incluye instalador, y SpringDesk se inicia por defecto con Windows.</li>
+          <li>Nuevo: recibe un aviso cuando hay una versión nueva lista y reinicia para actualizar en un clic.</li>
+          <li>Nuevo: exporta el diagnóstico en centro de control › Acerca de al informar de un problema.</li>
+          <li>Nuevo: actualiza desde DeskFlow conservando tus cajas y tu ajuste de inicio, eliminando automáticamente la versión anterior.</li>
+        </ul>
     </main>
   </div>
 

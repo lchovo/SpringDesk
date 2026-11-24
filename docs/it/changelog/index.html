@@ -351,9 +351,83 @@
         <ul>
           <li>Novità: prima pubblicazione nel Microsoft Store, con 7 giorni di prova gratuita.</li>
         </ul>
-
       <h2>Prima del Microsoft Store</h2>
       <p>Le versioni da 1.0 a 1.3 (16–17 ottobre 2026) erano prime build gratuite su GitHub. Non sono più disponibili; la versione dello Store le ha sostituite e ne eredita i layout.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· 17 ottobre 2026</span></h2>
+        <ul>
+          <li>Corretto: le miniature delle foto nei box potevano apparire capovolte. Ora sono orientate correttamente.</li>
+          <li>Corretto: il nome di un’icona che entrava a malapena su una riga poteva perdere l’ultima lettera (come “Packing List.tx”). Ora i nomi lunghi vanno a capo su una seconda riga.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· 17 ottobre 2026</span></h2>
+        <ul>
+          <li>Corretto: i file di testo lunghi in cinese potevano apparire con caratteri illeggibili nell’anteprima. Ora vengono mostrati in modo chiaro.</li>
+          <li>Corretto: durante l’anteprima con più icone selezionate, i tasti freccia potevano uscire dalla selezione invece di sfogliare solo quegli elementi. Ora corrispondono ai pulsanti ‹ › e mantengono la selezione.</li>
+          <li>Corretto: visualizzare in anteprima immagini che Windows non sa aprire da solo (come una foto HEIC dell’iPhone senza estensione) poteva far sì che SpringDesk continuasse a usare memoria extra in seguito. Ora la memoria torna alla normalità dopo la chiusura.</li>
+          <li>Corretto: modificare e salvare un’immagine sul desktop non ne aggiornava subito la miniatura. Ora la nuova miniatura compare immediatamente.</li>
+          <li>Corretto: in un box cartella ordinato per ultima modifica, modificare un file non lo spostava in cima. Ora i file modificati passano in cima.</li>
+          <li>Corretto: ripristinare una disposizione precedente poteva reimpostare anche il tema, gli interruttori delle impostazioni e lo stato di blocco. Ora il ripristino recupera solo i box.</li>
+          <li>Corretto: i nuovi file del desktop potevano sparire quando non c’era “In arrivo” (ad esempio dopo aver ripristinato una vecchia disposizione o quando lo schermo era pieno di box). Ora SpringDesk crea “In arrivo” o aggiunge il file a una nuova scheda quando non resta spazio.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· 17 ottobre 2026</span></h2>
+        <ul>
+          <li>Novità: premi Spazio su un’icona selezionata per vederne l’anteprima senza aprire il file, e premi Spazio o Esc per chiudere. SpringDesk mostra direttamente immagini, video, audio, testo, codice e PDF, e presenta una scheda dettagli per Word, Excel, PowerPoint, file zip, programmi, cartelle e altri elementi.</li>
+          <li>Novità: spostati tra le anteprime con i tasti freccia (o solo tra gli elementi selezionati quando ne scegli più di uno), fai clic su un’altra icona per cambiare, ingrandisci e sposta le immagini, riproduci direttamente i video o premi Invio per aprire. I pulsanti in alto permettono di scegliere “Apri con …”, ingrandire o chiudere.</li>
+          <li>Novità: premi i tasti freccia dentro un box per spostare la selezione, come sul desktop di Windows.</li>
+          <li>Novità: temi chiaro e scuro per box, Impostazioni, finestre di dialogo, menu, ricerca e menu dell’area di notifica. Scegli Chiaro, Scuro o Automatico in Impostazioni › Aspetto › Tema (Automatico segue subito Windows); i colori di tinta sono stati rimossi mentre resta il cursore di opacità.</li>
+          <li>Migliorato: Impostazioni › Generali › Desktop affianca “Mostra icone del desktop” e “Mostra anche le icone proprie di Windows”, e la scelta per le icone di Windows viene ora ricordata.</li>
+          <li>Migliorato: rimosso “Impostazioni…” dal menu contestuale di ciascun box; apri Impostazioni dall’icona nell’area di notifica.</li>
+          <li>Migliorato: al primo utilizzo, la colonna destra dispone Cartelle sopra il box di smistamento e il box cartella Download così i due restano vicini.</li>
+          <li>Corretto: i nomi dei file nei risultati di ricerca sul desktop apparivano in testo nero su sfondo scuro. Ora sono leggibili.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· 17 ottobre 2026</span></h2>
+        <ul>
+          <li>Novità: SpringDesk ora supporta l’inglese oltre al cinese. Segue la lingua di visualizzazione di Windows, oppure puoi cambiare in qualsiasi momento in Impostazioni › Generali › Lingua con effetto immediato.</li>
+          <li>Novità: i nomi predefiniti assegnati da SpringDesk ai box e alle schede (In arrivo, Preferiti, Scheda 2 e schede del box di smistamento) cambiano con la lingua, mentre i nomi che hai scritto tu restano invariati. In inglese i nomi sono box, sorting box, folder box e Inbox.</li>
+          <li>Novità: Impostazioni sostituisce il centro di controllo con quattro pagine (Generali, Smistamento, Aspetto e Informazioni), raggruppando le opzioni correlate e mostrando informazioni sulla versione, aggiornamenti software ed esportazione diagnostica sotto Informazioni.</li>
+          <li>Novità: avvisi e conferme ora usano la finestra satinata di SpringDesk con pulsanti di azione (“Elimina”, “Ripristina”) anziché finestre generiche Sì / No.</li>
+          <li>Migliorato: rinomina, blocco ed eliminazione di un box tornano nel menu contestuale di ciascun box, e “Ripristina disposizione precedente” si trova in Impostazioni › Generali.</li>
+          <li>Migliorato: rimosso “Riporta i box fuori schermo”, poiché SpringDesk mantiene automaticamente ogni box sullo schermo all’avvio e quando cambiano gli schermi.</li>
+          <li>Migliorato: ora le disposizioni vengono salvate in backup una volta al giorno prima della prima modifica della giornata invece di conservare solo le ultime dieci modifiche, così una grande riorganizzazione non elimina i giorni precedenti. Ripristinare un backup salva prima la disposizione attuale, non tocca mai i tuoi file e mette i file più recenti o rinominati in “In arrivo”.</li>
+          <li>Migliorato: i testi in tutta l’app sono più brevi e coerenti, e le opzioni di ordinamento nel menu contestuale di un box sono ora raggruppate sotto Ordina per.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· 17 ottobre 2026</span></h2>
+        <ul>
+          <li>Novità: il box “File” diventa un box di smistamento con una scheda per tipo di file (documenti, fogli di calcolo, presentazioni, PDF e immagini, più video, archivi compressi, programmi di installazione, link web e icone di sistema opzionali), mantenendo i file esistenti dov’erano.</li>
+          <li>Novità: attiva o disattiva le schede del box di smistamento e lo smistamento automatico per tipo facendo clic destro sulla barra del titolo › Schede oppure nella nuova pagina Smistamento del centro di controllo. Attivare lo smistamento automatico porta i file corrispondenti da “In arrivo”, e chiudere una scheda riporta i relativi file in “In arrivo”.</li>
+          <li>Novità: trascina da un punto vuoto di un box per selezionare più icone, come sul desktop di Windows. Tieni premuto Ctrl per aggiungere o togliere elementi e trascina vicino al bordo superiore o inferiore per scorrere.</li>
+          <li>Novità: fai clic destro sulla scheda o sulla barra del titolo di un box cartella › Apri in Esplora file per aprirne la cartella anche quando il box è pieno.</li>
+          <li>Migliorato: le schede del box di smistamento accettano solo i tipi di file corrispondenti, rimandando da dove venivano gli elementi non adatti.</li>
+          <li>Migliorato: i nuovi collegamenti ai programmi e le nuove cartelle attendono in “In arrivo” invece di sistemarsi automaticamente.</li>
+          <li>Migliorato: copia e taglia tra i box ed Esplora file funzionano come in Windows, con la finestra di conflitto propria di Windows quando un nome è già presente e “nome - Copia” quando si incolla nella stessa cartella. Tra i box del desktop, tagliare sposta l’icona mentre copiare mostra un suggerimento per usare invece Taglia.</li>
+          <li>Migliorato: Ctrl+C, Ctrl+X e Canc rispondono subito, e il primo clic destro dopo l’avvio di SpringDesk non si blocca più.</li>
+          <li>Corretto: l’uso di memoria di SpringDesk poteva crescere lentamente man mano che facevi clic destro o copiavi. Ora la memoria resta stabile.</li>
+          <li>Corretto: attivare o disattivare un’opzione nella pagina Smistamento o una scheda nel box di smistamento faceva ripetere l’animazione a tutti gli altri interruttori della pagina. Ora restano fermi.</li>
+          <li>Corretto: i file creati dentro un box con Nuovo potevano lampeggiare in “In arrivo” o saltare a una scheda del box di smistamento. Ora restano nel box in cui li hai creati, mentre i file che arrivano da altrove continuano a essere smistati per tipo.</li>
+          <li>Corretto: salvare un file del desktop in Excel o Word poteva spostarlo fuori dal box in cui lo avevi messo. Ora resta al suo posto.</li>
+          <li>Corretto: trascinare un’icona in una nuova posizione nello stesso box poteva farla volare dalla vecchia posizione anziché farla cadere subito al suo posto.</li>
+          <li>Corretto: le scorciatoie da tastiera come Ctrl+C, Ctrl+X, Ctrl+V, Canc e F2 funzionavano solo subito dopo aver fatto clic su un’icona. Ora funzionano dopo aver fatto clic in qualsiasi punto di un box, compreso uno spazio vuoto, una scheda o la barra del titolo.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· 16 ottobre 2026</span></h2>
+        <ul>
+          <li>Novità: prima pubblicazione, come versione gratuita su GitHub. Già DeskFlow, ora SpringDesk. Richiede Windows 11.</li>
+          <li>Novità: crea, rinomina, sposta e ridimensiona i box, oppure arrotola un box fino alla barra del titolo.</li>
+          <li>Novità: organizza più gruppi di icone come schede dentro un box e rilascia un box sulla barra del titolo di un altro per unirli.</li>
+          <li>Novità: mostra qualsiasi cartella (come Download) direttamente sul desktop in un box cartella.</li>
+          <li>Novità: al primo utilizzo ordina automaticamente il desktop in box per programmi, file, cartelle e download, collocando gli elementi non categorizzati in “In arrivo”.</li>
+          <li>Novità: smista per tipo i nuovi file del desktop nei rispettivi box.</li>
+          <li>Novità: aggancia i box a una griglia così restano allineati senza sovrapporsi.</li>
+          <li>Novità: blocca la disposizione per evitare trascinamenti accidentali.</li>
+          <li>Novità: sposta le icone aperte di recente in cima al rispettivo box.</li>
+          <li>Novità: passa il puntatore su un’icona per vedere gli stessi dettagli del file mostrati da Windows.</li>
+          <li>Novità: disattiva “Mostra icone del desktop” di Windows per nascondere anche i box.</li>
+          <li>Novità: fai clic sul desktop o su un box e inizia a scrivere per cercare, anche tramite le iniziali pinyin cinesi (ad esempio scrivendo “wx” per trovare “微信”).</li>
+          <li>Novità: premi Ctrl+Alt+Spazio per cercare da qualsiasi punto.</li>
+          <li>Novità: regola trasparenza e tinta, blocca la disposizione ed esegui backup o ripristini delle disposizioni nel centro di controllo.</li>
+          <li>Novità: programma di installazione incluso, e SpringDesk si avvia con Windows per impostazione predefinita.</li>
+          <li>Novità: ricevi una notifica quando è pronta una nuova versione e riavvia per aggiornare con un clic.</li>
+          <li>Novità: esporta la diagnostica in centro di controllo › Informazioni quando segnali un problema.</li>
+          <li>Novità: aggiorna da DeskFlow mantenendo i box e l’impostazione di avvio, con rimozione automatica della versione precedente.</li>
+        </ul>
     </main>
   </div>
 

@@ -351,9 +351,83 @@
         <ul>
           <li>Neu: Erste Veröffentlichung im Microsoft Store mit 7-tägiger kostenloser Testversion.</li>
         </ul>
-
       <h2>Vor dem Microsoft Store</h2>
       <p>Die Versionen 1.0 bis 1.3 (16.–17. Oktober 2026) waren frühe kostenlose Builds auf GitHub. Sie sind nicht mehr verfügbar; die Store-Version hat sie abgelöst und übernimmt ihre Layouts.</p>
+      <h2 id="v1.3.2">1.3.2 <span class="byline">· 17. Oktober 2026</span></h2>
+        <ul>
+          <li>Behoben: Fotovorschaubilder in Boxen konnten auf dem Kopf stehen. Sie erscheinen jetzt richtig herum.</li>
+          <li>Behoben: Ein Symbolname, der gerade noch in eine Zeile passte, konnte seinen letzten Buchstaben verlieren (etwa „Packing List.tx“). Lange Namen werden jetzt stattdessen in eine zweite Zeile umgebrochen.</li>
+        </ul>
+      <h2 id="v1.3.1">1.3.1 <span class="byline">· 17. Oktober 2026</span></h2>
+        <ul>
+          <li>Behoben: Lange chinesische Textdateien konnten in der Vorschau als Zeichensalat erscheinen. Sie werden jetzt sauber angezeigt.</li>
+          <li>Behoben: Bei der Vorschau mit mehreren ausgewählten Symbolen konnten die Pfeiltasten über die Auswahl hinausgehen, statt nur durch diese Elemente zu blättern. Sie verhalten sich jetzt wie die Schaltflächen ‹ › und behalten deine Auswahl.</li>
+          <li>Behoben: Nach der Vorschau von Bildern, die Windows nicht selbst öffnen kann (etwa einem iPhone-HEIC-Foto ohne Dateiendung), konnte SpringDesk anschließend mehr Speicher belegen. Der Speicherverbrauch normalisiert sich jetzt nach dem Schließen.</li>
+          <li>Behoben: Beim Bearbeiten und Speichern eines Bilds auf dem Desktop wurde sein Vorschaubild nicht sofort aktualisiert. Das neue Vorschaubild erscheint jetzt sofort.</li>
+          <li>Behoben: In einer nach Änderungsdatum sortierten Ordnerbox rückte eine bearbeitete Datei nicht nach oben. Geänderte Dateien wandern jetzt an die Spitze.</li>
+          <li>Behoben: Beim Wiederherstellen eines früheren Layouts konnten auch dein Design, die Einstellungsschalter und der Sperrzustand zurückgesetzt werden. Beim Wiederherstellen kommen jetzt nur noch deine Boxen zurück.</li>
+          <li>Behoben: Neue Desktopdateien konnten verloren gehen, wenn kein Eingang vorhanden war (etwa nach dem Wiederherstellen eines älteren Layouts oder wenn der Bildschirm voller Boxen war). SpringDesk erstellt jetzt einen Eingang oder fügt die Datei einem neuen Tab hinzu, wenn kein Platz mehr ist.</li>
+        </ul>
+      <h2 id="v1.3.0">1.3.0 <span class="byline">· 17. Oktober 2026</span></h2>
+        <ul>
+          <li>Neu: Drücke bei einem ausgewählten Symbol die Leertaste für eine Vorschau ohne Öffnen der Datei, und drücke zum Schließen erneut die Leertaste oder Esc. SpringDesk zeigt Bilder, Videos, Audio, Text, Code und PDFs direkt an und blendet für Word, Excel, PowerPoint, ZIP-Dateien, Programme, Ordner und andere Elemente eine Detailkarte ein.</li>
+          <li>Neu: Blättere in der Vorschau mit den Pfeiltasten weiter (oder nur durch deine Auswahl, wenn mehrere Elemente markiert sind), klicke zum Wechseln auf ein anderes Symbol, zoome und verschiebe Bilder, gib Videos direkt wieder oder drücke Eingabe zum Öffnen. Über die oberen Schaltflächen kannst du „Mit … öffnen“ wählen, maximieren oder schließen.</li>
+          <li>Neu: Drücke in einer Box die Pfeiltasten, um die Auswahl zu verschieben, genau wie auf dem Windows-Desktop.</li>
+          <li>Neu: Helles und dunkles Design für Boxen, Einstellungen, Dialoge, Menüs, Suche und das Infobereich-Menü. Wähle Hell, Dunkel oder Automatisch unter Einstellungen › Darstellung › Design (Automatisch folgt Windows sofort); Tönungsfarben wurden entfernt, während der Deckkraft-Schieberegler bleibt.</li>
+          <li>Verbessert: Einstellungen › Allgemein › Desktop stellt „Desktopsymbole anzeigen“ und „Auch Windows-eigene Symbole anzeigen“ nebeneinander, und deine Wahl für die Windows-eigenen Symbole wird jetzt gespeichert.</li>
+          <li>Verbessert: „Einstellungen…“ wurde aus dem Rechtsklick-Menü jeder Box entfernt; öffne die Einstellungen stattdessen über das Symbol im Infobereich.</li>
+          <li>Verbessert: Bei der ersten Nutzung ordnet die rechte Spalte „Ordner“ über der Sortierbox und der Ordnerbox „Downloads“ an, sodass beide zusammenstehen.</li>
+          <li>Behoben: Dateinamen in den Ergebnissen der Desktopsuche erschienen als schwarzer Text auf dunklem Hintergrund. Sie sind jetzt gut lesbar.</li>
+        </ul>
+      <h2 id="v1.2.0">1.2.0 <span class="byline">· 17. Oktober 2026</span></h2>
+        <ul>
+          <li>Neu: SpringDesk unterstützt neben Chinesisch jetzt auch Englisch. Es folgt deiner Windows-Anzeigesprache, oder du wechselst jederzeit unter Einstellungen › Allgemein › Sprache, wobei die Änderung sofort wirksam wird.</li>
+          <li>Neu: Standardnamen, die SpringDesk deinen Boxen und Tabs gegeben hat (Eingang, Favoriten, Tab 2 und Tabs der Sortierbox), wechseln mit der Sprache; Namen, die du selbst eingegeben hast, bleiben unverändert. Im Englischen lauten die Bezeichnungen box, sorting box, folder box und Inbox.</li>
+          <li>Neu: Die Einstellungen ersetzen das Kontrollzentrum mit vier Seiten (Allgemein, Sortierung, Darstellung und Info), fassen zusammengehörige Optionen zusammen und zeigen Versionsinfos, Softwareupdates sowie den Diagnoseexport unter Info.</li>
+          <li>Neu: Hinweise und Bestätigungen nutzen jetzt den eigenen Milchglas-Dialog von SpringDesk mit Aktionsschaltflächen („Löschen“, „Wiederherstellen“) statt allgemeiner Ja/Nein-Dialoge.</li>
+          <li>Verbessert: Das Umbenennen, Sperren und Löschen einer Box kehren in das Rechtsklick-Menü jeder Box zurück, und „Früheres Layout wiederherstellen“ befindet sich unter Einstellungen › Allgemein.</li>
+          <li>Verbessert: „Boxen außerhalb des Bildschirms zurückholen“ wurde entfernt, da SpringDesk jede Box beim Start und bei Änderungen der Anzeige automatisch auf dem Bildschirm hält.</li>
+          <li>Verbessert: Layouts werden jetzt einmal täglich vor der ersten Änderung des Tages gesichert, statt nur die letzten zehn Bearbeitungen aufzubewahren, sodass ein größeres Umsortieren frühere Tage nicht verdrängt. Beim Wiederherstellen einer Sicherung wird zuerst dein aktuelles Layout gesichert, deine Dateien bleiben unberührt, und neuere oder umbenannte Dateien landen im Eingang.</li>
+          <li>Verbessert: Texte in der gesamten App sind kürzer und einheitlicher, und Sortieroptionen im Rechtsklick-Menü einer Box sind jetzt unter „Sortieren nach“ gruppiert.</li>
+        </ul>
+      <h2 id="v1.1.0">1.1.0 <span class="byline">· 17. Oktober 2026</span></h2>
+        <ul>
+          <li>Neu: Die Box „Dateien“ wird zur Sortierbox mit je einem Tab pro Dateityp (Dokumente, Tabellen, Präsentationen, PDF und Bilder sowie optional Videos, Archive, Installationsprogramme, Weblinks und Systemsymbole), während deine vorhandenen Dateien an ihrem Platz bleiben.</li>
+          <li>Neu: Schalte Tabs der Sortierbox und das automatische Sortieren pro Typ per Rechtsklick auf die Titelleiste › Tabs oder auf der neuen Seite „Sortierung“ im Kontrollzentrum ein oder aus. Das Einschalten von „Automatisch sortieren“ holt passende Dateien aus dem Eingang herüber, und das Schließen eines Tabs legt seine Dateien zurück in den Eingang.</li>
+          <li>Neu: Ziehe von einer freien Stelle in einer Box aus, um mehrere Symbole auszuwählen, wie auf dem Windows-Desktop. Halte Strg gedrückt, um Elemente hinzuzufügen oder zu entfernen, und ziehe zum Scrollen nahe an den oberen oder unteren Rand.</li>
+          <li>Neu: Klicke mit der rechten Maustaste auf den Tab oder die Titelleiste einer Ordnerbox › Im Explorer öffnen, um ihren Ordner auch dann zu öffnen, wenn die Box voll ist.</li>
+          <li>Verbessert: Tabs der Sortierbox nehmen nur passende Dateitypen auf und schicken unpassende Elemente zurück, woher sie kamen.</li>
+          <li>Verbessert: Neue Programmverknüpfungen und Ordner warten im Eingang, statt sich automatisch einzuordnen.</li>
+          <li>Verbessert: Kopieren und Ausschneiden zwischen Boxen und dem Datei-Explorer funktionieren wie unter Windows, mit dem eigenen Konfliktdialog von Windows bei bereits vergebenem Namen und „Name - Kopie“ beim Einfügen in denselben Ordner. Zwischen Desktop-Boxen verschiebt Ausschneiden das Symbol, während Kopieren einen Hinweis anzeigt, stattdessen Ausschneiden zu verwenden.</li>
+          <li>Verbessert: Strg+C, Strg+X und Entf reagieren sofort, und der erste Rechtsklick nach dem Start von SpringDesk stockt nicht mehr.</li>
+          <li>Behoben: Der Speicherverbrauch von SpringDesk konnte langsam steigen, je öfter du rechtsgeklickt oder kopiert hast. Der Speicher bleibt jetzt konstant.</li>
+          <li>Behoben: Das Umschalten einer Option auf der Seite „Sortierung“ oder eines Tabs in der Sortierbox ließ alle anderen Schalter auf der Seite ihre Animation erneut abspielen. Sie bleiben jetzt ruhig.</li>
+          <li>Behoben: Mit „Neu“ innerhalb einer Box erstellte Dateien konnten kurz im Eingang aufblitzen oder in einen Tab der Sortierbox springen. Sie bleiben jetzt in der Box, in der du sie erstellt hast, während Dateien von anderswo weiterhin nach Typ sortiert werden.</li>
+          <li>Behoben: Das Speichern einer Desktopdatei in Excel oder Word konnte sie aus der Box verschieben, in die du sie gelegt hattest. Sie bleibt jetzt an ihrem Platz.</li>
+          <li>Behoben: Beim Ziehen eines Symbols an eine neue Stelle in derselben Box konnte es von seinem alten Platz herüberfliegen, statt direkt an den neuen Platz zu fallen.</li>
+          <li>Behoben: Tastenkürzel wie Strg+C, Strg+X, Strg+V, Entf und F2 funktionierten nur direkt nach dem Klick auf ein Symbol. Sie funktionieren jetzt nach einem Klick irgendwo in einer Box, einschließlich einer freien Stelle, eines Tabs oder der Titelleiste.</li>
+        </ul>
+      <h2 id="v1.0.0">1.0.0 <span class="byline">· 16. Oktober 2026</span></h2>
+        <ul>
+          <li>Neu: Erste Veröffentlichung als kostenlose Version auf GitHub. Früher DeskFlow, jetzt SpringDesk. Benötigt Windows 11.</li>
+          <li>Neu: Boxen erstellen, umbenennen, verschieben und in der Größe ändern oder eine Box bis auf ihre Titelleiste einrollen.</li>
+          <li>Neu: Mehrere Gruppen von Symbolen als Tabs in einer Box organisieren und eine Box auf die Titelleiste einer anderen Box ziehen, um sie zu verbinden.</li>
+          <li>Neu: Beliebige Ordner (wie Downloads) direkt auf deinem Desktop in einer Ordnerbox anzeigen.</li>
+          <li>Neu: Deinen Desktop bei der ersten Nutzung automatisch in Boxen für Programme, Dateien, Ordner und Downloads sortieren, während nicht zugeordnete Elemente im Eingang landen.</li>
+          <li>Neu: Neue Desktopdateien nach Typ in ihre passenden Boxen einsortieren.</li>
+          <li>Neu: Boxen an einem Raster ausrichten, sodass sie ohne Überlappung geordnet bleiben.</li>
+          <li>Neu: Dein Layout sperren, um versehentliches Verschieben zu verhindern.</li>
+          <li>Neu: Zuletzt geöffnete Symbole an den Anfang ihrer Box verschieben.</li>
+          <li>Neu: Mit dem Mauszeiger über ein Symbol fahren, um dieselben Dateidetails wie unter Windows zu sehen.</li>
+          <li>Neu: „Desktopsymbole anzeigen“ in Windows ausschalten, um auch deine Boxen auszublenden.</li>
+          <li>Neu: Auf den Desktop oder eine Box klicken und zum Suchen einfach lostippen, einschließlich chinesischer Pinyin-Anfangsbuchstaben (etwa „wx“ tippen, um „微信“ zu finden).</li>
+          <li>Neu: Strg+Alt+Leertaste drücken, um von überall aus zu suchen.</li>
+          <li>Neu: Im Kontrollzentrum Transparenz und Tönung anpassen, dein Layout sperren sowie Layouts sichern oder wiederherstellen.</li>
+          <li>Neu: Ein Installationsprogramm, und SpringDesk startet standardmäßig mit Windows.</li>
+          <li>Neu: Benachrichtigt werden, wenn eine neue Version bereitsteht, und mit einem Klick zum Aktualisieren neu starten.</li>
+          <li>Neu: Diagnose unter Kontrollzentrum › Info exportieren, wenn du ein Problem meldest.</li>
+          <li>Neu: Von DeskFlow aus aktualisieren und dabei deine Boxen sowie die Autostart-Einstellung behalten, während die alte Version automatisch entfernt wird.</li>
+        </ul>
     </main>
   </div>
 
