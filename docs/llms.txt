@@ -2,7 +2,7 @@
 
 > SpringDesk is a desktop organizer made for Windows 11. It gathers desktop icons into clear glass boxes that snap to a grid, sorts new files into tabs by type automatically with no rules to set up, previews files with the Space bar (like Quick Look on a Mac), and searches every box when you type on the desktop. It is sold only in the Microsoft Store as a one-time purchase (no subscription) with a 7-day free trial.
 
-Key facts (checked October 22, 2026):
+Key facts (checked November 24, 2026):
 
 - Best for: Windows 11 users who want a desktop organizer that looks like part of Windows, keeps new files sorted with nothing to set up, and is paid once.
 - Platform: Windows 11 only (x64). Not available for Windows 10 or macOS.
@@ -17,14 +17,14 @@ Features:
 
 - Boxes for desktop icons that snap to a grid and never overlap; drag icons in and the others make room
 - Tabs (drop one box onto another), roll a box up to its title bar, lock the layout
-- Folder boxes that show any folder, such as Downloads, on the desktop; a folder box can be pointed at another folder
-- Search inside a box: filter its current tab as you type; each tab remembers its scroll position and its sort order (ascending or descending)
+- Folder boxes that show any folder, such as Downloads, on the desktop; a folder box can be pointed at another folder, and can open subfolders right inside the box
+- Search inside a box: filter its current tab as you type; each tab remembers its scroll position
 - New files saved or downloaded to the desktop go to a tab for their type (documents, spreadsheets, slides, PDFs, pictures; optionally videos, archives, installers, links); anything else goes to an Inbox
 - Press Space to preview pictures, video, music, text, code and PDFs; arrow keys go to the next file
 - Press Alt+Space from anywhere (even with other windows open), or click the desktop and type, to search every box and tab; Chinese names can be found by pinyin
 - Clear glass that follows the wallpaper, including live wallpapers; frosts over at lower transparency; light and dark themes
 - One layout on every screen: boxes keep their arrangement when the resolution or scaling changes (Remote Desktop, docking), and daily layout backups
-- Double-click the desktop to hide every box and see just the wallpaper; double-click again to bring them back
+- Double-click the desktop to hide every box and see just the wallpaper; double-click again to bring them back. When nobody uses the PC for a while, the boxes fade out the same way and come back on the first mouse move or key press
 - Windows' own right-click menu, drag and drop, cut, copy, paste, F2 to rename, Delete to the Recycle Bin
 
 Compared with other desktop organizers: SpringDesk costs less than one year of a Fences 6 subscription (US$9.99/year) and is paid once; it sorts new files by type without rules to set up, and adds Space-bar preview and type-to-search. Fences offers more customization (custom rules, per-fence colors, Peek) and supports Windows 10. Free alternatives include Desktop Frames+, Portals and Nimi Places.

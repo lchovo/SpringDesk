@@ -3,7 +3,7 @@
   <!-- home pages: tools/site/home.py -->
   <url>
     <loc>https://springdesk.app/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/de/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/es/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/fr/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/it/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -78,7 +78,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/pt/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/ja/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -108,7 +108,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/ko/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/zh/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -138,7 +138,7 @@
   </url>
   <url>
     <loc>https://springdesk.app/zh-hant/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://springdesk.app/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://springdesk.app/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://springdesk.app/es/"/>
@@ -154,7 +154,7 @@
   <!-- /home pages -->
   <url><loc>https://springdesk.app/fences-alternative/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://springdesk.app/best-desktop-organizer-windows-11/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://springdesk.app/guides/organize-windows-11-desktop/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://springdesk.app/guides/organize-windows-11-desktop/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://springdesk.app/press/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://springdesk.app/changelog/</loc><lastmod>2026-11-23</lastmod></url>
 </urlset>

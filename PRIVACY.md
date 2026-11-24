@@ -16,6 +16,9 @@ personal data.
   you press Space, and it never sends any of it anywhere.
 - To draw the boxes' glass, SpringDesk copies the desktop background (the wallpaper, not your windows) into
   memory. The copy is never saved or sent.
+- So that you can search by typing on the desktop, and so that keys can't act on Windows' own desktop icons while
+  SpringDesk hides them, SpringDesk watches key presses. It acts on them only when the desktop or one of its boxes
+  has the keyboard; it never logs what you type and never sends any key press anywhere.
 - Your layout (boxes, tabs, settings) and a few daily backups of it are saved in your user folder
   (%APPDATA%\SpringDesk). A copy of the latest layout is kept in Documents\SpringDesk, so your boxes can come back
   after you reinstall SpringDesk; if your Documents folder is synced (for example by OneDrive), that copy is synced
@@ -29,7 +32,7 @@ statement. SpringDesk only gets the answer: on trial or bought, and when the tri
 
 ## Diagnostics
 
-Settings > About > Export diagnostics makes a zip file on your PC with the logs, your layout, the names of the items
+Settings › About › Export diagnostics makes a zip file on your PC with the logs, your layout, the names of the items
 on your desktop (not their contents) and basic system information (Windows version, screens). It's only shared if
 you send it yourself.
 
@@ -53,6 +56,7 @@ SpringDesk 是 Windows 11 的桌面整理工具，完全在你的电脑上运行
 
 - 为了把桌面显示在分区里，SpringDesk 会读取桌面上各项的名称和图标，以及你选择在文件夹门户里显示的文件夹的内容。只有在显示缩略图、或你按空格预览时，才会读取文件的内容，也从不把任何东西发出去。
 - 为了画出分区的玻璃效果，SpringDesk 会把桌面背景（壁纸，不包括你的窗口）复制到内存里。这份复制不保存、不发送。
+- 为了让你在桌面上直接打字搜索，并且在 SpringDesk 藏起 Windows 自己的桌面图标时不让按键误操作到它们，SpringDesk 会查看按键。只有桌面或分区正在接收键盘输入时它才处理这些按键；从不把你输入的内容写进日志，也从不发送任何按键。
 - 你的布局（分区、标签页、设置）和每天的几份备份保存在你的用户文件夹里（%APPDATA%\SpringDesk）。最新布局的一份副本保存在 文档\SpringDesk 里，重新安装 SpringDesk 后可以用它找回分区；如果你的文档文件夹在同步（例如 OneDrive），这份副本也会跟着同步。用于排查问题的日志保存在 %LOCALAPPDATA%\SpringDesk。
 
 ## 联网
