@@ -22,7 +22,7 @@ The desktop organizer made for Windows 11: icons in clear glass boxes, new files
 - **Light and dark**: follows Windows, or pick one in Settings › Appearance
 - **Settings**: theme and transparency, the sorting box, layout lock, daily layout backups
 
-In English, or in Chinese on Chinese Windows (Settings › General › Language).
+In ten languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), 日本語, 한국어, 简体中文 and 繁體中文. It follows your Windows display language (Settings › General › Language).
 
 ## Install
 
@@ -42,7 +42,7 @@ Requires **Windows 11**. If another desktop organizer is running, quit it first.
 
 ## Updates
 
-Automatic, through the Microsoft Store. Latest: 1.14.1 (November 23, 2026). What changed in each version: [springdesk.app/changelog](https://springdesk.app/changelog/).
+Automatic, through the Microsoft Store. Latest: 1.15.1 (November 24, 2026). What changed in each version: [springdesk.app/changelog](https://springdesk.app/changelog/).
 
 ## Uninstall
 
@@ -79,7 +79,7 @@ Settings › About › Export diagnostics, and send me the zip: email contact@sp
 - **空格预览**：选中图标按空格，不用打开就能看图片、视频、音乐、文本和 PDF；其他文件显示信息。方向键看下一个
 - **浅色和深色**：跟随 Windows，也可以在 设置 › 外观 里选
 - **设置**：主题和透明度、收纳门户、锁定分区、每天自动备份布局
-- **中英文界面**：跟随 Windows 的显示语言，也可以在 设置 › 通用 › 语言 里改
+- **10 种界面语言**：English、Deutsch、Español、Français、Italiano、Português (Brasil)、日本語、한국어、简体中文、繁體中文，跟随 Windows 的显示语言，也可以在 设置 › 通用 › 语言 里改
 
 ### 安装
 

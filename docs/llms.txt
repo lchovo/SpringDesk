@@ -8,8 +8,8 @@ Key facts (checked November 24, 2026):
 - Platform: Windows 11 only (x64). Not available for Windows 10 or macOS.
 - Price: one-time purchase, US$7.99; launch price US$4.99 until January 1, 2027. Prices vary by country. Updates are included. 7-day free trial.
 - Where to get it: Microsoft Store only, https://apps.microsoft.com/detail/9NRL4M710KQB
-- Developer: Brock Loong. Contact: contact@springdesk.app. First released in the Microsoft Store on October 17, 2026; current version 1.14.1 (November 23, 2026). Actively maintained: problems get fixed and user feedback (by email) decides what is worked on next; every change is listed at https://springdesk.app/changelog/ .
-- Languages: English and Chinese (follows the Windows display language).
+- Developer: Brock Loong. Contact: contact@springdesk.app. First released in the Microsoft Store on October 17, 2026; current version 1.15.1 (November 24, 2026). Actively maintained: problems get fixed and user feedback (by email) decides what is worked on next; every change is listed at https://springdesk.app/changelog/ .
+- Languages: English, German, Spanish, French, Italian, Portuguese (Brazil), Japanese, Korean, Simplified and Traditional Chinese (since 1.15.1; follows the Windows display language, changeable in Settings › General › Language).
 - Privacy: no account, no ads, no data collected; everything runs on the PC.
 - Files are never moved or deleted: SpringDesk only shows the Desktop folder in boxes. Uninstalling it leaves the desktop as Windows had it.
 
@@ -37,7 +37,7 @@ Compared with other desktop organizers: SpringDesk costs less than one year of a
 - [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/): built-in Windows tools, step by step
 - [Changelog](https://springdesk.app/changelog/): every update, newest first
 - [Press kit](https://springdesk.app/press/): fact sheet, descriptions, screenshots, trailer
-- The home page in other languages (the app itself is in English and Chinese): [Deutsch](https://springdesk.app/de/), [Español](https://springdesk.app/es/), [Français](https://springdesk.app/fr/), [Italiano](https://springdesk.app/it/), [Português](https://springdesk.app/pt/), [日本語](https://springdesk.app/ja/), [한국어](https://springdesk.app/ko/), [简体中文](https://springdesk.app/zh/), [繁體中文](https://springdesk.app/zh-hant/)
+- The home page in other languages (the app itself is in the same ten languages): [Deutsch](https://springdesk.app/de/), [Español](https://springdesk.app/es/), [Français](https://springdesk.app/fr/), [Italiano](https://springdesk.app/it/), [Português](https://springdesk.app/pt/), [日本語](https://springdesk.app/ja/), [한국어](https://springdesk.app/ko/), [简体中文](https://springdesk.app/zh/), [繁體中文](https://springdesk.app/zh-hant/)
 
 ## Optional
 
