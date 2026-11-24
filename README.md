@@ -114,4 +114,4 @@ Windows 设置 › 应用 › 已安装的应用 › SpringDesk › 卸载。桌
 
 ### 更新日志
 
-见 [springdesk.app/changelog](https://springdesk.app/changelog/)（英文），或商店页的"此版本中的新增功能"。
+见 [springdesk.app/zh/changelog](https://springdesk.app/zh/changelog/)，或商店页的"此版本中的新增功能"。
