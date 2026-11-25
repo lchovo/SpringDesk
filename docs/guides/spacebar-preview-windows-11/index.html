@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Preview Files with Spacebar on Windows 11 (Like Mac Quick Look)</title>
+  <meta name="description" content="Four ways to preview photos, PDFs, videos and code on Windows 11 without opening an app: File Explorer Preview Pane, PowerToys Peek, QuickLook, and SpringDesk on the desktop.">
+  <meta name="theme-color" content="#0e0a13">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Spacebar file preview on Windows 11 (like Mac Quick Look)">
+  <meta property="og:description" content="How to look inside photos, PDFs, videos and text files instantly on Windows 11 without launching an app.">
+  <meta property="og:image" content="https://springdesk.app/assets/og.jpg">
+  <meta property="og:url" content="https://springdesk.app/guides/spacebar-preview-windows-11/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://springdesk.app/guides/spacebar-preview-windows-11/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to preview files with Spacebar on Windows 11 (like Mac Quick Look)",
+        "description": "Four ways to preview photos, PDFs, videos and code on Windows 11 without opening a full app.",
+        "url": "https://springdesk.app/guides/spacebar-preview-windows-11/",
+        "datePublished": "2026-11-25",
+        "dateModified": "2026-11-25",
+        "author": { "@type": "Person", "name": "Brock Loong", "url": "https://github.com/lchovo" },
+        "image": "https://springdesk.app/assets/og.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Does Windows 11 have Mac's Spacebar Quick Look built in?", "acceptedAnswer": { "@type": "Answer", "text": "Not with the Space bar alone. Windows 11 includes a side Preview Pane in File Explorer (Alt+P), and Microsoft's free PowerToys adds Peek (Ctrl+Space). For single-key Space preview directly on the desktop, tools such as QuickLook or SpringDesk add it." } },
+          { "@type": "Question", "name": "What file types can SpringDesk preview with Space?", "acceptedAnswer": { "@type": "Answer", "text": "SpringDesk previews pictures, videos, audio, plain text, source code and PDFs directly on the Windows 11 desktop. Word, Excel, PowerPoint, archives, installers and folders show an instant details card without waiting for Office to launch." } },
+          { "@type": "Question", "name": "Can I flip through multiple photos or PDFs with the arrow keys?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. While the Space preview is open in SpringDesk, the arrow keys step through the current tab (or through the files you selected), pre-decoding neighboring photos so flipping feels immediate." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
+        <a href="/fences-alternative/">Compare</a>
+      </nav>
+      <div class="bar-end">
+<!-- languages -->
+        <details class="lang" data-close="Close">
+          <summary aria-label="Language: English"><svg class="globe" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2.2 2.4-2.2 10.6 0 13M8 1.5c2.2 2.4 2.2 10.6 0 13"/></svg><span>English</span></summary>
+          <ul>
+            <li><a href="/" hreflang="en" lang="en" data-lang="en" data-suggest="View in English" aria-current="page">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de" data-lang="de" data-suggest="Auf Deutsch ansehen">Deutsch</a></li>
+            <li><a href="/es/" hreflang="es" lang="es" data-lang="es" data-suggest="Ver en español">Español</a></li>
+            <li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr" data-suggest="Voir en français">Français</a></li>
+            <li><a href="/it/" hreflang="it" lang="it" data-lang="it" data-suggest="Vedi in italiano">Italiano</a></li>
+            <li><a href="/pt/" hreflang="pt" lang="pt-BR" data-lang="pt-BR" data-suggest="Ver em português">Português</a></li>
+            <li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" data-suggest="日本語で見る">日本語</a></li>
+            <li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" data-suggest="한국어로 보기">한국어</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans" data-suggest="查看中文版">简体中文</a></li>
+            <li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-Hant" data-suggest="查看繁體中文版">繁體中文</a></li>
+          </ul>
+        </details>
+<!-- /languages -->
+        <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-space-header">Try it free</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main class="article">
+      <h1>How to preview files with Spacebar on Windows 11</h1>
+      <p class="lede">If you've used a Mac, pressing Space to look inside a photo, PDF or video without opening a heavy app becomes muscle memory. Windows 11 doesn't bind the Space bar to Quick Look out of the box, so here are the four ways to get instant file previews, depending on where you keep your files.</p>
+      <p class="byline">By Brock Loong, developer of SpringDesk · November 25, 2026</p>
+
+      <figure class="glass">
+        <video data-src="/assets/4-quick-look.mp4" poster="/assets/4-quick-look-still.jpg" muted loop playsinline preload="none"></video>
+        <figcaption>Pressing Space on the desktop in SpringDesk to preview photos, PDFs and video, then stepping through with the arrow keys.</figcaption>
+      </figure>
+
+      <h2>At a glance</h2>
+      <div class="table glass">
+        <table>
+          <thead><tr><th>Option</th><th>Shortcut</th><th>Where it works</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><th>File Explorer Preview Pane</th><td><kbd>Alt</kbd>+<kbd>P</kbd></td><td>Inside File Explorer only</td><td>Built into Windows 11</td></tr>
+            <tr><th>Microsoft PowerToys Peek</th><td><kbd>Ctrl</kbd>+<kbd>Space</kbd></td><td>File Explorer and Windows desktop</td><td>Free (open source)</td></tr>
+            <tr><th>QuickLook</th><td><kbd>Space</kbd></td><td>File Explorer and Windows desktop</td><td>Free (open source)</td></tr>
+            <tr><th>SpringDesk</th><td><kbd>Space</kbd></td><td>Desktop boxes and folder boxes</td><td>7-day trial, then US$7.99 once (US$4.99 until Jan 1, 2027)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>1. Built into Windows 11: File Explorer's Preview Pane</h2>
+      <p>Before installing anything, open File Explorer, select <em>View › Show › Preview pane</em> (or press <kbd>Alt</kbd>+<kbd>P</kbd>). Clicking an image, text file or PDF shows a small preview in the right-hand column.</p>
+      <p><strong>Good for:</strong> Skimming documents inside a folder window with zero extra software.<br>
+      <strong>Keep in mind:</strong> It takes up horizontal space in File Explorer, doesn't play video or audio inline, and doesn't work on the desktop itself.</p>
+
+      <h2>2. Official Microsoft utility: PowerToys Peek</h2>
+      <p>Microsoft's free <a href="https://learn.microsoft.com/en-us/windows/powertoys/peek">PowerToys</a> suite includes a module called <strong>Peek</strong>. Once installed, select a file on the desktop or in File Explorer and press <kbd>Ctrl</kbd>+<kbd>Space</kbd> (customizable in PowerToys settings, though single-key <kbd>Space</kbd> isn't available so typing in search boxes isn't hijacked).</p>
+      <p><strong>Good for:</strong> Users who already run PowerToys for FancyZones or PowerToys Run and want a floating preview everywhere.</p>
+
+      <h2>3. Free single-key Spacebar utility: QuickLook</h2>
+      <p><a href="https://github.com/QL-Win/QuickLook">QuickLook</a> is a popular open-source app in the Microsoft Store and on GitHub that brings single-key <kbd>Space</kbd> preview to File Explorer and the standard Windows desktop, with optional plugins for Office files and archives.</p>
+      <p><strong>Good for:</strong> Keeping the standard Windows desktop and File Explorer, while adding Mac-style <kbd>Space</kbd> preview everywhere for free.</p>
+
+      <h2>4. Spacebar preview + an organized desktop: SpringDesk</h2>
+      <p>I built <a href="/">SpringDesk</a> for people whose working files (downloads, screenshots, PDFs, project folders) live on the Windows 11 desktop. It gathers your desktop icons into clear glass boxes, sorts new files into tabs by type automatically, and builds <kbd>Space</kbd> preview directly into every box and folder box:</p>
+      <ul>
+        <li><strong>Instant opening, zero app spin-up:</strong> Select any icon and press <kbd>Space</kbd>. Photos (with mouse-wheel zoom), PDFs (rendered with Windows 11's native engine), videos, audio, plain text and source code open right away.</li>
+        <li><strong>Arrow-key browsing:</strong> Leave the preview open and press the arrow keys to flip through the rest of the tab; neighboring photos decode ahead so there's no pause.</li>
+        <li><strong>Honest speed on heavy formats:</strong> Rather than calling Word or Excel in the background and making you wait, Office files, archives and installers show a fast details card with size, item count and timestamps, and <kbd>Enter</kbd> opens the full file when you need it.</li>
+        <li><strong>Works on any folder, too:</strong> Pin your <em>Downloads</em> or project folder onto the desktop as a folder box, open subfolders right inside it, and press <kbd>Space</kbd> on anything there.</li>
+      </ul>
+      <p><strong>Keep in mind:</strong> SpringDesk previews files inside its desktop boxes and folder boxes, not inside separate File Explorer windows, and it requires Windows 11.</p>
+
+      <div class="cta glass">
+        <h2>Try SpringDesk free for 7 days</h2>
+        <p>Clear glass boxes, automatic sorting, Spacebar preview and Alt+Space search for Windows 11. One-time purchase after the trial, no subscription.</p>
+        <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-space-cta">
+          <img src="/assets/store-badge-light.svg" width="205" height="56" alt="Get it from Microsoft">
+        </a>
+      </div>
+
+      <h2>Questions</h2>
+      <h3>Does Windows 11 have Mac's Spacebar Quick Look built in?</h3>
+      <p>Not on the Space bar alone. Windows 11 has File Explorer's side Preview Pane (<kbd>Alt</kbd>+<kbd>P</kbd>), and Microsoft PowerToys adds Peek (<kbd>Ctrl</kbd>+<kbd>Space</kbd>). For single-key <kbd>Space</kbd> preview on the desktop, you need an app such as QuickLook or SpringDesk.</p>
+      <h3>What file types can SpringDesk preview with Space?</h3>
+      <p>Pictures, videos, music, plain text, code and PDFs open directly in the preview window. Word, Excel, PowerPoint, zip archives, installers, shortcuts and folders show an instant info card.</p>
+      <h3>Does SpringDesk move my files?</h3>
+      <p>No. Your files stay in your Desktop folder (or their own folder in a folder box). Quit or uninstall SpringDesk and your Windows 11 desktop is back just as it was. See <a href="/guides/organize-windows-11-desktop/">how to organize your Windows 11 desktop</a> and <a href="/best-desktop-organizer-windows-11/">desktop organizers compared</a>.</p>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

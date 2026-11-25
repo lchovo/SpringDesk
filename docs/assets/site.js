@@ -1,15 +1,28 @@
 // Shared by every page of springdesk.app. Every page works without it: films stay on their pictures, the hero shows
 // the tidy desktop, questions open and close by themselves (<details>).
 
-// Where the visitor came from: a link like springdesk.app/?ref=press-xda carries the source to the Store,
-// where Partner Center counts it as the campaign (cid). Kept for the visit, so it survives moving between pages.
+// Where the visitor came from: a link like springdesk.app/?ref=press-xda, or standard Google Ads / YouTube UTM
+// parameters (?utm_source=youtube&utm_campaign=creator_name, or ?gclid=...), carries the source to the Store, where
+// Partner Center counts it as the campaign (cid). Underscores and dots are normalized to hyphens. Kept in
+// sessionStorage for the visit only (no cookies, no third-party tracking).
 (function () {
-  let ref = new URLSearchParams(location.search).get('ref');
+  const params = new URLSearchParams(location.search);
+  const clean = s => (s || '').trim().replace(/[_.+\s]+/g, '-').replace(/[^a-z0-9-]/gi, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  let ref = clean(params.get('ref') || params.get('cid'));
+  if (!ref) {
+    const src = clean(params.get('utm_source'));
+    const camp = clean(params.get('utm_campaign'));
+    if (src && camp) ref = (camp.startsWith(src + '-') ? camp : src + '-' + camp);
+    else if (camp || src) ref = camp || src;
+    else if (params.has('gclid') || params.has('gbraid') || params.has('wbraid')) ref = 'google-ads';
+    else if (params.has('msclkid')) ref = 'bing-ads';
+  }
+  if (ref.length > 50) ref = ref.slice(0, 50).replace(/-$/, '');
   try {
     if (ref) sessionStorage.setItem('springdesk-ref', ref);
-    else ref = sessionStorage.getItem('springdesk-ref');
+    else ref = clean(sessionStorage.getItem('springdesk-ref')).slice(0, 50).replace(/-$/, '');
   } catch (e) { /* storage blocked: use the link's own ref only */ }
-  if (!ref || !/^[a-z0-9][a-z0-9-]{0,39}$/i.test(ref)) return;
+  if (!ref || !/^[a-z0-9](?:[a-z0-9-]{0,48}[a-z0-9])?$/i.test(ref)) return;
   document.querySelectorAll('a[href^="https://apps.microsoft.com/detail/"]').forEach(link => {
     const url = new URL(link.href);
     url.searchParams.set('cid', ref);
