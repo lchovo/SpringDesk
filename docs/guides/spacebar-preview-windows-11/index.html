@@ -34,7 +34,7 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "Does Windows 11 have Mac's Spacebar Quick Look built in?", "acceptedAnswer": { "@type": "Answer", "text": "Not with the Space bar alone. Windows 11 includes a side Preview Pane in File Explorer (Alt+P), and Microsoft's free PowerToys adds Peek (Ctrl+Space). For single-key Space preview directly on the desktop, tools such as QuickLook or SpringDesk add it." } },
+          { "@type": "Question", "name": "Does Windows 11 have Mac's Spacebar Quick Look built in?", "acceptedAnswer": { "@type": "Answer", "text": "Not out of the box. Windows 11 includes a side Preview Pane in File Explorer (Alt+P). Microsoft's free PowerToys adds Peek, which previews the file selected in File Explorer when you press Space (Ctrl+Space before PowerToys 0.95). For Space preview on the desktop itself, tools such as QuickLook or SpringDesk add it." } },
           { "@type": "Question", "name": "What file types can SpringDesk preview with Space?", "acceptedAnswer": { "@type": "Answer", "text": "SpringDesk previews pictures, videos, audio, plain text, source code and PDFs directly on the Windows 11 desktop. Word, Excel, PowerPoint, archives, installers and folders show an instant details card without waiting for Office to launch." } },
           { "@type": "Question", "name": "Can I flip through multiple photos or PDFs with the arrow keys?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. While the Space preview is open in SpringDesk, the arrow keys step through the current tab (or through the files you selected), pre-decoding neighboring photos so flipping feels immediate." } }
         ]
@@ -95,7 +95,7 @@
           <thead><tr><th>Option</th><th>Shortcut</th><th>Where it works</th><th>Price</th></tr></thead>
           <tbody>
             <tr><th>File Explorer Preview Pane</th><td><kbd>Alt</kbd>+<kbd>P</kbd></td><td>Inside File Explorer only</td><td>Built into Windows 11</td></tr>
-            <tr><th>Microsoft PowerToys Peek</th><td><kbd>Ctrl</kbd>+<kbd>Space</kbd></td><td>File Explorer and Windows desktop</td><td>Free (open source)</td></tr>
+            <tr><th>Microsoft PowerToys Peek</th><td><kbd>Space</kbd> (<kbd>Ctrl</kbd>+<kbd>Space</kbd> before 0.95)</td><td>File Explorer</td><td>Free (open source)</td></tr>
             <tr><th>QuickLook</th><td><kbd>Space</kbd></td><td>File Explorer and Windows desktop</td><td>Free (open source)</td></tr>
             <tr><th>SpringDesk</th><td><kbd>Space</kbd></td><td>Desktop boxes and folder boxes</td><td>7-day trial, then US$7.99 once (US$4.99 until Jan 1, 2027)</td></tr>
           </tbody>
@@ -108,8 +108,8 @@
       <strong>Keep in mind:</strong> It takes up horizontal space in File Explorer, doesn't play video or audio inline, and doesn't work on the desktop itself.</p>
 
       <h2>2. Official Microsoft utility: PowerToys Peek</h2>
-      <p>Microsoft's free <a href="https://learn.microsoft.com/en-us/windows/powertoys/peek">PowerToys</a> suite includes a module called <strong>Peek</strong>. Once installed, select a file on the desktop or in File Explorer and press <kbd>Ctrl</kbd>+<kbd>Space</kbd> (customizable in PowerToys settings, though single-key <kbd>Space</kbd> isn't available so typing in search boxes isn't hijacked).</p>
-      <p><strong>Good for:</strong> Users who already run PowerToys for FancyZones or PowerToys Run and want a floating preview everywhere.</p>
+      <p>Microsoft's free <a href="https://learn.microsoft.com/en-us/windows/powertoys/peek">PowerToys</a> suite includes a module called <strong>Peek</strong>. Once installed, select a file in File Explorer and press <kbd>Space</kbd>. That's the default since PowerToys 0.95 (older versions used <kbd>Ctrl</kbd>+<kbd>Space</kbd>), and you can change it in PowerToys settings. The arrow keys move to the next file and <kbd>Enter</kbd> opens it.</p>
+      <p><strong>Good for:</strong> Users who already run PowerToys for FancyZones or PowerToys Run and want Space preview in File Explorer.</p>
 
       <h2>3. Free single-key Spacebar utility: QuickLook</h2>
       <p><a href="https://github.com/QL-Win/QuickLook">QuickLook</a> is a popular open-source app in the Microsoft Store and on GitHub that brings single-key <kbd>Space</kbd> preview to File Explorer and the standard Windows desktop, with optional plugins for Office files and archives.</p>
@@ -135,7 +135,7 @@
 
       <h2>Questions</h2>
       <h3>Does Windows 11 have Mac's Spacebar Quick Look built in?</h3>
-      <p>Not on the Space bar alone. Windows 11 has File Explorer's side Preview Pane (<kbd>Alt</kbd>+<kbd>P</kbd>), and Microsoft PowerToys adds Peek (<kbd>Ctrl</kbd>+<kbd>Space</kbd>). For single-key <kbd>Space</kbd> preview on the desktop, you need an app such as QuickLook or SpringDesk.</p>
+      <p>Not out of the box. Windows 11 has File Explorer's side Preview Pane (<kbd>Alt</kbd>+<kbd>P</kbd>). Microsoft PowerToys adds Peek, which previews the file selected in File Explorer when you press <kbd>Space</kbd> (<kbd>Ctrl</kbd>+<kbd>Space</kbd> before PowerToys 0.95). For <kbd>Space</kbd> preview on the desktop itself, you need an app such as QuickLook or SpringDesk.</p>
       <h3>What file types can SpringDesk preview with Space?</h3>
       <p>Pictures, videos, music, plain text, code and PDFs open directly in the preview window. Word, Excel, PowerPoint, zip archives, installers, shortcuts and folders show an instant info card.</p>
       <h3>Does SpringDesk move my files?</h3>
