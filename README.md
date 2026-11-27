@@ -8,7 +8,7 @@ The desktop organizer made for Windows 11: icons in clear glass boxes, new files
 
 [中文说明](#中文说明)
 
-![SpringDesk](screenshot.png)
+![SpringDesk](screenshot.jpg)
 
 ## Features
 
@@ -31,13 +31,15 @@ In ten languages: English, Deutsch, Español, Français, Italiano, Português (B
 
 Had the free version from GitHub? Open the Store version once: your boxes come along, and it asks you to uninstall the GitHub copy.
 
-Requires **Windows 11**. If another desktop organizer is running, quit it first.
+Requires **Windows 11**, on x64 or ARM64 PCs. If another desktop organizer is running, quit it first.
 
 ## Choosing a desktop organizer
 
 - [SpringDesk or Fences? An honest comparison](https://springdesk.app/fences-alternative/)
 - [Desktop organizers for Windows 11, compared](https://springdesk.app/best-desktop-organizer-windows-11/)
 - [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/)
+- [How to preview files with Space on Windows 11](https://springdesk.app/guides/spacebar-preview-windows-11/)
+- [Keeping desktop icons tidy over Wallpaper Engine](https://springdesk.app/guides/wallpaper-engine-desktop-icons/)
 - [Press kit](https://springdesk.app/press/)
 
 ## Updates
@@ -88,7 +90,7 @@ Settings › About › Export diagnostics, and send me the zip: email contact@sp
 
 以前装过 GitHub 上的免费版？打开一次商店版，分区会原样接过来，并提醒你卸载 GitHub 版。
 
-需要 **Windows 11**。如果在用别的桌面整理工具，请先把它退出。
+需要 **Windows 11**，x64 和 ARM64 电脑都能用。如果在用别的桌面整理工具，请先把它退出。
 
 ### 更新
 
