@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop Icons Keep Moving on Windows 11? Why It Happens and How to Stop It</title>
+  <meta name="description" content="Why Windows 11 rearranges desktop icons after a monitor change, docking or Remote Desktop, the settings that help, and how to keep a layout that stays put.">
+  <meta name="theme-color" content="#0e0a13">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Why desktop icons move on Windows 11, and how to stop it">
+  <meta property="og:description" content="Why icons get reshuffled when the screen changes, what helps in Windows 11, and a layout that stays put.">
+  <meta property="og:image" content="https://springdesk.app/assets/og.jpg">
+  <meta property="og:url" content="https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preload" href="/assets/fonts/departure-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('anim')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Why desktop icons move on Windows 11, and how to stop it",
+        "description": "Why Windows 11 rearranges desktop icons after a monitor change, docking or Remote Desktop, the settings that help, and how to keep a layout that stays put.",
+        "url": "https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "author": {
+          "@type": "Person",
+          "name": "Brock Loong",
+          "url": "https://github.com/lchovo"
+        },
+        "image": "https://springdesk.app/assets/og.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do my desktop icons move when I connect a second monitor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Windows places desktop icons on a grid that depends on the screen size and scaling. When a monitor is connected or disconnected, or the main display changes, the grid changes and Windows fits the icons onto the new one, so they can end up in a different order."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I stop Windows 11 from rearranging desktop icons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Right-click the desktop, open View, turn off Auto arrange icons and keep Align icons to grid on. Keep the same main display and the same scaling on the screens you switch between. If the screen still changes often, a tool that saves and restores icon positions, or a desktop organizer that keeps its own layout, keeps the arrangement you chose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do desktop icons move after using Remote Desktop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They can. A Remote Desktop session uses the screen size of the computer you connect from, so the desktop is laid out for that size. Choosing the same resolution in Remote Desktop Connection helps. SpringDesk fits its layout to the session and puts every box back where it was when you're on your own screen again."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "SpringDesk",
+        "item": "https://springdesk.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Why desktop icons move on Windows 11, and how to stop it",
+        "item": "https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="28" height="28">SpringDesk</a>
+      <nav class="tabs" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/#price">Price</a>
+        <a href="/#faq">Questions</a>
+        <a href="/fences-alternative/">Compare</a>
+      </nav>
+      <div class="bar-end">
+<!-- languages -->
+        <details class="lang" data-close="Close">
+          <summary aria-label="Language: English"><svg class="globe" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2.2 2.4-2.2 10.6 0 13M8 1.5c2.2 2.4 2.2 10.6 0 13"/></svg><span>English</span></summary>
+          <ul>
+            <li><a href="/" hreflang="en" lang="en" data-lang="en" data-suggest="View in English" aria-current="page">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de" data-lang="de" data-suggest="Auf Deutsch ansehen">Deutsch</a></li>
+            <li><a href="/es/" hreflang="es" lang="es" data-lang="es" data-suggest="Ver en español">Español</a></li>
+            <li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr" data-suggest="Voir en français">Français</a></li>
+            <li><a href="/it/" hreflang="it" lang="it" data-lang="it" data-suggest="Vedi in italiano">Italiano</a></li>
+            <li><a href="/pt/" hreflang="pt" lang="pt-BR" data-lang="pt-BR" data-suggest="Ver em português">Português</a></li>
+            <li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" data-suggest="日本語で見る">日本語</a></li>
+            <li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" data-suggest="한국어로 보기">한국어</a></li>
+            <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans" data-suggest="查看中文版">简体中文</a></li>
+            <li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-Hant" data-suggest="查看繁體中文版">繁體中文</a></li>
+          </ul>
+        </details>
+<!-- /languages -->
+        <a class="btn" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-icons-header">Try it free</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main class="article">
+      <h1>Why desktop icons move on Windows 11, and how to stop it</h1>
+      <p class="lede">You arrange your desktop, then plug in a monitor, dock your laptop or connect over Remote Desktop, and come back to icons in a different order. Here's why Windows does that, what helps, and how to keep a layout that stays where you put it.</p>
+      <p class="byline">By Brock Loong, developer of SpringDesk · November 27, 2026</p>
+
+      <h2>Why it happens</h2>
+      <p>Windows places desktop icons on a grid, and the grid depends on the screen size and scaling. When either changes, Windows fits the icons onto the new grid, and they can end up in a different order. Common triggers:</p>
+      <ul>
+        <li>Connecting or disconnecting a monitor, or changing which one is the main display.</li>
+        <li>Docking or undocking a laptop.</li>
+        <li>Signing in over Remote Desktop, which uses the screen size of the computer you connect from.</li>
+        <li>A game or app that changes the resolution, or a display driver update.</li>
+        <li>Changing <em>Scale</em> in <em>Settings › System › Display</em>.</li>
+      </ul>
+      <p>If <em>Auto arrange icons</em> is on, Windows also packs the icons into columns from the top left every time something changes.</p>
+
+      <h2>What helps in Windows 11</h2>
+      <ul>
+        <li><strong>Turn off Auto arrange.</strong> Right-click the desktop, open <em>View</em>, untick <em>Auto arrange icons</em> and keep <em>Align icons to grid</em> on, so icons stay where you drop them.</li>
+        <li><strong>Keep the same main display.</strong> In <em>Settings › System › Display</em>, select the monitor you want and tick <em>Make this my main display</em>. The desktop icons live on the main display.</li>
+        <li><strong>Use the same scaling</strong> on the screens you switch between, in <em>Settings › System › Display › Scale</em>.</li>
+        <li><strong>Match the resolution in Remote Desktop.</strong> In Remote Desktop Connection, open <em>Show Options › Display</em> and choose the same size as your own screen.</li>
+        <li><strong>Save and restore the layout.</strong> Free tools such as DesktopOK save your icon positions and put them back after a change, by hand or on a schedule.</li>
+      </ul>
+
+      <h2>A layout that doesn't depend on the screen</h2>
+      <figure class="glass">
+        <img src="/assets/01-overview.jpg" alt="A Windows 11 desktop with icons in clear glass boxes over a desert wallpaper" width="1600" height="900" loading="lazy" decoding="async">
+        <figcaption>SpringDesk keeps one layout for the boxes on every screen you use.</figcaption>
+      </figure>
+      <p>SpringDesk shows your desktop in clear glass boxes and keeps its own layout. One layout covers every screen you use: on a different monitor, a different scaling or a Remote Desktop session, the boxes keep their arrangement and fit the screen in proportion, and back on the original screen every box returns exactly where it was. Lock the layout so a stray drag doesn't move a box. SpringDesk also keeps a daily backup of the layout.</p>
+      <p><strong>Keep in mind:</strong> SpringDesk needs Windows 11 and is paid after a 7-day trial. It hides Windows' own desktop icons while it runs and shows them in its boxes; your files stay in your Desktop folder, and when you quit, the desktop is back as Windows had it.</p>
+
+      <div class="cta glass">
+        <h2>Try SpringDesk free for 7 days</h2>
+        <p>One layout across screens, new files sorted by type, Space to preview and Alt+Space to search, for Windows 11. One-time purchase after the trial, no subscription.</p>
+        <a class="get" href="https://apps.microsoft.com/detail/9NRL4M710KQB?cid=site-icons-cta">
+          <img src="/assets/store-badge-light.svg" width="205" height="56" alt="Get it from Microsoft">
+        </a>
+      </div>
+
+      <h2>Questions</h2>
+      <h3>Why do my desktop icons move when I connect a second monitor?</h3>
+      <p>Windows places desktop icons on a grid that depends on the screen size and scaling. When a monitor is connected or disconnected, or the main display changes, the grid changes and Windows fits the icons onto the new one, so they can end up in a different order.</p>
+      <h3>How do I stop Windows 11 from rearranging desktop icons?</h3>
+      <p>Right-click the desktop, open View, turn off Auto arrange icons and keep Align icons to grid on. Keep the same main display and the same scaling on the screens you switch between. If the screen still changes often, a tool that saves and restores icon positions, or a desktop organizer that keeps its own layout, keeps the arrangement you chose.</p>
+      <h3>Do desktop icons move after using Remote Desktop?</h3>
+      <p>They can. A Remote Desktop session uses the screen size of the computer you connect from, so the desktop is laid out for that size. Choosing the same resolution in Remote Desktop Connection helps. SpringDesk fits its layout to the session and puts every box back where it was when you&#x27;re on your own screen again.</p>
+      <p>More: <a href="/guides/organize-windows-11-desktop/">how to organize your Windows 11 desktop</a> and <a href="/best-desktop-organizer-windows-11/">desktop organizers compared</a>.</p>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-in">
+        <div class="foot-about">
+          <a class="brand" href="/"><img src="/assets/icon.png" alt="" width="40" height="40">SpringDesk</a>
+          <p>The desktop organizer made for Windows 11.</p>
+        </div>
+        <div>
+          <h3>SpringDesk</h3>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#price">Price</a></li>
+            <li><a href="/changelog/">Changelog</a></li>
+            <li><a href="/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compare</h3>
+          <ul>
+            <li><a href="/fences-alternative/">SpringDesk or Fences</a></li>
+            <li><a href="/best-desktop-organizer-windows-11/">Desktop organizers compared</a></li>
+            <li><a href="/guides/organize-windows-11-desktop/">Organize your desktop</a></li>
+            <li><a href="/guides/spacebar-preview-windows-11/">Spacebar preview on Windows 11</a></li>
+            <li><a href="/guides/wallpaper-engine-desktop-icons/">Desktop icons with Wallpaper Engine</a></li>
+            <li><a href="/guides/stop-windows-11-desktop-icons-moving/">Desktop icons that keep moving</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@springdesk.app">contact@springdesk.app</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/issues">Support</a></li>
+            <li><a href="https://github.com/lchovo/SpringDesk/blob/main/PRIVACY.md">Privacy</a></li>
+            <li><a href="https://www.youtube.com/@SpringDeskApp">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-end">© 2026 Brock Loong</p>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

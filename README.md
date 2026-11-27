@@ -40,6 +40,7 @@ Requires **Windows 11**, on x64 or ARM64 PCs. If another desktop organizer is ru
 - [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/)
 - [How to preview files with Space on Windows 11](https://springdesk.app/guides/spacebar-preview-windows-11/)
 - [Keeping desktop icons tidy over Wallpaper Engine](https://springdesk.app/guides/wallpaper-engine-desktop-icons/)
+- [Why desktop icons move on Windows 11, and how to stop it](https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/)
 - [Press kit](https://springdesk.app/press/)
 
 ## Updates

@@ -37,6 +37,7 @@ Compared with other desktop organizers: SpringDesk costs less than one year of a
 - [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/): built-in Windows tools, step by step
 - [How to preview files with Spacebar on Windows 11](https://springdesk.app/guides/spacebar-preview-windows-11/): File Explorer Preview Pane, PowerToys Peek, QuickLook and SpringDesk compared
 - [How to keep desktop icons clean over Wallpaper Engine](https://springdesk.app/guides/wallpaper-engine-desktop-icons/): clear glass boxes, double-click hide and auto-fade when away
+- [Why desktop icons move on Windows 11, and how to stop it](https://springdesk.app/guides/stop-windows-11-desktop-icons-moving/): what changes the icon order (monitors, docking, Remote Desktop, scaling), the Windows settings that help, and a layout that stays put
 - [Changelog](https://springdesk.app/changelog/): every update, newest first
 - [Press kit](https://springdesk.app/press/): fact sheet, descriptions, screenshots, trailer
 - The home page, changelog and Fences comparison in ten languages (the app itself is in the same ten languages): [Deutsch](https://springdesk.app/de/), [Español](https://springdesk.app/es/), [Français](https://springdesk.app/fr/), [Italiano](https://springdesk.app/it/), [Português](https://springdesk.app/pt/), [日本語](https://springdesk.app/ja/), [한국어](https://springdesk.app/ko/), [简体中文](https://springdesk.app/zh/), [繁體中文](https://springdesk.app/zh-hant/)
