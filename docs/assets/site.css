@@ -492,7 +492,9 @@ html:lang(zh-Hant) {
   --display: "Segoe UI Variable Display", "Segoe UI", "Microsoft JhengHei UI", "PingFang TC", system-ui, sans-serif;
 }
 
-/* Line breaks: Japanese at phrase boundaries (Chrome and Edge), never inside a word; Korean only at spaces */
+/* Line breaks: Japanese at phrase boundaries (Chrome and Edge), never inside a word; Korean only at spaces;
+   Chinese article titles only at spaces ("Windows 11 / 桌面整理软件对比", not "Windows 11 桌 / 面整理…") */
 :lang(ja) :is(h1, h2, h3, .lede, .scene-head p, .duo p) { word-break: auto-phrase; }
 :lang(ko) { word-break: keep-all; }
+:lang(zh) .article h1 { word-break: keep-all; }
 :lang(ja) .hero h1 { font-size: clamp(38px, 4.6vw, 66px); }

@@ -27,13 +27,13 @@ Features:
 - Double-click the desktop to hide every box and see just the wallpaper; double-click again to bring them back. When nobody uses the PC for a while, the boxes fade out the same way and come back on the first mouse move or key press
 - Windows' own right-click menu, drag and drop, cut, copy, paste, F2 to rename, Delete to the Recycle Bin
 
-Compared with other desktop organizers: SpringDesk costs less than one year of a Fences 7 subscription (US$10/year) and is paid once; it sorts new files by type without rules to set up, and adds Space-bar preview and type-to-search. Fences offers more customization (custom rules, per-fence colors, Peek) and supports Windows 10. Free alternatives include Desktop Frames+, Portals and Nimi Places.
+Compared with other desktop organizers: SpringDesk costs less than one year of a Fences 7 subscription (US$10/year) and is paid once; it sorts new files by type without rules to set up, and adds Space-bar preview and type-to-search. Fences offers more customization (custom rules, per-fence colors, Peek) and supports Windows 10. Free alternatives include PecoFence, Desktop Frames+, Portals and Nimi Places.
 
 ## Pages
 
 - [Home](https://springdesk.app/): features, video and FAQ
 - [SpringDesk or Fences?](https://springdesk.app/fences-alternative/): price and feature comparison with Stardock Fences 7, with sources
-- [Desktop organizers for Windows 11, compared](https://springdesk.app/best-desktop-organizer-windows-11/): seven free and paid options and how to choose
+- [Desktop organizers for Windows 11, compared](https://springdesk.app/best-desktop-organizer-windows-11/): eight free and paid options and how to choose (also in the other nine languages, e.g. https://springdesk.app/de/best-desktop-organizer-windows-11/)
 - [How to organize your Windows 11 desktop](https://springdesk.app/guides/organize-windows-11-desktop/): built-in Windows tools, step by step
 - [How to preview files with Spacebar on Windows 11](https://springdesk.app/guides/spacebar-preview-windows-11/): File Explorer Preview Pane, PowerToys Peek, QuickLook and SpringDesk compared
 - [How to keep desktop icons clean over Wallpaper Engine](https://springdesk.app/guides/wallpaper-engine-desktop-icons/): clear glass boxes, double-click hide and auto-fade when away
